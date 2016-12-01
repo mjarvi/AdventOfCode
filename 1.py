@@ -20,11 +20,10 @@ class You(object):
 
     def __init__(self):
         self._heading = NORTH
-        self._visited = []
-        self._x = 0
-        self._y = 0
         self.x = Integer(0)
         self.y = Integer(0)
+        self.visited = []
+        self.visited_more_than_twice = []
 
     def walk(self, command):
         heading, distance = self.split(command)
@@ -42,28 +41,26 @@ class You(object):
             self._heading = self.directions[current - 1]
 
     def go(self, distance):
-        if self._heading == NORTH:
-            self._y += 1 * distance
-        if self._heading == EAST:
-            self._x += 1 * distance
-        if self._heading == SOUTH:
-            self._y += -1 * distance
-        if self._heading == WEST:
-            self._x += -1 * distance
-
         v, n = {NORTH: (self.y, +1),
                 EAST:  (self.x, +1),
                 SOUTH: (self.y, -1),
                 WEST:  (self.x, -1)}[self._heading]
 
         for _ in range(distance):
-            v.value -= n
+            v.value += n
+            self.track(self.get_position())
+
+    def track(self,  position):
+        if position in self.visited:
+            self.visited_more_than_twice.append(position)
+        self.visited.append(position)
 
     def get_position(self):
         return self.x.value, self.y.value
 
-    def get_distance(self):
-        return abs(self.x.value) + abs(self.y.value)
+    def get_distance(self, position=None):
+        x, y = position if position else self.get_position()
+        return abs(x) + abs(y)
 
     def get_heading(self):
         return self._heading
@@ -112,10 +109,16 @@ class TestYou(unittest.TestCase):
         i.travel('L5, R2, L3, L1, R1, R1')
         self.assertEqual(i.get_position(), (-9, 2))
 
+    def test_first_twice_visited(self):
+        i = You()
+        i.travel('R8, R4, R4, R8')
+        self.assertEqual(i.visited_more_than_twice[0], (4, 0))
+
     def test_solution(self):
         i = You()
         i.travel(THE_ROUTE)
         self.assertEqual(i.get_distance(), 231)
+        self.assertEqual(i.get_distance(i.visited_more_than_twice[0]), 147)
 
 
 unittest.main()
