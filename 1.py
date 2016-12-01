@@ -51,19 +51,19 @@ class You(object):
         if self._heading == WEST:
             self._x += -1 * distance
 
-        v, n = {NORTH: (self.y,  1),
-                EAST:  (self.y, -1),
-                SOUTH: (self.x,  1),
+        v, n = {NORTH: (self.y, +1),
+                EAST:  (self.x, +1),
+                SOUTH: (self.y, -1),
                 WEST:  (self.x, -1)}[self._heading]
 
         for _ in range(distance):
             v.value -= n
 
     def get_position(self):
-        return self._x, self._y
+        return self.x.value, self.y.value
 
     def get_distance(self):
-        return abs(self._x) + abs(self._y)
+        return abs(self.x.value) + abs(self.y.value)
 
     def get_heading(self):
         return self._heading
