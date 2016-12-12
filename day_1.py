@@ -35,10 +35,8 @@ class You(object):
 
     def turn(self, direction):
         current = self.directions.index(self._heading)
-        if direction == 'R':
-            self._heading = self.directions[(current + 1) % len(self.directions)]
-        else:
-            self._heading = self.directions[current - 1]
+        next_index = (current + {'R': 1, 'L': -1}[direction]) % len(self.directions)
+        self._heading = self.directions[next_index]
 
     def go(self, distance):
         v, n = {NORTH: (self.y, +1),
@@ -62,9 +60,6 @@ class You(object):
         x, y = position if position else self.get_position()
         return abs(x) + abs(y)
 
-    def get_heading(self):
-        return self._heading
-
     def travel(self, instructions):
         for step in instructions.split(','):
             self.walk(step.strip())
@@ -72,51 +67,46 @@ class You(object):
 
 class TestYou(unittest.TestCase):
 
+    def setUp(self):
+        self.i = You()
+
     def test_i_start_from_origo(self):
         self.assertEqual(You().get_position(), (0, 0))
 
     def test_two_steps_right_is_two_blocks_away(self):
-        i = You()
-        i.walk('R2')
-        self.assertEqual(i.get_position(), (2, 0))
-        self.assertEqual(i.get_distance(), 2)
+        self.i.walk('R2')
+        self.assertEqual(self.i.get_position(), (2, 0))
+        self.assertEqual(self.i.get_distance(), 2)
 
     def test_init_towards_north(self):
-        i = You()
-        self.assertEqual(i.get_heading(), NORTH)
+        self.assertEqual(self.i._heading, NORTH)
 
     def test_turn_left_from_north_is_west(self):
-        i = You()
-        i.turn('L')
+        self.i.turn('L')
         self.assertEqual(i._heading, WEST)
 
     def test_two_right_turns_and_one_left_is_east(self):
-        i = You()
-        i.walk('R1')
-        i.walk('R1')
-        i.walk('L1')
-        self.assertEqual(i.get_heading(), EAST)
+        self.i.walk('R1')
+        self.i.walk('R1')
+        self.i.walk('L1')
+        self.assertEqual(seelf.i._heading, EAST)
 
     def test_two_steps_right_and_one_left_is_three_blocks_away(self):
-        i = You()
-        i.walk('R2')
-        i.walk('L1')
-        self.assertEqual(i.get_position(), (2, 1))
-        self.assertEqual(i.get_distance(), 3)
+        self.i.walk('R2')
+        self.i.walk('L1')
+        self.assertEqual(seelf.i.get_position(), (2, 1))
+        self.assertEqual(seelf.i.get_distance(), 3)
 
     def test_route(self):
-        i = You()
-        i.travel('L5, R2, L3, L1, R1, R1')
+        self.i.travel('L5, R2, L3, L1, R1, R1')
         self.assertEqual(i.get_position(), (-9, 2))
 
     def test_first_twice_visited(self):
-        i = You()
-        i.travel('R8, R4, R4, R8')
+        self.i.travel('R8, R4, R4, R8')
         self.assertEqual(i.visited_more_than_twice[0], (4, 0))
 
     def test_solution(self):
-        i = You()
-        i.travel(THE_ROUTE)
+        self.i.travel(THE_ROUTE)
         self.assertEqual(i.get_distance(), 231)
         self.assertEqual(i.get_distance(i.visited_more_than_twice[0]), 147)
 
