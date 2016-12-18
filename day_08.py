@@ -1,4 +1,5 @@
 import unittest
+import copy
 import re
 from mock import patch
 from mock import call
@@ -59,8 +60,17 @@ on the back of the display tries to convince you, anyway.
 
 There seems to be an intermediate check of the voltage used by the display:
 after you swipe your card, if the screen did work, how many pixels should be
-lit?  '''
+lit?
 
+--- Part Two ---
+
+You notice that the screen is only capable of displaying capital letters; in
+the font it uses, each letter is 5 pixels wide and 6 tall.
+
+After you swipe your card, what code is the screen trying to display?
+
+
+'''
 
 class Day8(unittest.TestCase):
 
@@ -103,6 +113,24 @@ class Day8(unittest.TestCase):
 #.#....
 .#.....''', self.d.get())
 
+        self.d.rotate(y=1, n=6)
+        self.assertEqual('''\
+.#..#.#
+.#....#
+.#.....''', self.d.get())
+
+    def test_rotate_x_at_larger_grid(self):
+        g = Display(3, 6)
+        g.rect(3, 1)
+        g.rotate(x=1, n=4)
+        self.assertEqual('''\
+#.#
+...
+...
+...
+.#.
+...''', g.get())
+
     @patch('day_08.Display.rect')
     def test_parse_command_rect(self, rect_mock):
         self.d.execute('rect 1x1')
@@ -127,14 +155,15 @@ class Day8(unittest.TestCase):
         r = Display(50, 6)
         for cmd in data.splitlines():
             r.execute(cmd)
-        self.assertEqual(124, r.sum_lit_pixels())
+        self.assertEqual(121, r.sum_lit_pixels())
         self.assertEqual('''\
-#.#####.############.....#########.#.#############
-..##.##..#.####.####....############.##..#.#..####
-##....###..#.#..##..####..###.####..#.##.#.#.#...#
-..###....#......#....#........#.#...#....#..#.###.
-..###...........................#......#.......#..
-..#...............#.............................#.''', r.get())
+###..#..#.###..#..#..##..####..##..####..###.#....
+#..#.#..#.#..#.#..#.#..#.#....#..#.#......#..#....
+#..#.#..#.#..#.#..#.#....###..#..#.###....#..#....
+###..#..#.###..#..#.#....#....#..#.#......#..#....
+#.#..#..#.#.#..#..#.#..#.#....#..#.#......#..#....
+#..#..##..#..#..##...##..####..##..####..###.####.\
+''', r.get())
 
 
 class Display(object):
@@ -181,14 +210,14 @@ class Display(object):
             self.rotate_y(y, n)
 
     def rotate_x(self, x, n):
-        start = self._height - 1
-        wrap_pixel = self.pixel[start][x]
-        for y in range(start, 0, -1):
-            self.pixel[y][x] = self.pixel[y - 1][x]
-        self.pixel[0][1] = wrap_pixel
+        dup = copy.deepcopy(self.pixel)
+        h = self._height
+        for y in range(h):
+            self.pixel[(n + y) % h][x] = dup[y % h][x]
 
     def rotate_y(self, y, n):
-        self.pixel[y] = self.pixel[y][n - 1:] + self.pixel[y][:n - 1]
+        w = self._width
+        self.pixel[y] = self.pixel[y][(w - n):w] + self.pixel[y][0:w - n]
 
     def foo(self):
         return self.baa()
