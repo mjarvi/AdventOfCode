@@ -26,11 +26,10 @@ the encrypted name, in order, with ties broken by alphabetization. For example:
     above, the sum of their sector IDs is 1514.
 
     What is the sum of the sector IDs of the real rooms?
-
 '''
 
 
-class Day4first(unittest.TestCase):
+class Day4(unittest.TestCase):
 
     def test_example(self):
         self.assertEqual(True, is_real_room('aaaaa-bbb-z-y-x', 'abxyz'))
@@ -79,16 +78,14 @@ Z becomes A, and so on. Dashes become spaces.
 For example, the real name for qzmt-zixmtkozy-ivhz-343 is very encrypted name.
 
 What is the sector ID of the room where North Pole objects are stored?
-
 '''
 
 
-
-class Day4second(unittest.TestCase):
+class Day4PartTwo(unittest.TestCase):
 
     def test_example(self):
         self.assertEqual('very encrypted name', decrypt('qzmt-zixmtkozy-ivhz', 343))
-        
+
     def test_solution(self):
 
         def north_pole_objects_sector_id(rooms):
@@ -97,8 +94,9 @@ class Day4second(unittest.TestCase):
                 if is_real_room(name, checksum):
                     if decrypt(name, sector) == 'northpole object storage':
                         return sector
-            
+
         self.assertEqual(991, north_pole_objects_sector_id(data.splitlines()))
+
 
 def is_real_room(name, checksum):
     return checksum == get_five_first_most_common_letters(name)
@@ -136,6 +134,10 @@ def sum_sectors_of_real(names):
 
 def decrypt(encrypted, sector_id):
     alphabets = 'abcdefghijklmnopqrstuvwxyz'
-    amount = sector_id % len(alphabets)
-    transition = string.maketrans(alphabets, alphabets[amount:] + alphabets[:amount])
+    offset = sector_id % len(alphabets)
+    transition = string.maketrans(alphabets, alphabets[offset:] + alphabets[:offset])
     return string.translate(encrypted, transition).replace('-', ' ')
+
+
+if __name__ == '__main__':
+    unittest.main()

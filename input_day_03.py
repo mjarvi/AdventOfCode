@@ -1,7 +1,4 @@
-import unittest
-
-
-num = [
+data = [
  [ 883,  357,  185 ],
  [ 572,  189,  424 ],
  [ 842,  206,  272 ],
@@ -1905,65 +1902,3 @@ num = [
  [ 401,  211,  328 ],
  [ 725,  312,  215 ]]
 
-class TestTriangles(unittest.TestCase):
-
-    def test_first(self):
-
-        on = 0
-        for k in num:
-            if self.is_triangle(k):
-                on =on + 1
-
-        self.assertEqual(on, 982)
-
-    def test_second_example(self):
-
-        circles = 0
-        numbers = [[101, 301, 501],
-                   [102, 302, 502],
-                   [103, 303, 503],
-                   [201, 401, 601],
-                   [202, 402, 602],
-                   [203, 403, 603]]
-
-        t = self.triples(numbers)
-        self.assertEqual(next(t), [101,102,103])
-        self.assertEqual(next(t), [301,302,303])
-        self.assertEqual(next(t), [501,502,503])
-        self.assertEqual(next(t), [201,202,203])
-        self.assertEqual(next(t), [401,402,403])
-        self.assertEqual(next(t), [601,602,603])
-
-        for k in self.triples(numbers):
-            if self.is_triangle(k):
-                circles = circles + 1
-
-        self.assertEqual(circles, 6)
-
-    def is_triangle(self, k):
-
-        n1, n2, n3 = k
-
-        if n1 + n2 <= n3:
-            return False
-        else:
-            return True
-
-    def triples(self, k):
-        i = iter(k)
-        for _ in range(len(k)):
-            a1, b1, c1 = next(i)
-            a2, b2, c2 = next(i)
-            a3, b3, c3 = next(i)
-            yield sorted([a1, a2, a3])
-            yield sorted([b1, b2, b3])
-            yield sorted([c1, c2, c3])
-
-    def test_second_real(self):
-        circles = 0
-        for k in self.triples(num):
-            if self.is_triangle(k):
-                circles = circles + 1
-        self.assertEqual(circles, 1826)
-
-unittest.main()

@@ -35,6 +35,7 @@ Your puzzle input is abbhdwsy.
 
 class Day5(unittest.TestCase):
 
+    @unittest.SkipTest
     def test_example(self):
         g = pwd_generator('abc', 3231928)
         pwd = ''.join([next(g) for _ in range(8)])
@@ -45,6 +46,7 @@ class Day5(unittest.TestCase):
         pwd = ''.join([next(g) for _ in range(8)])
         self.assertEqual('801b56a7', pwd)
 
+    @unittest.SkipTest
     def test_example_II(self):
         g = complex_pwd_generator('abc', 3231928)
         self.assertEqual((1, '5'), next(g))
@@ -111,7 +113,8 @@ class PwdHasher(Iterator):
         while True:
             self.index += 1
             hasher = hashlib.md5()
-            hasher.update('{}{}'.format(self.door_id, self.index))
+            hasher.update(self.door_id)
+            hasher.update(str(self.index))
             hd = hasher.hexdigest()
             if hd.startswith('00000'):
                 return hd
