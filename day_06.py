@@ -1,6 +1,6 @@
 import unittest
 import string
-from day_6_input import data
+from input_day_06 import data
 import collections
 
 ''' --- Day 6: Signals and Noise ---
@@ -58,8 +58,8 @@ class Day6(unittest.TestCase):
         msg = [collections.Counter(xdata[k]).most_common(1)[0] for k in xdata]
         self.assertEqual('qrqlznrl', ''.join(c for c, _ in msg))
 
-
-''' --- Part Two ---
+        '''
+--- Part Two ---
 
 Of course, that would be the message - if you hadn't agreed to use a modified
 repetition code instead.
@@ -78,6 +78,17 @@ Given the recording in your puzzle input and this new decoding methodology,
 what is the original message that Santa is trying to send?
 
 '''
+
+    def test_part_two_solution(self):
+        xdata = {}
+        for line in data.splitlines():
+            for i, c in enumerate(line):
+                if i not in xdata:
+                    xdata[i] = ''
+                xdata[i] += c
+
+        msg = [collections.Counter(xdata[k]).most_common()[-1] for k in xdata]
+        self.assertEqual('kgzdfaon', ''.join(c for c, _ in msg))
 
 
 if __name__ == '__main__':
