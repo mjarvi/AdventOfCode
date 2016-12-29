@@ -1,5 +1,5 @@
 import unittest
-from day_3_input import data
+from input_day_03 import data
 
 
 ''' --- Day 3: Squares With Three Sides ---

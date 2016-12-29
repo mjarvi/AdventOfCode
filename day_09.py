@@ -42,7 +42,6 @@ and not processed further.
 
 What is the decompressed length of the file (your puzzle input)? Don't count
 whitespace.
-
 '''
 
 
@@ -82,41 +81,93 @@ class Day09(unittest.TestCase):
             story += decompress(l)
         self.assertEqual(98135, len(story))
 
-    '''
 
---- Part Two ---
+''' --- Part Two ---
 
 Apparently, the file actually uses version two of the format.
 
-In version two, the only difference is that markers within decompressed data are decompressed. This, the documentation explains, provides much more substantial compression capabilities, allowing many-gigabyte files to be stored in only a few kilobytes.
+In version two, the only difference is that markers within decompressed data
+are decompressed. This, the documentation explains, provides much more
+substantial compression capabilities, allowing many-gigabyte files to be stored
+in only a few kilobytes.
 
 For example:
 
-(3x3)XYZ still becomes XYZXYZXYZ, as the decompressed section contains no markers.
-X(8x2)(3x3)ABCY becomes XABCABCABCABCABCABCY, because the decompressed data from the (8x2) marker is then further decompressed, thus triggering the (3x3) marker twice for a total of six ABC sequences.
-(27x12)(20x12)(13x14)(7x10)(1x12)A decompresses into a string of A repeated 241920 times.
-(25x3)(3x3)ABC(2x3)XY(5x2)PQRSTX(18x9)(3x2)TWO(5x7)SEVEN becomes 445 characters long.
-Unfortunately, the computer you brought probably doesn't have enough memory to actually decompress the file; you'll have to come up with another way to get its decompressed length.
+(3x3)XYZ still becomes XYZXYZXYZ, as the decompressed section contains no
+markers.
+
+X(8x2)(3x3)ABCY becomes XABCABCABCABCABCABCY, because the decompressed data
+from the (8x2) marker is then further decompressed, thus triggering the (3x3)
+marker twice for a total of six ABC sequences.
+
+(27x12)(20x12)(13x14)(7x10)(1x12)A decompresses into a string of A repeated
+241920 times.
+
+(25x3)(3x3)ABC(2x3)XY(5x2)PQRSTX(18x9)(3x2)TWO(5x7)SEVEN becomes 445 characters
+long.
+
+Unfortunately, the computer you brought probably doesn't have enough memory to
+actually decompress the file; you'll have to come up with another way to get
+its decompressed length.
 
 What is the decompressed length of the file using this improved format?
-
 '''
 
+
+class Day09PartTwo(unittest.TestCase):
+
+    def test_empty_string_has_zero_length(self):
+        self.assertEqual(0, decoded_length(''))
+
+    def test_if_string_has_no_backets_the_len_is_the_same(self):
+        self.assertEqual(4, decoded_length('ASDF'))
+
+    def test_multiplier_tag_will_duplicate_some_part_of_the_string(self):
+        self.assertEqual(9, decoded_length('(3x3)ASD'))
+
+    def test_examples(self):
+        # (27x12)(20x12)(13x14)(7x10)(1x12)A decompresses into a string of A
+        # repeated 241920 times.
+        self.assertEqual(241920, decoded_length('(27x12)(20x12)(13x14)(7x10)(1x12)A'))
+
+        # (25x3)(3x3)ABC(2x3)XY(5x2)PQRSTX(18x9)(3x2)TWO(5x7)SEVEN becomes 445
+        # characters long.
+        self.assertEqual(445, decoded_length('(25x3)(3x3)ABC(2x3)XY(5x2)PQRSTX(18x9)(3x2)TWO(5x7)SEVEN'))
+
+    def test_solution(self):
+        self.assertEqual(10964557606, decoded_length(data))
+
+
 def decompress(dense):
+    if '(' in dense:
+        leader, length, amount, tail = parse_tag(dense)
+        return leader + (tail[:length] * amount) + decompress(tail[length:])
+    return dense
 
-    def parse_tag(substring):
-        split = re.split(r'\((\d+)x(\d+)\)?.*', substring)
-        return int(split[1]), int(split[2])
 
-    def unroll(dense):
-        if '(' in dense:
-            tag_start = dense.index('(')
-            tag_end = dense.index(')')
-            len, amount = parse_tag(dense[tag_start:])
-            return dense[:tag_start] + (dense[tag_end + 1:tag_end + 1 + len] * amount) + unroll(dense[tag_end + 1 + len:])
-        return dense
+def parse_tag(string):
+    # LEADER(length x amount)TAIL
+    bracket = string.find('(')
+    leader = string[:bracket]
+    _, length, amount, tail, _ = re.split(r'\((\d+)x(\d+)\)?(.*)$', string[bracket:])
+    return leader, int(length), int(amount), tail
 
-    return unroll(dense)
+
+def decoded_length(string):
+    length = 0
+
+    def calc_len(substring):
+        length = 0
+        if '(' in substring:
+            leader, chars, amount, tail = parse_tag(substring)
+            length += len(leader) + (amount * calc_len(tail[:chars]))
+            length += calc_len(tail[chars:])
+        else:
+            length += len(substring)
+        return length
+
+    length += calc_len(string)
+    return length
 
 
 if __name__ == '__main__':

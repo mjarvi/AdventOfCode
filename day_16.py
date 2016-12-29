@@ -1,7 +1,5 @@
 import unittest
-import string
 # from day_16_input import data
-import collections
 
 '''
 '''
@@ -9,6 +7,7 @@ import collections
 
 class Day16(unittest.TestCase):
 
+    @unittest.SkipTest
     def test_solution(self):
         self.assertEqual(0, 1)
 
