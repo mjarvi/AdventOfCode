@@ -2,7 +2,7 @@ import unittest
 import re
 import collections
 import string
-from day_4_input import data
+from input_day_04 import data
 
 
 ''' --- Day 4: Security Through Obscurity ---
