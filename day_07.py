@@ -1,6 +1,6 @@
 import unittest
 import re
-from day_7_input import data
+from input_day_07 import data
 
 
 ''' --- Day 7: Internet Protocol Version 7 ---
