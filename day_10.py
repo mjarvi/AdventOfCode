@@ -100,8 +100,6 @@ class Day10(unittest.TestCase):
         f = Factory()
         b = f.get_bot(3)
         b.todo(Instruction('bot 3 gives low to output 1 and high to output 5'))
-        self.assertEqual([], f.get_bin(1))
-        self.assertEqual([], f.get_bin(5))
         b.append(12)
         self.assertEqual([], f.get_bin(1))
         self.assertEqual([], f.get_bin(5))
