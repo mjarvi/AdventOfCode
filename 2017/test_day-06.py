@@ -94,11 +94,11 @@ def get_loop_count_to_reach_balance(banks):
 class TestDaySix(unittest.TestCase):
 
     def test_examples(self):
-        res, diff = get_loop_count_to_reach_balance(example)
-        self.assertEqual(5, res) 
-        self.assertEqual(5, diff) 
+        res, freq = get_loop_count_to_reach_balance(example)
+        self.assertEqual(5, res)
+        self.assertEqual(4, freq)
 
     def test_solution(self):
-        res, diff = get_loop_count_to_reach_balance(problem)
+        res, freq = get_loop_count_to_reach_balance(problem)
         self.assertEqual(4074, res)
-        self.assertEqual(1281, diff)
+        self.assertEqual(2793, freq)
