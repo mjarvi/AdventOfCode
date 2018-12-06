@@ -102,14 +102,20 @@ class Fabric():
             for c in claims:
                 for y in range(c.y, c.max_y):
                     for x in range(c.x, c.max_x):
-                        if chart[y][x] == '.':
-                            chart[y][x] = str(c.number)
+                        if chart[y][x] is None:
+                            chart[y][x] = c.number
                         else:
+                            self.claim_intact[c.number] = False
+                            self.claim_intact[chart[y][x]] = False
                             chart[y][x] = 'X'
 
-        claims = tuple(Claim(*parse(values)) for values in claim_list.splitlines())
+        claims = []
+        self.claim_intact = {}
+        for n, x, y, width, height in (parse(values) for values in claim_list.splitlines()):
+            claims.append(Claim(n, x, y, width, height))
+            self.claim_intact[n] = True
         self.width, self.height = self.find_limits(claims)
-        self.chart = [['.' for _ in range(self.width)] for _ in range(self.height)]
+        self.chart = [[None for _ in range(self.width)] for _ in range(self.height)]
         populate(self.chart, claims)
 
     @property
@@ -131,6 +137,9 @@ class Fabric():
                 if self.chart[y][x] == 'X':
                     overlap += 1
         return overlap
+
+    def get_intact_numbers(self):
+        return [number for number, intact in self.claim_intact.items() if intact]
 
 
 class TestDay02(unittest.TestCase):
@@ -155,8 +164,13 @@ class TestDay02(unittest.TestCase):
         f = Fabric(DAY3_INPUT)
         self.assertEqual(f.get_overlap(), 110827)
 
+    def test_example2(self):
+        f = Fabric(EXAMPLE_CLAIMS)
+        self.assertEqual(f.get_intact_numbers(), [3])
+
     def test_solution_2(self):
-        pass
+        f = Fabric(DAY3_INPUT)
+        self.assertEqual(f.get_intact_numbers(), [116])
 
 
 if __name__ == '__main__':
