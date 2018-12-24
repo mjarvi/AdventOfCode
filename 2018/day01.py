@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import unittest
 from inputs import DAY1_INPUT
 
@@ -47,7 +48,11 @@ Chronal Calibration
         (At this point, the device continues from the start of the list.)
         Current frequency  3, change of +1; resulting frequency  4.
         Current frequency  4, change of -2; resulting frequency  2, which has already been seen.
-        In this example, the first frequency reached twice is 2. Note that your device might need to repeat its list of frequency changes many times before a duplicate frequency is found, and that duplicates might be found while in the middle of processing the list.
+
+        In this example, the first frequency reached twice is 2. Note that your
+        device might need to repeat its list of frequency changes many times
+        before a duplicate frequency is found, and that duplicates might be
+        found while in the middle of processing the list.
 
     Here are other examples:
 
@@ -61,14 +66,14 @@ Chronal Calibration
 
 
 def solve_part1(serie):
-    return sum(serie)
+    return sum(split_to_list_of_numbers(serie))
 
 
 def solve_part2(serie):
     total = 0
     totals = set((total,))
     while True:
-        ring = list(serie)
+        ring = list(split_to_list_of_numbers(serie))
         for k in ring:
             total += k
             if total in totals:
@@ -78,26 +83,40 @@ def solve_part2(serie):
     return 0
 
 
+def split_to_list_of_numbers(serie):
+    return [int(n) for n in serie.split(' ') if n]
+    # ret = []
+    # for n in serie.split(' '):
+    #     num = int(n)
+    #     ret.append(num)
+    # return ret
+
+
+
 class TestDay01(unittest.TestCase):
 
     def test_example1(self):
-        serie = (1, -2, 3, 1)
+        serie = '1 -2 3 1'
         self.assertEqual(solve_part1(serie), 3)
 
     def test_example2(self):
-        self.assertEqual(solve_part1([+1, +1, +1]), 3)
-        self.assertEqual(solve_part1([+1, +1, -2]), 0)
-        self.assertEqual(solve_part1([-1, -2, -3]), -6)
+        self.assertEqual(solve_part1('+1 +1 +1'), 3)
+        self.assertEqual(solve_part1('+1 +1 -2'), 0)
+        self.assertEqual(solve_part1('-1 -2 -3'), -6)
 
     def test_solution_1(self):
-        self.assertEqual(solve_part1([int(n) for n in DAY1_INPUT.split(' ') if n]), 490)
+        self.assertEqual(solve_part1(DAY1_INPUT), 490)
 
     def test_example_3(self):
-        self.assertEqual(solve_part2([+1, -2, +3, +1]), 2)
-        self.assertEqual(solve_part2([+1, -1]), 0)
-        self.assertEqual(solve_part2([+3, +3, +4, -2, -4]), 10)
-        self.assertEqual(solve_part2([-6, +3, +8, +5, -6]), 5)
-        self.assertEqual(solve_part2([+7, +7, -2, -7, -4]), 14)
+        self.assertEqual(solve_part2('+1 -2 +3 +1'), 2)
+        self.assertEqual(solve_part2('+1 -1'), 0)
+        self.assertEqual(solve_part2('+3 +3 +4 -2 -4'), 10)
+        self.assertEqual(solve_part2('-6 +3 +8 +5 -6'), 5)
+        self.assertEqual(solve_part2('+7 +7 -2 -7 -4'), 14)
 
     def test_solution_2(self):
-        self.assertEqual(solve_part2([int(n) for n in DAY1_INPUT.split(' ') if n]), 70357)
+        self.assertEqual(solve_part2(DAY1_INPUT), 70357)
+
+
+if __name__ == '__main__':
+    unittest.main()

@@ -1384,5 +1384,1343 @@ DAY3_INPUT = '''\
 #1290 @ 120,266: 15x24
 #1291 @ 7,287: 10x23
 #1292 @ 811,139: 16x27
-#1293 @ 168,680: 22x12
-'''
+#1293 @ 168,680: 22x12'''
+
+
+DAY4_INPUT = '''\
+[1518-02-28 00:47] falls asleep
+[1518-10-23 23:47] Guard #1627 begins shift
+[1518-10-25 00:41] wakes up
+[1518-09-13 00:04] Guard #571 begins shift
+[1518-05-10 00:10] wakes up
+[1518-03-07 00:02] Guard #1901 begins shift
+[1518-10-10 00:59] wakes up
+[1518-08-21 00:25] falls asleep
+[1518-06-18 00:25] falls asleep
+[1518-11-19 00:24] falls asleep
+[1518-04-13 00:42] wakes up
+[1518-11-01 23:51] Guard #1697 begins shift
+[1518-05-14 00:14] falls asleep
+[1518-08-04 00:49] wakes up
+[1518-08-07 00:47] falls asleep
+[1518-10-20 00:52] wakes up
+[1518-06-17 00:02] Guard #101 begins shift
+[1518-04-11 00:56] wakes up
+[1518-07-16 00:03] Guard #2593 begins shift
+[1518-09-30 00:20] falls asleep
+[1518-10-31 00:34] falls asleep
+[1518-07-22 00:57] wakes up
+[1518-06-19 00:01] Guard #3457 begins shift
+[1518-10-13 00:06] falls asleep
+[1518-11-13 23:57] Guard #2699 begins shift
+[1518-10-07 00:04] Guard #1901 begins shift
+[1518-07-09 00:00] Guard #1693 begins shift
+[1518-04-09 23:57] Guard #3557 begins shift
+[1518-11-11 23:56] Guard #3457 begins shift
+[1518-10-28 00:14] wakes up
+[1518-06-16 00:14] falls asleep
+[1518-04-24 00:46] falls asleep
+[1518-06-19 00:44] falls asleep
+[1518-09-25 00:11] wakes up
+[1518-07-19 00:20] falls asleep
+[1518-07-14 23:58] Guard #101 begins shift
+[1518-07-28 00:18] falls asleep
+[1518-06-03 00:45] falls asleep
+[1518-05-23 00:03] Guard #1627 begins shift
+[1518-05-10 00:09] falls asleep
+[1518-04-28 00:56] falls asleep
+[1518-05-22 00:38] wakes up
+[1518-04-05 00:03] Guard #1627 begins shift
+[1518-03-19 00:00] Guard #1151 begins shift
+[1518-06-12 00:56] wakes up
+[1518-10-07 00:41] falls asleep
+[1518-10-07 00:10] falls asleep
+[1518-03-01 00:35] falls asleep
+[1518-11-03 00:56] wakes up
+[1518-11-14 00:46] falls asleep
+[1518-04-10 00:32] falls asleep
+[1518-06-25 00:59] wakes up
+[1518-05-19 00:41] falls asleep
+[1518-08-14 00:52] wakes up
+[1518-08-14 00:57] falls asleep
+[1518-07-27 23:59] Guard #1693 begins shift
+[1518-06-19 00:24] wakes up
+[1518-03-11 00:37] falls asleep
+[1518-04-20 00:03] falls asleep
+[1518-10-20 00:22] falls asleep
+[1518-10-09 00:59] wakes up
+[1518-02-24 00:08] falls asleep
+[1518-07-07 23:58] Guard #1733 begins shift
+[1518-05-23 00:59] wakes up
+[1518-09-18 00:48] wakes up
+[1518-04-27 00:34] wakes up
+[1518-03-29 00:29] wakes up
+[1518-10-23 00:00] Guard #1697 begins shift
+[1518-04-06 00:47] wakes up
+[1518-06-18 00:48] wakes up
+[1518-08-27 00:38] wakes up
+[1518-03-15 00:24] falls asleep
+[1518-08-29 00:50] falls asleep
+[1518-11-01 00:36] falls asleep
+[1518-08-26 00:44] wakes up
+[1518-07-21 00:53] wakes up
+[1518-06-24 00:50] wakes up
+[1518-03-07 00:21] falls asleep
+[1518-10-07 00:35] falls asleep
+[1518-09-29 00:41] falls asleep
+[1518-10-27 00:26] falls asleep
+[1518-04-26 00:56] wakes up
+[1518-03-28 23:56] Guard #2593 begins shift
+[1518-04-07 00:49] wakes up
+[1518-02-25 23:49] Guard #3457 begins shift
+[1518-03-06 00:56] wakes up
+[1518-11-07 00:45] falls asleep
+[1518-03-02 00:04] Guard #1693 begins shift
+[1518-10-11 00:53] wakes up
+[1518-04-21 00:30] falls asleep
+[1518-04-26 00:48] falls asleep
+[1518-03-15 00:00] Guard #1901 begins shift
+[1518-06-09 00:52] wakes up
+[1518-05-05 00:05] falls asleep
+[1518-09-23 00:57] falls asleep
+[1518-10-21 23:56] Guard #1151 begins shift
+[1518-11-05 00:56] falls asleep
+[1518-10-16 00:18] falls asleep
+[1518-09-20 00:49] wakes up
+[1518-07-14 00:00] Guard #3559 begins shift
+[1518-08-17 00:06] falls asleep
+[1518-08-03 00:08] wakes up
+[1518-03-25 00:04] Guard #743 begins shift
+[1518-03-12 23:59] Guard #2399 begins shift
+[1518-04-24 00:43] wakes up
+[1518-10-30 00:41] wakes up
+[1518-10-19 00:56] wakes up
+[1518-03-05 00:36] wakes up
+[1518-07-11 00:43] falls asleep
+[1518-09-29 00:48] wakes up
+[1518-07-10 23:47] Guard #2699 begins shift
+[1518-07-05 00:49] wakes up
+[1518-06-07 00:51] wakes up
+[1518-04-07 00:10] falls asleep
+[1518-05-28 00:04] falls asleep
+[1518-06-05 00:33] wakes up
+[1518-09-06 00:03] Guard #743 begins shift
+[1518-06-20 23:48] Guard #571 begins shift
+[1518-02-28 00:26] falls asleep
+[1518-03-23 23:58] Guard #743 begins shift
+[1518-02-22 00:44] wakes up
+[1518-06-27 00:28] falls asleep
+[1518-06-05 00:23] wakes up
+[1518-11-13 00:56] wakes up
+[1518-02-16 00:38] wakes up
+[1518-11-10 00:23] falls asleep
+[1518-11-06 00:48] falls asleep
+[1518-02-27 00:04] Guard #443 begins shift
+[1518-04-24 00:51] wakes up
+[1518-11-21 00:22] falls asleep
+[1518-09-30 00:03] Guard #101 begins shift
+[1518-09-27 00:35] wakes up
+[1518-04-15 00:10] falls asleep
+[1518-09-22 00:08] falls asleep
+[1518-11-05 23:49] Guard #3301 begins shift
+[1518-05-07 23:58] Guard #1697 begins shift
+[1518-04-09 00:00] Guard #1627 begins shift
+[1518-07-21 23:56] Guard #2459 begins shift
+[1518-09-01 00:35] falls asleep
+[1518-10-17 00:22] falls asleep
+[1518-08-17 00:21] wakes up
+[1518-10-02 00:38] falls asleep
+[1518-06-03 00:55] wakes up
+[1518-05-25 00:43] falls asleep
+[1518-09-27 23:59] Guard #2819 begins shift
+[1518-08-11 00:34] falls asleep
+[1518-04-02 00:15] falls asleep
+[1518-07-14 00:39] wakes up
+[1518-10-20 00:47] falls asleep
+[1518-03-21 00:16] falls asleep
+[1518-04-01 00:20] falls asleep
+[1518-05-18 00:20] falls asleep
+[1518-02-22 00:23] falls asleep
+[1518-11-11 00:13] falls asleep
+[1518-09-09 00:58] wakes up
+[1518-03-05 00:28] falls asleep
+[1518-04-20 00:29] wakes up
+[1518-03-31 00:00] Guard #2657 begins shift
+[1518-06-26 00:32] wakes up
+[1518-06-09 00:04] Guard #1627 begins shift
+[1518-04-27 00:03] Guard #1151 begins shift
+[1518-09-06 23:48] Guard #673 begins shift
+[1518-07-26 00:54] wakes up
+[1518-05-22 00:22] falls asleep
+[1518-10-17 00:56] wakes up
+[1518-04-09 00:22] falls asleep
+[1518-03-03 00:03] Guard #2399 begins shift
+[1518-05-25 00:12] falls asleep
+[1518-09-17 00:00] Guard #1693 begins shift
+[1518-06-16 00:57] wakes up
+[1518-06-11 00:00] Guard #673 begins shift
+[1518-07-29 00:49] falls asleep
+[1518-10-24 23:56] Guard #743 begins shift
+[1518-11-11 00:57] falls asleep
+[1518-06-10 00:19] wakes up
+[1518-04-01 00:52] wakes up
+[1518-10-26 00:17] falls asleep
+[1518-09-06 00:36] falls asleep
+[1518-08-21 00:47] falls asleep
+[1518-08-26 00:49] falls asleep
+[1518-10-02 00:28] falls asleep
+[1518-10-01 00:32] wakes up
+[1518-11-03 00:55] falls asleep
+[1518-08-25 00:56] wakes up
+[1518-08-21 00:41] wakes up
+[1518-06-02 23:56] Guard #2819 begins shift
+[1518-08-11 23:56] Guard #1693 begins shift
+[1518-05-05 23:57] Guard #443 begins shift
+[1518-04-28 00:53] wakes up
+[1518-08-26 23:59] Guard #1901 begins shift
+[1518-08-30 00:36] falls asleep
+[1518-05-13 00:04] Guard #2459 begins shift
+[1518-02-17 00:23] falls asleep
+[1518-10-23 00:26] falls asleep
+[1518-02-20 00:41] wakes up
+[1518-07-16 00:10] falls asleep
+[1518-07-30 00:00] Guard #3557 begins shift
+[1518-11-02 00:20] wakes up
+[1518-07-13 00:49] wakes up
+[1518-06-30 23:51] Guard #2459 begins shift
+[1518-07-16 00:53] wakes up
+[1518-04-23 00:21] wakes up
+[1518-03-13 00:46] falls asleep
+[1518-04-07 00:58] wakes up
+[1518-11-08 00:44] falls asleep
+[1518-11-09 23:57] Guard #3301 begins shift
+[1518-07-02 00:52] wakes up
+[1518-08-20 00:59] wakes up
+[1518-09-10 00:03] Guard #2819 begins shift
+[1518-09-25 00:21] falls asleep
+[1518-05-29 00:34] wakes up
+[1518-11-08 00:58] wakes up
+[1518-10-21 00:02] Guard #2657 begins shift
+[1518-06-01 00:00] Guard #2819 begins shift
+[1518-09-24 00:29] falls asleep
+[1518-04-19 23:48] Guard #3559 begins shift
+[1518-08-28 00:14] falls asleep
+[1518-06-25 00:56] falls asleep
+[1518-05-16 00:56] wakes up
+[1518-02-25 00:37] falls asleep
+[1518-05-17 00:55] wakes up
+[1518-07-24 23:57] Guard #2819 begins shift
+[1518-10-03 00:02] Guard #1151 begins shift
+[1518-02-26 00:40] falls asleep
+[1518-04-07 00:02] Guard #3301 begins shift
+[1518-11-17 23:46] Guard #2399 begins shift
+[1518-09-05 00:57] wakes up
+[1518-10-10 23:54] Guard #1693 begins shift
+[1518-10-10 00:56] falls asleep
+[1518-09-08 00:21] wakes up
+[1518-06-22 00:41] wakes up
+[1518-08-15 00:58] wakes up
+[1518-05-27 00:20] wakes up
+[1518-11-06 23:58] Guard #2459 begins shift
+[1518-10-25 00:10] falls asleep
+[1518-09-26 00:23] falls asleep
+[1518-05-19 00:10] falls asleep
+[1518-06-30 00:03] Guard #1901 begins shift
+[1518-09-02 00:52] wakes up
+[1518-09-23 23:59] Guard #443 begins shift
+[1518-07-28 00:21] wakes up
+[1518-10-08 00:04] Guard #1901 begins shift
+[1518-10-03 00:15] falls asleep
+[1518-03-23 00:47] wakes up
+[1518-05-27 00:43] falls asleep
+[1518-04-04 00:52] wakes up
+[1518-10-05 00:56] wakes up
+[1518-09-29 00:25] wakes up
+[1518-10-20 00:00] Guard #1901 begins shift
+[1518-08-08 00:50] falls asleep
+[1518-04-18 00:34] wakes up
+[1518-06-07 00:34] falls asleep
+[1518-04-27 23:58] Guard #1697 begins shift
+[1518-11-05 00:11] falls asleep
+[1518-02-18 00:55] wakes up
+[1518-08-09 00:12] falls asleep
+[1518-07-05 00:21] falls asleep
+[1518-11-04 23:56] Guard #1697 begins shift
+[1518-03-20 00:06] falls asleep
+[1518-10-02 00:32] wakes up
+[1518-05-15 00:53] wakes up
+[1518-11-18 23:58] Guard #443 begins shift
+[1518-10-22 00:14] falls asleep
+[1518-10-26 00:50] wakes up
+[1518-06-06 00:00] Guard #2819 begins shift
+[1518-07-01 00:45] falls asleep
+[1518-10-01 00:57] wakes up
+[1518-08-24 00:02] Guard #3457 begins shift
+[1518-11-04 00:50] falls asleep
+[1518-05-04 23:51] Guard #443 begins shift
+[1518-10-08 00:29] falls asleep
+[1518-09-10 23:56] Guard #3301 begins shift
+[1518-10-29 23:57] Guard #3559 begins shift
+[1518-10-07 00:37] wakes up
+[1518-03-19 00:32] wakes up
+[1518-05-30 00:26] wakes up
+[1518-05-12 00:46] falls asleep
+[1518-06-01 00:19] wakes up
+[1518-09-13 00:56] wakes up
+[1518-10-02 00:56] wakes up
+[1518-04-28 23:48] Guard #1627 begins shift
+[1518-04-28 00:58] wakes up
+[1518-04-19 00:34] wakes up
+[1518-09-24 00:49] wakes up
+[1518-08-12 00:31] wakes up
+[1518-05-24 00:23] falls asleep
+[1518-05-01 00:57] wakes up
+[1518-09-04 23:56] Guard #1901 begins shift
+[1518-04-29 00:54] wakes up
+[1518-03-12 00:56] wakes up
+[1518-02-25 00:52] wakes up
+[1518-05-09 00:48] wakes up
+[1518-04-08 00:54] wakes up
+[1518-10-15 00:23] wakes up
+[1518-09-15 00:52] wakes up
+[1518-08-14 00:51] falls asleep
+[1518-04-16 00:02] Guard #743 begins shift
+[1518-10-18 00:55] wakes up
+[1518-05-08 00:42] falls asleep
+[1518-02-23 00:53] wakes up
+[1518-03-10 00:49] wakes up
+[1518-05-09 00:00] Guard #2399 begins shift
+[1518-10-19 00:30] wakes up
+[1518-11-03 23:58] Guard #2819 begins shift
+[1518-09-20 23:58] Guard #3557 begins shift
+[1518-06-14 00:56] wakes up
+[1518-07-14 00:52] falls asleep
+[1518-09-17 00:18] falls asleep
+[1518-04-15 00:02] Guard #1693 begins shift
+[1518-08-07 00:52] wakes up
+[1518-06-27 00:00] Guard #3557 begins shift
+[1518-06-28 00:00] Guard #1627 begins shift
+[1518-11-23 00:49] falls asleep
+[1518-07-20 23:50] Guard #1151 begins shift
+[1518-05-25 23:56] Guard #1693 begins shift
+[1518-07-06 00:36] wakes up
+[1518-03-30 00:03] Guard #3301 begins shift
+[1518-09-24 00:58] wakes up
+[1518-05-23 00:52] falls asleep
+[1518-06-28 00:55] wakes up
+[1518-06-12 00:54] falls asleep
+[1518-07-22 23:51] Guard #2819 begins shift
+[1518-04-03 00:01] Guard #2399 begins shift
+[1518-04-26 00:43] wakes up
+[1518-07-15 00:13] falls asleep
+[1518-05-03 00:48] falls asleep
+[1518-03-19 00:27] falls asleep
+[1518-06-05 00:09] falls asleep
+[1518-10-10 00:08] falls asleep
+[1518-05-25 00:03] Guard #743 begins shift
+[1518-05-03 00:18] wakes up
+[1518-08-19 00:39] wakes up
+[1518-09-01 00:00] Guard #1151 begins shift
+[1518-02-22 00:03] Guard #3557 begins shift
+[1518-08-02 00:40] wakes up
+[1518-03-26 00:48] wakes up
+[1518-02-26 00:48] falls asleep
+[1518-11-15 00:03] Guard #101 begins shift
+[1518-10-03 23:57] Guard #2657 begins shift
+[1518-09-28 00:48] wakes up
+[1518-08-29 00:00] Guard #443 begins shift
+[1518-11-12 00:45] wakes up
+[1518-05-07 00:40] wakes up
+[1518-10-17 00:00] Guard #2819 begins shift
+[1518-04-21 00:39] falls asleep
+[1518-08-27 00:30] falls asleep
+[1518-09-19 00:37] wakes up
+[1518-05-13 00:47] wakes up
+[1518-04-13 00:01] falls asleep
+[1518-04-08 00:14] falls asleep
+[1518-08-21 00:02] Guard #101 begins shift
+[1518-07-13 00:35] falls asleep
+[1518-06-12 00:38] wakes up
+[1518-07-01 00:50] wakes up
+[1518-07-15 00:37] wakes up
+[1518-09-26 00:44] wakes up
+[1518-04-03 00:21] falls asleep
+[1518-02-26 00:03] falls asleep
+[1518-05-06 23:59] Guard #673 begins shift
+[1518-09-28 00:33] falls asleep
+[1518-09-27 00:27] falls asleep
+[1518-04-01 00:36] falls asleep
+[1518-07-23 23:59] Guard #101 begins shift
+[1518-09-08 00:04] Guard #2399 begins shift
+[1518-07-19 23:57] Guard #673 begins shift
+[1518-09-15 00:40] falls asleep
+[1518-03-14 00:25] falls asleep
+[1518-11-06 00:57] wakes up
+[1518-04-21 00:03] Guard #443 begins shift
+[1518-09-11 00:57] wakes up
+[1518-07-08 00:09] falls asleep
+[1518-08-17 00:30] wakes up
+[1518-08-30 00:55] wakes up
+[1518-10-24 00:03] falls asleep
+[1518-04-09 00:58] wakes up
+[1518-02-16 00:43] falls asleep
+[1518-10-06 00:52] wakes up
+[1518-04-12 00:59] wakes up
+[1518-08-17 00:58] wakes up
+[1518-05-14 00:38] wakes up
+[1518-09-19 00:55] wakes up
+[1518-08-08 00:32] falls asleep
+[1518-08-01 00:54] wakes up
+[1518-02-21 00:44] falls asleep
+[1518-09-27 00:19] wakes up
+[1518-07-11 00:31] falls asleep
+[1518-06-10 00:27] wakes up
+[1518-09-14 00:06] falls asleep
+[1518-04-07 23:59] Guard #101 begins shift
+[1518-08-07 00:03] Guard #1901 begins shift
+[1518-07-25 00:46] wakes up
+[1518-09-29 00:03] Guard #673 begins shift
+[1518-10-14 00:51] falls asleep
+[1518-07-29 00:12] falls asleep
+[1518-05-29 00:42] falls asleep
+[1518-10-31 00:23] falls asleep
+[1518-02-19 00:53] wakes up
+[1518-08-13 00:57] wakes up
+[1518-06-20 00:16] falls asleep
+[1518-03-15 00:39] falls asleep
+[1518-06-19 00:53] wakes up
+[1518-06-22 00:49] wakes up
+[1518-06-13 00:01] Guard #2699 begins shift
+[1518-06-12 00:15] falls asleep
+[1518-06-23 00:48] wakes up
+[1518-07-07 00:59] wakes up
+[1518-04-28 00:09] falls asleep
+[1518-10-14 00:47] wakes up
+[1518-10-20 00:33] wakes up
+[1518-08-08 00:54] wakes up
+[1518-09-23 00:27] falls asleep
+[1518-11-09 00:29] wakes up
+[1518-02-27 00:52] wakes up
+[1518-05-28 00:59] wakes up
+[1518-02-26 00:27] wakes up
+[1518-04-22 00:56] wakes up
+[1518-02-19 23:47] Guard #1697 begins shift
+[1518-11-04 00:46] wakes up
+[1518-05-22 00:29] wakes up
+[1518-08-04 00:44] falls asleep
+[1518-05-11 00:17] wakes up
+[1518-02-24 00:17] wakes up
+[1518-10-24 00:26] wakes up
+[1518-07-23 00:48] wakes up
+[1518-04-16 00:47] wakes up
+[1518-09-13 23:56] Guard #443 begins shift
+[1518-04-08 00:37] falls asleep
+[1518-07-10 00:54] wakes up
+[1518-08-12 00:41] wakes up
+[1518-06-13 00:49] falls asleep
+[1518-09-13 00:46] falls asleep
+[1518-07-24 00:59] wakes up
+[1518-11-21 23:57] Guard #827 begins shift
+[1518-10-04 23:58] Guard #443 begins shift
+[1518-08-27 00:43] falls asleep
+[1518-07-23 00:04] falls asleep
+[1518-04-23 00:19] falls asleep
+[1518-10-06 00:42] falls asleep
+[1518-03-18 00:03] Guard #1733 begins shift
+[1518-02-28 00:34] wakes up
+[1518-09-08 00:06] falls asleep
+[1518-10-28 00:13] falls asleep
+[1518-07-22 00:46] falls asleep
+[1518-04-11 00:02] Guard #2399 begins shift
+[1518-09-18 00:14] falls asleep
+[1518-04-21 00:33] wakes up
+[1518-07-25 23:57] Guard #443 begins shift
+[1518-04-11 23:51] Guard #2459 begins shift
+[1518-07-04 00:11] falls asleep
+[1518-11-18 00:04] falls asleep
+[1518-11-10 23:57] Guard #2399 begins shift
+[1518-08-01 00:42] wakes up
+[1518-03-23 00:19] falls asleep
+[1518-10-09 00:40] wakes up
+[1518-08-05 23:58] Guard #3457 begins shift
+[1518-05-02 23:51] Guard #1733 begins shift
+[1518-11-23 00:42] wakes up
+[1518-06-05 00:56] wakes up
+[1518-11-11 00:38] wakes up
+[1518-08-28 00:56] wakes up
+[1518-05-27 00:49] wakes up
+[1518-08-21 00:49] wakes up
+[1518-05-11 00:03] Guard #101 begins shift
+[1518-03-22 00:25] wakes up
+[1518-02-24 00:48] falls asleep
+[1518-05-15 00:24] falls asleep
+[1518-08-22 00:43] wakes up
+[1518-02-16 00:45] wakes up
+[1518-03-14 00:58] wakes up
+[1518-05-06 00:53] falls asleep
+[1518-09-25 00:06] falls asleep
+[1518-08-15 00:00] falls asleep
+[1518-03-21 23:56] Guard #1151 begins shift
+[1518-05-07 00:29] falls asleep
+[1518-06-17 00:53] wakes up
+[1518-08-09 00:46] wakes up
+[1518-08-26 00:57] wakes up
+[1518-07-01 00:00] falls asleep
+[1518-10-19 00:38] wakes up
+[1518-02-15 23:58] Guard #3557 begins shift
+[1518-06-27 00:44] wakes up
+[1518-05-06 00:56] wakes up
+[1518-05-24 00:44] wakes up
+[1518-05-29 00:01] Guard #1151 begins shift
+[1518-09-30 00:35] wakes up
+[1518-06-08 00:01] falls asleep
+[1518-07-04 23:56] Guard #2699 begins shift
+[1518-10-19 00:46] falls asleep
+[1518-02-19 00:59] wakes up
+[1518-09-25 23:59] Guard #673 begins shift
+[1518-08-13 00:40] wakes up
+[1518-05-30 23:49] Guard #1627 begins shift
+[1518-04-25 00:50] falls asleep
+[1518-07-04 00:53] wakes up
+[1518-04-07 00:52] falls asleep
+[1518-04-12 00:30] wakes up
+[1518-06-06 00:45] falls asleep
+[1518-06-23 00:01] Guard #443 begins shift
+[1518-07-31 00:11] wakes up
+[1518-08-24 00:22] falls asleep
+[1518-09-22 00:36] wakes up
+[1518-10-14 00:46] falls asleep
+[1518-06-20 00:41] wakes up
+[1518-10-22 00:55] wakes up
+[1518-08-19 00:02] Guard #2593 begins shift
+[1518-11-02 00:03] falls asleep
+[1518-10-31 00:29] wakes up
+[1518-05-26 00:46] falls asleep
+[1518-05-16 23:59] Guard #3457 begins shift
+[1518-07-23 00:40] falls asleep
+[1518-11-17 00:45] falls asleep
+[1518-05-19 00:00] Guard #673 begins shift
+[1518-03-02 00:39] wakes up
+[1518-05-10 00:00] Guard #673 begins shift
+[1518-02-21 00:52] wakes up
+[1518-08-17 23:59] Guard #3301 begins shift
+[1518-03-11 00:49] wakes up
+[1518-08-28 00:46] falls asleep
+[1518-11-15 00:35] falls asleep
+[1518-06-21 00:52] wakes up
+[1518-06-27 00:35] falls asleep
+[1518-10-12 00:24] falls asleep
+[1518-08-09 00:02] Guard #743 begins shift
+[1518-11-08 00:02] Guard #3457 begins shift
+[1518-10-18 00:02] Guard #2593 begins shift
+[1518-03-12 00:46] falls asleep
+[1518-09-19 00:44] falls asleep
+[1518-04-08 00:29] wakes up
+[1518-11-23 00:52] wakes up
+[1518-09-01 00:30] wakes up
+[1518-04-25 00:45] wakes up
+[1518-03-17 00:59] wakes up
+[1518-04-10 00:07] falls asleep
+[1518-05-22 00:48] falls asleep
+[1518-07-03 00:58] wakes up
+[1518-03-13 23:59] Guard #571 begins shift
+[1518-04-30 00:00] Guard #101 begins shift
+[1518-04-27 00:45] falls asleep
+[1518-08-01 00:45] falls asleep
+[1518-06-24 00:07] falls asleep
+[1518-03-13 00:58] wakes up
+[1518-02-20 00:01] falls asleep
+[1518-03-26 00:43] falls asleep
+[1518-05-25 00:59] wakes up
+[1518-04-25 00:02] Guard #743 begins shift
+[1518-07-10 00:40] falls asleep
+[1518-06-15 00:46] wakes up
+[1518-10-29 00:54] wakes up
+[1518-05-08 00:59] wakes up
+[1518-08-25 00:43] falls asleep
+[1518-06-14 23:49] Guard #571 begins shift
+[1518-11-14 00:26] wakes up
+[1518-10-10 00:37] falls asleep
+[1518-08-02 23:51] Guard #1627 begins shift
+[1518-11-01 00:01] Guard #1901 begins shift
+[1518-08-07 23:59] Guard #1901 begins shift
+[1518-10-06 00:02] Guard #101 begins shift
+[1518-08-16 00:56] wakes up
+[1518-11-14 00:24] falls asleep
+[1518-05-21 00:10] falls asleep
+[1518-08-03 23:58] Guard #1901 begins shift
+[1518-06-21 23:58] Guard #1627 begins shift
+[1518-07-06 23:56] Guard #3457 begins shift
+[1518-07-11 00:24] wakes up
+[1518-03-18 00:24] wakes up
+[1518-07-19 00:00] Guard #743 begins shift
+[1518-08-28 00:25] wakes up
+[1518-03-09 00:25] falls asleep
+[1518-06-02 00:52] wakes up
+[1518-09-02 00:08] falls asleep
+[1518-09-06 00:52] wakes up
+[1518-10-31 00:41] wakes up
+[1518-08-18 00:47] falls asleep
+[1518-09-29 00:14] falls asleep
+[1518-03-23 00:26] wakes up
+[1518-05-27 00:11] falls asleep
+[1518-03-06 00:50] wakes up
+[1518-07-11 00:40] wakes up
+[1518-07-06 00:03] Guard #3457 begins shift
+[1518-10-12 00:25] wakes up
+[1518-07-09 00:10] falls asleep
+[1518-02-26 00:55] wakes up
+[1518-06-09 23:53] Guard #1627 begins shift
+[1518-07-30 23:47] Guard #1733 begins shift
+[1518-06-08 00:32] falls asleep
+[1518-11-09 00:12] falls asleep
+[1518-07-09 00:17] wakes up
+[1518-04-15 00:55] wakes up
+[1518-03-27 00:03] Guard #1693 begins shift
+[1518-05-17 00:31] wakes up
+[1518-09-27 00:07] falls asleep
+[1518-03-27 00:47] falls asleep
+[1518-03-31 23:59] Guard #1693 begins shift
+[1518-06-13 00:30] wakes up
+[1518-06-26 00:09] falls asleep
+[1518-05-19 23:58] Guard #1901 begins shift
+[1518-07-29 00:01] Guard #101 begins shift
+[1518-04-03 00:56] wakes up
+[1518-07-29 00:44] wakes up
+[1518-03-18 00:18] falls asleep
+[1518-03-10 00:03] Guard #1733 begins shift
+[1518-05-28 00:11] wakes up
+[1518-08-15 00:49] falls asleep
+[1518-05-19 00:21] wakes up
+[1518-02-20 23:57] Guard #1901 begins shift
+[1518-06-14 00:00] Guard #3457 begins shift
+[1518-07-29 00:32] falls asleep
+[1518-08-05 00:54] falls asleep
+[1518-06-06 00:57] wakes up
+[1518-04-20 00:11] wakes up
+[1518-04-19 00:21] falls asleep
+[1518-11-20 00:03] Guard #2459 begins shift
+[1518-04-22 00:04] Guard #673 begins shift
+[1518-04-05 00:13] falls asleep
+[1518-11-23 00:03] Guard #743 begins shift
+[1518-05-19 00:52] wakes up
+[1518-04-22 00:47] wakes up
+[1518-04-05 00:53] wakes up
+[1518-06-08 00:56] wakes up
+[1518-11-03 00:01] Guard #3559 begins shift
+[1518-04-12 23:49] Guard #2819 begins shift
+[1518-05-01 00:00] Guard #1901 begins shift
+[1518-03-27 00:58] wakes up
+[1518-09-27 00:00] Guard #2593 begins shift
+[1518-08-22 23:56] Guard #2593 begins shift
+[1518-04-17 00:00] Guard #101 begins shift
+[1518-06-30 00:51] wakes up
+[1518-02-24 00:03] Guard #1697 begins shift
+[1518-10-18 00:32] falls asleep
+[1518-06-09 00:35] falls asleep
+[1518-11-10 00:32] wakes up
+[1518-07-17 23:50] Guard #2399 begins shift
+[1518-09-01 00:59] wakes up
+[1518-11-09 00:38] falls asleep
+[1518-04-18 00:04] falls asleep
+[1518-03-07 00:58] wakes up
+[1518-03-25 00:15] falls asleep
+[1518-11-02 00:53] wakes up
+[1518-09-30 00:34] falls asleep
+[1518-05-11 00:40] wakes up
+[1518-05-31 00:04] falls asleep
+[1518-09-20 00:48] falls asleep
+[1518-06-01 00:10] falls asleep
+[1518-05-01 23:57] Guard #571 begins shift
+[1518-03-11 00:00] Guard #1733 begins shift
+[1518-05-30 00:18] falls asleep
+[1518-09-03 00:50] falls asleep
+[1518-09-25 00:47] wakes up
+[1518-06-05 00:50] falls asleep
+[1518-09-02 00:00] Guard #3457 begins shift
+[1518-10-10 00:10] wakes up
+[1518-10-12 00:00] Guard #2399 begins shift
+[1518-11-09 00:49] wakes up
+[1518-09-19 23:57] Guard #571 begins shift
+[1518-08-23 00:40] wakes up
+[1518-11-13 00:16] falls asleep
+[1518-07-04 00:03] Guard #2699 begins shift
+[1518-02-28 00:54] wakes up
+[1518-04-01 00:31] wakes up
+[1518-04-05 00:43] wakes up
+[1518-08-31 00:00] Guard #409 begins shift
+[1518-08-24 00:52] wakes up
+[1518-10-24 00:04] wakes up
+[1518-04-17 00:50] wakes up
+[1518-08-10 00:03] Guard #2657 begins shift
+[1518-08-03 00:20] falls asleep
+[1518-03-02 00:13] falls asleep
+[1518-07-27 00:48] wakes up
+[1518-09-30 23:57] Guard #443 begins shift
+[1518-06-15 00:01] falls asleep
+[1518-10-23 00:57] falls asleep
+[1518-03-03 00:23] falls asleep
+[1518-07-02 00:25] falls asleep
+[1518-02-26 00:41] wakes up
+[1518-09-10 00:41] falls asleep
+[1518-03-03 00:39] wakes up
+[1518-08-06 00:28] falls asleep
+[1518-07-12 00:00] Guard #443 begins shift
+[1518-11-11 00:29] wakes up
+[1518-07-14 00:53] wakes up
+[1518-05-03 00:58] wakes up
+[1518-10-14 00:52] wakes up
+[1518-04-26 00:00] Guard #1697 begins shift
+[1518-06-29 00:59] wakes up
+[1518-03-24 00:41] wakes up
+[1518-05-30 00:35] falls asleep
+[1518-07-06 00:16] falls asleep
+[1518-05-20 23:58] Guard #3457 begins shift
+[1518-08-05 00:55] wakes up
+[1518-04-13 23:57] Guard #1697 begins shift
+[1518-09-24 00:55] falls asleep
+[1518-04-14 00:27] wakes up
+[1518-08-04 23:59] Guard #2399 begins shift
+[1518-11-06 00:19] wakes up
+[1518-06-13 00:25] falls asleep
+[1518-07-31 00:03] falls asleep
+[1518-06-07 00:02] Guard #2399 begins shift
+[1518-04-22 00:54] falls asleep
+[1518-10-19 00:29] falls asleep
+[1518-10-23 00:43] wakes up
+[1518-05-12 00:00] Guard #443 begins shift
+[1518-06-15 00:34] falls asleep
+[1518-03-11 00:20] wakes up
+[1518-10-11 00:51] falls asleep
+[1518-07-07 00:08] falls asleep
+[1518-03-09 00:32] wakes up
+[1518-07-18 00:43] wakes up
+[1518-11-01 00:55] wakes up
+[1518-03-15 00:26] wakes up
+[1518-04-17 23:48] Guard #443 begins shift
+[1518-05-20 00:41] falls asleep
+[1518-08-20 00:29] wakes up
+[1518-10-19 00:04] Guard #1693 begins shift
+[1518-10-15 00:00] Guard #1151 begins shift
+[1518-11-20 00:44] falls asleep
+[1518-07-31 23:59] Guard #3457 begins shift
+[1518-09-21 00:44] wakes up
+[1518-04-22 23:53] Guard #1627 begins shift
+[1518-10-07 00:58] wakes up
+[1518-09-06 00:33] wakes up
+[1518-09-10 00:59] wakes up
+[1518-06-02 00:01] falls asleep
+[1518-06-11 23:59] Guard #3559 begins shift
+[1518-05-04 00:16] falls asleep
+[1518-08-19 00:16] falls asleep
+[1518-08-12 00:40] falls asleep
+[1518-09-21 00:33] falls asleep
+[1518-03-12 00:38] wakes up
+[1518-10-15 00:44] falls asleep
+[1518-09-09 00:33] wakes up
+[1518-07-24 00:57] falls asleep
+[1518-10-15 00:54] wakes up
+[1518-11-17 00:50] wakes up
+[1518-02-24 00:56] wakes up
+[1518-03-25 00:36] wakes up
+[1518-05-26 23:57] Guard #2819 begins shift
+[1518-05-25 00:29] wakes up
+[1518-09-20 00:56] wakes up
+[1518-03-04 00:48] falls asleep
+[1518-04-27 00:15] falls asleep
+[1518-08-28 00:00] Guard #3301 begins shift
+[1518-09-08 00:56] wakes up
+[1518-10-02 00:04] Guard #1693 begins shift
+[1518-04-10 00:20] wakes up
+[1518-06-24 23:57] Guard #2819 begins shift
+[1518-09-03 00:54] wakes up
+[1518-08-14 00:00] Guard #3457 begins shift
+[1518-08-16 00:02] Guard #101 begins shift
+[1518-06-08 00:28] wakes up
+[1518-05-17 00:38] falls asleep
+[1518-03-01 00:49] wakes up
+[1518-05-21 23:57] Guard #101 begins shift
+[1518-11-02 00:51] falls asleep
+[1518-07-29 00:58] wakes up
+[1518-11-12 23:56] Guard #3457 begins shift
+[1518-09-09 00:00] Guard #101 begins shift
+[1518-07-10 00:00] Guard #2699 begins shift
+[1518-08-07 00:57] wakes up
+[1518-07-02 23:57] Guard #571 begins shift
+[1518-03-04 00:58] wakes up
+[1518-05-15 00:02] Guard #2459 begins shift
+[1518-09-09 00:16] falls asleep
+[1518-04-23 00:14] wakes up
+[1518-08-24 23:58] Guard #571 begins shift
+[1518-07-11 00:01] falls asleep
+[1518-04-20 00:21] falls asleep
+[1518-07-23 00:27] falls asleep
+[1518-08-06 00:45] wakes up
+[1518-06-14 00:19] falls asleep
+[1518-07-31 00:21] falls asleep
+[1518-07-08 00:51] falls asleep
+[1518-11-04 00:56] wakes up
+[1518-06-04 00:50] wakes up
+[1518-04-11 00:31] falls asleep
+[1518-03-29 00:09] falls asleep
+[1518-09-02 23:58] Guard #571 begins shift
+[1518-08-23 00:13] wakes up
+[1518-05-28 00:51] wakes up
+[1518-04-30 00:39] wakes up
+[1518-10-08 00:48] wakes up
+[1518-02-19 00:03] Guard #2819 begins shift
+[1518-04-27 00:58] wakes up
+[1518-10-16 00:34] wakes up
+[1518-08-14 00:44] wakes up
+[1518-10-27 00:50] wakes up
+[1518-04-12 00:34] falls asleep
+[1518-06-16 00:04] Guard #1697 begins shift
+[1518-08-11 00:04] Guard #2593 begins shift
+[1518-08-27 00:48] wakes up
+[1518-08-15 00:46] wakes up
+[1518-05-11 00:15] falls asleep
+[1518-11-23 00:41] falls asleep
+[1518-04-28 00:14] wakes up
+[1518-02-19 00:37] falls asleep
+[1518-10-14 00:33] wakes up
+[1518-03-21 00:03] Guard #101 begins shift
+[1518-06-28 00:44] falls asleep
+[1518-08-25 23:56] Guard #2819 begins shift
+[1518-06-11 00:24] falls asleep
+[1518-09-15 00:00] Guard #1697 begins shift
+[1518-08-29 23:59] Guard #3457 begins shift
+[1518-10-01 00:08] falls asleep
+[1518-04-16 00:21] falls asleep
+[1518-05-09 00:22] falls asleep
+[1518-03-01 00:00] Guard #1693 begins shift
+[1518-09-21 00:27] wakes up
+[1518-07-11 00:53] wakes up
+[1518-08-16 23:56] Guard #2699 begins shift
+[1518-06-14 00:24] wakes up
+[1518-03-26 00:24] wakes up
+[1518-09-21 00:11] falls asleep
+[1518-06-05 00:02] Guard #1697 begins shift
+[1518-11-20 23:59] Guard #1627 begins shift
+[1518-04-24 00:41] falls asleep
+[1518-03-12 00:02] Guard #3559 begins shift
+[1518-05-12 00:54] wakes up
+[1518-07-02 00:00] Guard #443 begins shift
+[1518-08-22 00:20] falls asleep
+[1518-05-28 00:46] falls asleep
+[1518-06-22 00:46] falls asleep
+[1518-04-12 00:01] falls asleep
+[1518-07-30 00:29] falls asleep
+[1518-10-16 00:00] Guard #2399 begins shift
+[1518-08-23 00:09] falls asleep
+[1518-08-26 00:39] falls asleep
+[1518-08-13 00:43] falls asleep
+[1518-02-23 00:02] Guard #2459 begins shift
+[1518-10-11 00:00] falls asleep
+[1518-10-25 23:57] Guard #101 begins shift
+[1518-10-13 00:41] wakes up
+[1518-09-23 00:49] wakes up
+[1518-03-03 23:58] Guard #2699 begins shift
+[1518-03-21 00:52] wakes up
+[1518-08-14 00:59] wakes up
+[1518-11-14 00:50] wakes up
+[1518-05-03 00:05] falls asleep
+[1518-06-25 23:56] Guard #743 begins shift
+[1518-07-30 00:57] wakes up
+[1518-02-17 00:00] Guard #3457 begins shift
+[1518-08-16 00:42] falls asleep
+[1518-03-04 00:41] wakes up
+[1518-07-12 23:57] Guard #1627 begins shift
+[1518-02-22 00:42] falls asleep
+[1518-06-02 00:46] falls asleep
+[1518-03-16 00:04] Guard #1627 begins shift
+[1518-04-30 00:19] falls asleep
+[1518-03-22 00:18] falls asleep
+[1518-06-02 00:13] wakes up
+[1518-09-06 00:06] falls asleep
+[1518-10-10 00:52] wakes up
+[1518-08-18 00:49] wakes up
+[1518-02-18 00:05] falls asleep
+[1518-07-08 00:21] wakes up
+[1518-09-16 00:03] Guard #827 begins shift
+[1518-04-17 00:28] falls asleep
+[1518-09-09 00:45] falls asleep
+[1518-06-14 00:38] falls asleep
+[1518-04-22 00:39] falls asleep
+[1518-04-28 00:48] falls asleep
+[1518-03-16 00:47] wakes up
+[1518-11-11 00:32] falls asleep
+[1518-06-19 00:10] falls asleep
+[1518-10-13 00:00] Guard #2399 begins shift
+[1518-10-01 00:53] falls asleep
+[1518-04-04 00:05] falls asleep
+[1518-07-29 00:21] wakes up
+[1518-09-04 00:04] Guard #409 begins shift
+[1518-04-23 00:03] falls asleep
+[1518-03-24 00:22] falls asleep
+[1518-05-02 00:56] falls asleep
+[1518-05-18 00:01] Guard #1627 begins shift
+[1518-03-28 00:00] Guard #571 begins shift
+[1518-07-03 00:42] falls asleep
+[1518-10-30 00:17] falls asleep
+[1518-05-22 00:55] wakes up
+[1518-05-13 23:59] Guard #1901 begins shift
+[1518-04-09 00:40] falls asleep
+[1518-11-19 00:25] wakes up
+[1518-02-27 00:32] falls asleep
+[1518-11-11 00:59] wakes up
+[1518-10-11 00:17] wakes up
+[1518-03-23 00:46] falls asleep
+[1518-03-26 00:21] falls asleep
+[1518-10-09 00:03] Guard #3559 begins shift
+[1518-07-25 00:31] falls asleep
+[1518-03-11 00:10] falls asleep
+[1518-09-08 00:55] falls asleep
+[1518-11-16 00:37] falls asleep
+[1518-03-17 00:39] falls asleep
+[1518-07-01 00:38] wakes up
+[1518-06-17 23:58] Guard #3301 begins shift
+[1518-03-30 00:55] wakes up
+[1518-08-17 00:46] falls asleep
+[1518-07-12 00:44] falls asleep
+[1518-04-03 23:48] Guard #2593 begins shift
+[1518-08-07 00:56] falls asleep
+[1518-09-05 00:11] falls asleep
+[1518-02-19 00:56] falls asleep
+[1518-02-28 00:04] Guard #2593 begins shift
+[1518-08-08 00:36] wakes up
+[1518-04-09 00:27] wakes up
+[1518-06-13 00:51] wakes up
+[1518-06-27 00:30] wakes up
+[1518-11-12 00:33] falls asleep
+[1518-08-03 00:33] wakes up
+[1518-08-19 23:49] Guard #3559 begins shift
+[1518-11-05 00:59] wakes up
+[1518-05-13 00:35] falls asleep
+[1518-11-16 00:00] Guard #443 begins shift
+[1518-04-02 00:00] Guard #1627 begins shift
+[1518-05-01 00:31] falls asleep
+[1518-08-23 00:29] falls asleep
+[1518-09-01 00:25] falls asleep
+[1518-03-16 00:13] falls asleep
+[1518-07-09 00:58] wakes up
+[1518-02-23 00:44] falls asleep
+[1518-02-17 23:51] Guard #2819 begins shift
+[1518-08-14 23:47] Guard #1151 begins shift
+[1518-07-14 00:56] falls asleep
+[1518-06-15 00:15] wakes up
+[1518-06-03 23:50] Guard #1901 begins shift
+[1518-03-12 00:32] falls asleep
+[1518-06-28 23:56] Guard #743 begins shift
+[1518-03-04 23:59] Guard #2593 begins shift
+[1518-09-20 00:54] falls asleep
+[1518-09-17 23:57] Guard #3457 begins shift
+[1518-07-26 00:46] falls asleep
+[1518-04-05 00:51] falls asleep
+[1518-05-29 00:29] falls asleep
+[1518-05-21 00:49] wakes up
+[1518-08-11 00:51] wakes up
+[1518-05-06 00:47] falls asleep
+[1518-08-21 23:59] Guard #2593 begins shift
+[1518-09-07 00:04] falls asleep
+[1518-10-27 23:59] Guard #2699 begins shift
+[1518-07-09 00:25] falls asleep
+[1518-10-26 23:59] Guard #1697 begins shift
+[1518-10-09 00:53] falls asleep
+[1518-06-22 00:34] wakes up
+[1518-03-08 00:04] Guard #409 begins shift
+[1518-08-13 00:24] falls asleep
+[1518-05-23 23:59] Guard #101 begins shift
+[1518-09-17 00:46] wakes up
+[1518-07-23 00:29] wakes up
+[1518-06-23 00:34] falls asleep
+[1518-10-29 00:02] Guard #2399 begins shift
+[1518-07-26 23:56] Guard #1901 begins shift
+[1518-07-17 00:29] falls asleep
+[1518-05-20 00:59] wakes up
+[1518-04-24 00:03] Guard #1627 begins shift
+[1518-06-29 00:40] falls asleep
+[1518-04-19 00:01] Guard #2593 begins shift
+[1518-03-05 23:59] Guard #2819 begins shift
+[1518-07-21 00:00] falls asleep
+[1518-07-18 00:03] falls asleep
+[1518-03-20 00:32] wakes up
+[1518-04-10 00:43] wakes up
+[1518-09-24 23:59] Guard #1627 begins shift
+[1518-02-16 00:35] falls asleep
+[1518-09-22 00:00] Guard #2593 begins shift
+[1518-03-26 00:00] Guard #2819 begins shift
+[1518-07-20 00:35] falls asleep
+[1518-04-25 00:56] wakes up
+[1518-10-14 00:19] falls asleep
+[1518-10-07 00:23] wakes up
+[1518-03-10 00:07] falls asleep
+[1518-05-29 00:52] wakes up
+[1518-09-23 00:58] wakes up
+[1518-06-21 00:01] falls asleep
+[1518-06-07 23:51] Guard #1697 begins shift
+[1518-05-28 00:55] falls asleep
+[1518-10-09 00:33] falls asleep
+[1518-10-23 00:59] wakes up
+[1518-05-11 00:26] falls asleep
+[1518-07-27 00:43] falls asleep
+[1518-05-26 00:52] wakes up
+[1518-08-02 00:22] falls asleep
+[1518-03-23 00:00] Guard #571 begins shift
+[1518-07-14 00:59] wakes up
+[1518-04-02 00:18] wakes up
+[1518-02-22 00:30] wakes up
+[1518-10-30 23:56] Guard #673 begins shift
+[1518-03-20 00:04] Guard #1693 begins shift
+[1518-08-20 00:42] falls asleep
+[1518-04-06 00:02] Guard #673 begins shift
+[1518-10-19 00:34] falls asleep
+[1518-10-24 00:13] falls asleep
+[1518-07-14 00:13] falls asleep
+[1518-10-14 00:02] Guard #2593 begins shift
+[1518-05-06 00:50] wakes up
+[1518-07-19 00:54] wakes up
+[1518-07-17 00:59] wakes up
+[1518-02-25 00:03] Guard #743 begins shift
+[1518-09-07 00:35] wakes up
+[1518-11-20 00:50] wakes up
+[1518-06-05 00:31] falls asleep
+[1518-05-15 23:56] Guard #3559 begins shift
+[1518-11-04 00:17] falls asleep
+[1518-10-10 00:04] Guard #2399 begins shift
+[1518-10-29 00:52] falls asleep
+[1518-06-01 23:53] Guard #101 begins shift
+[1518-07-31 00:35] wakes up
+[1518-07-23 00:15] wakes up
+[1518-05-29 23:59] Guard #1901 begins shift
+[1518-08-12 00:24] falls asleep
+[1518-03-17 00:00] Guard #1693 begins shift
+[1518-11-16 23:56] Guard #1901 begins shift
+[1518-08-01 00:13] falls asleep
+[1518-09-18 23:59] Guard #2699 begins shift
+[1518-07-08 00:56] wakes up
+[1518-03-30 00:18] falls asleep
+[1518-10-03 00:48] wakes up
+[1518-09-14 00:46] wakes up
+[1518-05-04 00:33] wakes up
+[1518-11-06 00:03] falls asleep
+[1518-06-10 00:25] falls asleep
+[1518-08-20 00:02] falls asleep
+[1518-06-04 00:04] falls asleep
+[1518-05-18 00:26] wakes up
+[1518-11-15 00:50] wakes up
+[1518-11-07 00:56] wakes up
+[1518-06-22 00:39] falls asleep
+[1518-09-19 00:31] falls asleep
+[1518-03-04 00:16] falls asleep
+[1518-05-17 00:29] falls asleep
+[1518-03-06 00:55] falls asleep
+[1518-10-15 00:14] falls asleep
+[1518-08-29 00:57] wakes up
+[1518-04-25 00:43] falls asleep
+[1518-08-02 00:03] Guard #1697 begins shift
+[1518-08-03 00:01] falls asleep
+[1518-02-17 00:33] wakes up
+[1518-03-15 00:50] wakes up
+[1518-06-10 00:04] falls asleep
+[1518-05-16 00:27] falls asleep
+[1518-05-02 00:58] wakes up
+[1518-05-30 00:52] wakes up
+[1518-04-26 00:24] falls asleep
+[1518-08-14 00:24] falls asleep
+[1518-04-14 00:13] falls asleep
+[1518-08-17 00:25] falls asleep
+[1518-11-16 00:54] wakes up
+[1518-11-05 00:29] wakes up
+[1518-06-17 00:19] falls asleep
+[1518-05-04 00:02] Guard #3557 begins shift
+[1518-05-27 23:52] Guard #3457 begins shift
+[1518-07-20 00:48] wakes up
+[1518-03-28 00:59] wakes up
+[1518-06-11 00:25] wakes up
+[1518-07-12 00:54] wakes up
+[1518-04-21 00:53] wakes up
+[1518-09-23 00:04] Guard #1697 begins shift
+[1518-03-28 00:36] falls asleep
+[1518-09-11 00:41] falls asleep
+[1518-06-20 00:02] Guard #1693 begins shift
+[1518-08-13 00:01] Guard #1901 begins shift
+[1518-05-05 00:55] wakes up
+[1518-09-30 00:31] wakes up
+[1518-04-06 00:19] falls asleep
+[1518-10-05 00:29] falls asleep
+[1518-05-31 00:45] wakes up
+[1518-04-29 00:04] falls asleep
+[1518-03-09 00:01] Guard #1693 begins shift
+[1518-07-17 00:02] Guard #1693 begins shift
+[1518-06-23 23:56] Guard #2593 begins shift
+[1518-06-30 00:46] falls asleep
+[1518-11-21 00:50] wakes up
+[1518-11-09 00:04] Guard #1697 begins shift
+[1518-11-18 00:54] wakes up
+[1518-09-12 00:00] Guard #2657 begins shift
+[1518-05-22 00:32] falls asleep
+[1518-06-22 00:26] falls asleep
+[1518-03-06 00:24] falls asleep'''
+
+DAY5_INPUT = '''\
+FuUmMfRbBVvYyzZrzZuUohNnHjAkAaiIvVKUumNnMtTaiIFfYEeyEeyYXsSxJDYydExXDdAasSjVvJPpJjqQoOptTcCrRPjJiITtmMLluUgVvnqQOoNfamMAkKFGhHvVQLXxlqQXffFFxqXxNnZnNFfzevVOYuUaApPyTtwWMjJLiIlCIizZUucMmSsmbBjJXhwWHVYzZpPexXDdEKkytTvzZuBbBbvbBrRVlLlLWwYyFfBkKtTmpXxPSsQqfFndDNSxXIiFfsdDNnoOBbUdvVgGJjzDdRrZTtVvDGvVguyYbBYHhyDdyYFfoOFAafoOygGTtYCcGgtPtTcCuUpbJBbjpbBPYOofuUFyBlLDdhHFzZfwWjzsSZKkQoOdDqYytTJRrITmMkSsKtipPDdKkCcnNpkdDmVvMKKEeIikRrbhHKkocCOLlryYRlXxLdDUtTuBZzZJjdYyDqQocCOzatTAdQqDqqQTTQqttAGgaFfQQEeQqiIqzZCLlcNnUuPLiIwvUxXudDVMmaAWOIibdDhCcHhHaAPpBAQqSNnHhsaQqhHZZzznaANFforYBbbBfFJwWjFfLlxXzZIwcSsCWsSifFyGgaUuAnNnNeEDdFdDxiIruUnNRUuOSyYsGgoXnTtNrRseEfFeEJjSlfFqQCUMmuEecLfFPpTtqQNVvMmQfFqxXWlLKAoOakgGJUujwUunbBrUuRUunJjNCmfFMXxeEiIiIbdDBSAaSyNwWnYcQqCsWwHhjJtkKcCToOkKsFfgGMmzZVvyEeYBbtTwlgbBGLjxXUCvVcuJpLAalRrbBPCcnNxwWJKkRrtTjfFPpVvXmMNnxUrQqRyYZzZEezeEEzZecCYyrRuPpaARuUrTtyzZYLwUuWPYyJjEelLxaATtoOEeiWfFwCeEcIXBbAapxGgXZzlnvVNQPhHpCcHhqlLOoiIuUBQqbnNXpPrVbBvRDdtQrRqaAtTReEhHpPOFfVvrQqRXVvxvVoBbtAaTmTbdEeDXxhHczZCBTkKtZkKzxXnNbiIQqBbFfZptTPxXkKwFfyFcCfYWAaBbuOoUuUlUuKpPueEUPplLmiIMCckLoOJjcvVXxCcCEezWfZzSskKFfEeFtZzxnDdMmHIidDzZhxuUvVmQqwWFfxXOoSatvVTYyAJOXxmMoHhPpjinNEeIZugGyYUXeEUuxzsPpHNZzDdTtRrlVvxXLeEnLlOojJykKYgGIiMmArRaAaDdhtTCcZzLlHlOoLUuhmsSBbFfAaEeMOWwoMmqQXxUuTjTCPpctuUaAIiOAaAUuaoOoIiJtHhdrRDRJwWjrVvxLlgGPpQqAaKEeTHhnZzNtNELFflenyYkKKFfkkXQqmmMMPpMTtLENiInlLepPlfFnNMmGgzZTteEDOoPeEpIidjjJcCeEYyJHgzZdjEQqeRqaYyAQrwWJfFLXaAxlqoBbOhHQqZyYddDDkiIKzmMDdkKoEeOxXFkSsizBbMmAaUuHhSsZFfIeBYNnykKbYyBbPeVTtukKUYWwHhyvmMLlExXoOlaOkKQqoAAaxcCeEXBbWpPXxMmiYDdoOyINnZzwzLlkKeYyrRXxOoEvVWnNBCcVvbEeiiIiIXxQqaABbIwjJrRyhHuaAzkKaAvVZIOokKiRrgGUJjrRJjVWwPWwpLloOUqQugCkKwWLlBOobfFFfcpPaAAaGQqTgwWGLmPpMleEMBbDdYymdDOyYodDOWXEexwoFfsStvVAahuUUuAIHiIhiupPUUuajJzZhHpPsSHUupcCPOKkkYRtTnNrxXynNzZoOKsSdDxLwXnNxPpWlkKXeIiEyYJFjJzZLlcZztTPTDdNcClLyYzZzXYyxZRcCrIiCcTzZtYyZmMztTTaAtthHbBGbnNBiIgTnhHYyUwYUiISsuUhHuyMmwNnmMWcmnNmMCXjJxczoOZrRfFxrRJjqQOdDFfaAKkaAoXtTmMquUaYMmiIyAQnNoOdRrDrRVvsVvSmgGuUMrRrRhJaAjRrovVzZByYuUeEdHhhHnUuNonNUuOkKcmWwMEewAaWbcCYyXxSSscCzAaTHhtZqQVvkKVORrovrIiqQRsLkKKSsUudDhpPYypPlTFftLIiQkKfFqHkXxpGgPYjJbByczZClugGIihHuKbBkiIUUGgbBkPzZpKtuUTWwgKkGcCTtTtPhHIUcCbbBBbBulHhLNnRrxuUHhADCcdHdDDdRreHpPZzEehtTtnNTIiEPZzqQphlLtTnnNMmZUuzNlDdVBbvyvrRVYLUuanjJwXxWeEmMNXKCpvVPcuURrxnNMRrmXyYxaAXBbpCcYypGgPPCqQGglLJjaDdAIaAiPIiHGgGDxXdAagpPHHhhbBxTtwWXWAoaAwWOQqdQHhqDYTtAaiIwxXWTLlgpPvrRlLVGtcEvVeywZCczWYEeCUuNyYvgGVpPnVaCpPOocAFfvTjJtGfkKFXWzZwxgtTsIdDiNtGgPpPnNpQqoONnFfyfFXxYGgCcVvXxTcMmOoDdcCCcYyYCclLyCSsMlLbBGYXxygiImnOoKfFkoOSNnXxLlcCPGXxxXgprkKUMmeEhHoOZzlLaAargtfsSifFxwWuUUuIiKaAkYUuymMWwXIvVsSpPiIFjJTFrhCcCcHyUuYxiIvVPpXxuUqpPDdgGWxXwzZzZPpfFvxfFfFzZvtTVveEVJjKtTkqQHhXDxPvVptTNGPpbCcBgGryYCcRgVvBjJKkdxTtwQqWRrRrZgGzVfFfNnFIOouUNnQqvoRXxEeWkMxXmJjmMVEePpvKyRrYlDdLcCpbBPFfDMmYEeZDdzydlxXWLlxWwSZzsKBbkvwiIWVXxIiWwXOogGHLlPphUznNYyFDdatTAfZaaAAJWwjfFQrRZzqQMNpqQPspPSbKkBDdIUunNcCkMmCcKiEeQqzrRjnhpPNbBqQnHTckwsSWwWmWwMBbDyYdYyHhKMgGHhmczlLZCCHhtDKiwWIkdyYvVKVDPnNpIiwWdvQdDqkcCFuUSsLlMHhWZzkSspPmZNnzMKmnNfciICFpBbIiRrpPZznNwWHTHhJQtWjJwTqXxhHjAeEaAaKkMmRrteNnNnFHhfqQsOoSEtwEeQqXTtxWBOFBbfUuFfQqcCCcIioOWwobXgGxayYRrAwdDxTtoOpPfrRFootTGjJsSjBbjJJgBbNncoqUuQGdAaDFfLWwtTlJFYyXxGgfOZzoOoCuUcjqQGcmMaACZxbRrZzVvWwQoOqAoOFvVVvjqQgGIuUiJhkaAVvqQKaNnjgGaAJAnNHCcCmMmMvDwWdQqVlLEoOZzAQqHWHhTBbtgGzZbByYEeeddHhtTeEMhHmGghhIiHVvHNndlLhHnNolLOOMmoDDdNnGgnTcbFfBCKIjJSsyYGUoOuWoDdOlLwYywWRriILlQUuGgqPpPpOoKUgGugYyGNiIstTwWhHMnNmSnpCcrcCzZxXVBGgjJqQsSAaLlbgmMGGjKkJzZgTtEerzDbBdHPiIdDkMmKQqpQyYqNnhaABbMfFmPpWwXTtbBnmMuwWkKEeVbwWmMkkKVxXJjvKQqRzZBilLpPIbAUBbfZzTgGUutPpFqXZzxJjNnAGgPpaDThHyYpTWwtoOPDjJdthHYpPxXLIiVvfsSFgGkpiIPUtXsSxPpWwlLjJQSAasCcjJtTePphHEUuvVReESquURrQsjJPYyKkjJeEpDdCxtTylLYHhXtKkTMlZJjAHUpZZzzecCtTNTtnpPEeSsSsrRENnRrPNnuKkCrRlrnSsNzYyvVulLOWMaAzmMJjvJjwWrRABbdXcfFHhEFferKkdDjJbWqPpYzZPpTuUEetySsQzVaAfuUNmMmMnFkKNXOoxNneExXnGlLmQnscCSNqJjQqMyYgvovVOHMfvVFLLTtVvlIixXVjJvPKDdJNnjvVJNnjEeDdkqQQqXPpfFxzwSsWpPwWJjZYyaHhjJAfFEECccCewWeuUPpeOxXqQpJjBbqQSsPoRdDbBVkZzQeEapPnNANnVvSsVkKCcvqBBbbDdEJiIsSjRrcCejtTyYQFLlfyYyURruPvFZzpzZPFffpzZPVSwWsmgGFfMlLKnyYNHgDdGggGAaGpPEBbBUubCTqQtCcvVrXxgGzDmMLldZwWzZdDJjBbtTvVIlSsnNIwWVvEelLiUiIuzZXxRrLxXDTYygGmEgGuwWUehHMIiaAtxXnNTLrxAaXXxjJbBReEFfFfWSuUwHkKhWAJMmmMUvVuAwWqQqKkQJOoyFfYcYyCzwzUuSsReErWGgTtoOcCwZGgJjkalLAKvXxrvVbBbBZzyvVBbyYJjXAnNaQqKzZZzzZkkRrYyJjKuUsWwSTtzZIsSUuRCcriFGgfoOdDPpWQTtIwWhqQHpaAPtSeORroEeEsYyTITZQqzQNnuUUuqrhnNHupPUHmNnRrMdDFDOobYyzZBdeEbBNzYCcPplhHLyZAatIihHNnQtTKkSslLNndDwfFWNnQqNqQnbBaBHhSFflLgnNGxuUGgtbBTTtXZhwWHzCcKSTtZzmYyYyMEjJSaAsRTtreskVHhUrRKBbtTkdzZeVvEDuyYDeEjJeEdpPWFfwjnbBNLldDSsdEenNXxLQqrRhRrHIirREeHHMmcCWrzeEZREmFfiIxheqIiQRrbBEVvwiBbZzoOzGgZcCIWHMmtTDdPeEEepVvUumMXRrRgkpFfdDUgrRdDGitTfIgGKSmMsklLBtcyYeETnNtCsSTVvpgGnNwDdWLRrlYJsSjdDBbTtkKGgRDnNJXPpMmxzZiIMmqLSsQqeEoZzOVvXxDJjeEdxmMXlbBWeECcAalLPpQvdQQqnNqDrYyRNuURacGgCljJLoOLdDlgGuUHhNjJnsSAEelovVqIiVvGgQQHhEDdceiIEyyYIiHhxXbBuLlCdDNnJRryYJjjtlLQqDcCdTcPpUUuYUuGggGGbYyBjJCCIlLWwiyLlYELlpPrqAatmSsMGgTqrRTttTGgfFiFfIiDdpPIhuOoUHjhQqSrEeRKksiIAatGLlTtgqQxXNnVXxkcCxIiXIHhaAkKiIvViRrlIevVEiWwgiIlLGWsMmVvSwVxXrbaAFfBRlLHoiIOQqhmJUujvVxXrwWRxXMMSsOyYbHQqPpheEGgbBwpPWmMdYNnyDdDynlLTxXttTYmyYMyNGgYuWwWwtXxTUUdaeEoQqOUxQGgOoFTttTlVdDvLfLlrdDdAgGMmObBwWLlSsTmMiZzFsSTtMmpVvPGgfWCcnZzCcKkmMIzZiBbWPpiFfIHqFbBZzKkGgqQtTfRrgGSsfnNFyYWpPgGZQqUuzjJFfZzsSEffTtDduJyYtTfFruURuMmdDIDdiKKphHBIibgGrLlRPRjHhJGgobPpwdDCcWZzmIYyiSfEeFsPpacCzZQqpPWprROoSfJjQqSsqQBUwWubtuUTFNsSnKkJjsOoxXFpPfwWVvAaNsOCcojJRrPjCcHhzZVvYNnhhmMHrRoCuUCcuUuKHhbBkpPIiWwAaFGgfUwWJjcCUudDQHhBbtMHkJaAjuUKxXBEeUJjuiIXgGSsgPpTtuUOXsSgdDNGOkKohHKkowWzZEoidhHHhDIwWAaIeEiFlPuUAeDQVvqkDdKfYNnDdIBbiPpQhHTtDdqcqqQDTtoOdFfQqQWElLewaAcCPxUacbRxyrVBbqQvnNRiIeErjJbZiIELlezzZOZwMmRrhvzZiIBbVZlyYLPpcCzHWyygGtUuuUysSYOoQqrMzZhDLlCcdHHnNSshwkWsMmBbpPIiPpXlLlLBbEKBbsSbBkVFfcClLjJvVTtkKrRCcvlLERrlLeqQLlwuUoOfIjJYUuyjVEevcNnnCCejJVSoOCcscCvEsSAaXxpWQmMYyYVvSsWbBTJTtjIDdiYyMSsmwWXxIiqQtTZOowmMmsCmVhSsHveEqQkiIiInpPHhqQNcCKfFdDaAeElKGCcgxhsvVOosSXsSxsfFFnNfHhrHhxXRNnSKkWwpGgnNKBbkyYIimMPgEekiIKEeSsGYydHhzVZrRmMQnNTtuUEeaoOKTtkoXxxXnQqlLNNngGtTOLlJVvjkEewWKAwWgGqzkUuTtFfnNDdBGgfFlLiItTSmTtMsnXgGxrTtRNoOEenNgGmMSsbKFfTNnvVtVfFZzcsSijJDnNUukKdlLJjrmtImMBbmYycCECcfkKFlLHhVwRrWvSsdDzZZzyYiIxXbBDdBbQKTMcroORNJjKkDdzZnoOCcBvPpaAVbRrMmfFZbBzCWwmuUuAaUxyYoOXpPYynzRnNrBbZMmCcKLlkASsidvVboFiIQqzBbFTtwpWweJVvJagGmgGEeUTtunNHhvqQVdeAXkKkKpVqQvOoVvepPsSsSsSfFEcSsCydDYbkKBmQqMUuGgMUZvVAazUiqeEQIgGPGgpGgBDdxvVXpPJBLDdzZmMmMlXKqQkYyRZKktTzLUxXLhHlulMcCzZmbFfBWKweEjyYJWSkKsuUNnJjcCzZeEIYynNnyKwWkrRbBOoOLiIvVtuTaArlLYyRPXfFIixptTtRrpPNnTkKWuUwFfwWloOpPOoAaoJyYjSsHhHhONnFPpfeeAQtEeTClLuZzxXqQiwWrRIUBWwgGNkKnmMbQJyYygSsUulLUuWwgEeGJWwFjUuJZzOopSsipbMmUuyBbXqUuPTtpVWwGgeEvhtTCcYyHgGooTVvXKkxXHzZpHBbTpPtWwzjJZxXFfZPWwpVvzaAQENneqyYhPRrGgoOnNRjJCcbBJsSqQtTIixOoXfFgZzdDCcVVkKYyvzIRriZKtTNnhPKkpIiHECcerRYGgSsNnRrXxyhHsSaiIqQAaABUubrpPDNQqnqSRFAamMfnNkZzvVpPDdyYCcwWRrQgcCCcGtTlLSshHVGXweUuZrSsvVRCcIirbvVJjHhvgagWwGLlDdAhRrfoOZbBfFBbzFfWYyqYycXoOxCHHhuULlGgSzZshyYufFQFCcMNcCncCkKuDdUvOoVmPkKpfvVqQHhDduUAaYEelwWwWLylLmlLTtGSDwSsSsWFPZzplLlLHhlLFwjNnryYdBbDyYvVROoUGbBgGjgQqGQZzKYLlykDSjJFGNDdtTpPnFLlBbfDTZzqQqQAazZNjTNmMqQtTtThmMzZGUulunNUlkyYAWwaxgLdeEDlMmMDdmjJGCWwtKkTbaAdDLuUdDCcQqGgHqHhweEiIQqJjyVvnBbQrRqQcCUumMqNntFdDAafKkDSsdTqzEeZDNSsnjLlJdWwhkKCtwkgwWGoOKtHhTkKaIiHhjdTtDNmMHhnziuOoUQHhBnlSshWZaAziwWKQqziIiaMiImCboHhOpLlKkPLlvQqhlfFLEeHxgGjJPpXlLbOoRrlLBePpUuETzPoOYavbBgTtnOKkkKoIBOFCOowZzWZhoOHlRrmFKkwWzZqQMmgAaGmMhCdDcaoPpdDfFwqSsQqkRuUrZzuUMmKkgRrhyYMQMmqUsSuOomLlCEeNnrRiItyYxXoOCcToOTpPtxBbDdXzaguUGiIyYkbrRZzBYpPlLybBKsGvVLzZeElfFdDsCcSLRFbBraAdDVvAazCgaaAZzYytZzToOnNbOoBAKkanNnNIKiUurRfKCckFSsCyUlLlhHvAaPSsEIsFtTfwWOfFlPiWFmMfPpzZKrRNwpMHhYymoOPWaAQgGvZzAaxXkJhniINHUuKkjQCcYgGEPpWwJvIiMmHUkKuDdxhHyMAgRrEeEeKgGkIipPuSsULlaEeRrAasSQwFfPJjpLvHcCcGtTfFgcCjJPpwmMiEeIWnnNNCHhKkcWCtTcQfFZbDfkKqsSrRrkIijJoOurRjJiAvqAUuUuaaUeEzQqZpqOsSobqQBaVvCDdcJAaeECSsRtTrcjJjyYlLAeEAaiFvMoMCcBbBbmMmnNMmUuLrRCcCfTtYyLldpPkKpjSsJjBVxXRrvfFbhHlLbCRrcyYCLlcJjmFuUOoiItSnNsTEenPpwyIiYWIlLVqvDyYPpLgGlQuUGgHcCxFGjJgIifEMCPKkfkKAPpAaacCJjpPNRSsrqQUunHfFhNdDSzZsFDKkddDzZZJjwBPmoOvVvaYaqQbIiBlLIizZAyXxAYbBykKvnNooOWQWeEwqaAjFfMmJoOtjchHQqqQYXJjxWKklldLuPDdjKkvPpRLlSsaArQqhHFfVmMfFkKBbfewUuxSalLjJYZzyIioAaOkKfFSslMmLXmMppPoOTRrVvtDoOkUuKOLlWJeNnEWjJfhGRdzZDrSsgtQqBDdbMhHQXxWAawpPqmMAamWSdPpnNDIiYyeLlWwZizZOsSoLlxXWNuUBetEeTENnajsWwgGhHSaxWYAabaAOozZiJjJPlLpdDLRrRrPnMfYyjhHJWwhHFdDiEeImzZOOxDdXYFfmzZMyAjJtTcWQcCqrRrdZzHhAayYVvDNBbrBbHKkqyVvKkcCvVYhHwtTMkKzZLluUmEeXcZzCjvVlgGLLKZjJQqfFzgJMmjGmtqQTMZSsmMcCqEKDHWwyYBzLloOAeEaaJeEXxAaMmWLlQoOqrRXSlLGgnNDdspAaLlPGgPpwWJbBNnSsVvcCJjELWwCbBcmMLljJTtvVvCiUQNnTSnbBnuUAwWaVcqQSeEsstTzumozZpPpYIFfiyPyzZYImMXFSpmMSsTlRBuRrUbdDapYbBCcRrfWZcPpCHwPpeEWTthoxXOCZqWyYLFxNmxXMAauCCcuQUVvYyPpMhJjHmiuvVLHNUcCpPMmLQqDfFoOSEesqERAargGeuQqUpyYPgGmMdkKHhbzgGZBkyBhFfHYDdyZzSsGXPQOoqiIIivVpVidDIbZzBbCcaAVsuUSvhCxXcsReEmKJwRtTrCcwWKkrqQjrqQUnNUuumHhwpPWUSsIosSzLlZQqOnfFNAaUuRroOVvitTZtrRTZBbGgxEeOWwWHsShwxLXxhvVmMcCjzZIizqRrWJjMiImwRMmrQZJPpZdajJkKhHPhHpAjJsSxXkKqpPbYyjJdEetsuUPWwPtTppBkKXxHKkbOopCcsSCpjOqrPMmlLWwPPncNEeoYJjyOGMsSQqtMgGWTeEtwHhAaVvoOeEWwsFfZFfzRraASBbHhAaoOoXxhWLsSaAzZxXlUuwzQqMmxXzniZzIBddDuUYyLcCoOcvVCljyeEhgGHIiYJUrRcgTAHPpaARXxyYrLofdWwyYDMmnVvOYyiIXxwOoWcniINWrLlRIqiIrROoQQqiAloOhHLOoawOTtSsWwmlLJbZJvVjzBtTQqMmIimsSvlLgMmHhodDFkpPKBSsCoOnNcgTVvtEeSsQlLbBlLqRrbhHBldFAadwWoOZzCOMVuuUUKkZONDZdbBDzBqVjSWwWwvBbbvVBbBYyXHAdDkKZzaGHhghOXxDmwWwQqXxPpFjJfxXWEHOoJUuWwjEGhBbHhQUutaJLqQtpPltTZpPdDhHzzZFiIBhaFfnzLlKQqktBzZpPbNnJjaAYyjJBRAuURrHsShzZttgrRGQqFYyfTEehiIOoNnTMmWwUgYkKdDXxuUdWwlLRrzhHZuhHEqQduUNSVvsaAhWKjJkhHwHccCvVhOmMoHwBtPQnNqUaAvVBCcqahgwWzZvVWDdOomMwGjJfXxNdDnItTVrRvoOfGgaAKlLkTqmMtTDsSPpdqAwPpWrkNKoOknKnNnHhNxXkKknwddDmmMMDdTtSswWDdqGgQDLlmDRrSssAwOoxnNXqQwWVvcBdDYNDdFFCoOcffnFfyGiTtIxXQIOoinCLloOTiItusGKkgrRBrgMpPmjoKkOOFZsYpPpwWKkfLlsSkBbkKfYyTFfQpPiIOooLPTeEkOodAvVCcaDJzcWwCZtTORfQqkufFUKFoOrGExGgDdXeXbBTczZCtOpPoACDNnBcCqvVHhQbrvVFHhwWNnfLlZmvvVbBVpkKNzZEEnNJCcAFfJjaeWWdDwFfzZwRrEtiIGzZMXxmFfemMFfElLYgCcAmDphHkGOxXkbBWPpZzYyjxBbtTXoHhkKkKzZMmFfgGROoyrRMmArzNYHiRyYrNnZXxQHLlOyOosgGuUrpcnkMGgwWmKaQqEeAylLeEYsSdDTwWPYUuHCBCwWcFfjJFfuUxvVCdmdDaIiLlAMBYybBDdQqyJjSsdDlLYbDKkkKQqQqLlYmMymMJjvbwZyYiIzEKkXlLlKkOoLetTFfXdDsShHrRxIvVAYyalFugGzQFSsfsAaxNnXDYBxXqQuUbkpPZzGPpgEvVVWhuUPpHwrRQAadJIYyCUuXpPNnxVKymtTMHhPeEpSsQIiqcCAaqFRnNrRKkzZriFfIfyYMbrZzTzZrzZpPRtMmVXMwOEepwWwWPsSOvVKrRPpkyEnNeJcyYSctTCeEAsSzZamMgsseESuQrJjRTDbkKBdznIiNdIiDYyLvVPEZzXZmppuUEeHhHhBbZfFzPeWhHPpaVzrREUueZPpSXxkPxcCsQqSJnRrfyYfdDFPZUulPiIpoxcCXzZzZZzOQXxleEPhYcHhHVPppCqQqQruUfelmMBXxoEekKOHhzbaABMmmwWVSstTWIiwJjRrJjvAXnmMUGgyYuvPpVnNvVHhCkKSspacJsDTtnNpPFfzZgxQUuqXJjWUgErReTtRrGMmhtAapPuREmMerbJjBbXMKkEeYdLIilLlXxrAoOIiazZtTOoCvbBVZzGozZAaRSuyYUyuUEeYmMzZHhIWNnFELlefgVYyRrvGuUeFRWeZyYzEwGoOfhhHGjJhXnRaAHTthWwrjJsfNnLlrRmMZVeyYKOayYAaAeNFfpiIrpDdPRPsmMSsnNIpVfFWiIwvkSsnNNnKYCcZuUOoHhWEetKaEeqvsSjuiAJjZkCcKVvJjNrRKaNoAdDaEdDqMmhwWHQqQgfnNFxHlLhLocpPEUHhmiOoCcDdIMPpvjJVmMuewQqFfAONnoeXxFULluBbCGgcCBhLlAYiIyDdROJQGrCciiIIRPfuBPBbpwWPpbtcoNMyUukwWxXKYkpvxigiGWwPTtphHpGgPWFGipPBrPMmpwBHhbsMmOIJjiBcCYyATtaRrbgGougGUQlLNnIGgiySsEeZzOoqCugGNniIgcCjyyYLSsRUqRrQuldAalLDlLLlCcubmMBULsSDfLliwWdsDyYGlLKkxXNRrvcCoNnOdDVvvriCcJQHhWwwWpPjJhHtQdLlDDdqtaAsLCVvclZrReEzWwiINnjJkKFfSrYyHwWzZUuGUuwVvwTthHWwHaKkOouUXPjbkKBJppFfUSsurREjJmMXLlYyFWQqVGgvhHhHJjOoWwSsLlOokjJRrOokKgJjGKwQWwOoWbQqBSXxiYyhlLOoTiIWqrRfMmZzDnNdqQPMfFcCaxVoqQLlOcCeEkjJTtNFfHaAYyhsSsSKCpQanHhgGNKQxXQqSYyyqRlLFYyaASszdRYPpdDyrDfFIisSgQPpjJiORroIicCICchHeiGbBjqrRuEeULluwhHyfFxXBEeumMSsnEVQqjJmjlLQVvqOoKTQqlxXHmMhPgGFIiDdqrRlLjJiIQEmMTtwyYhHWmMhHmxfcneRrkzlUuDddDoOFvVfLZmLleEZjJzZzWwmMiIllLLMPpkKKQKkLvVPpWKSsfFqQkQqwkLPcCpLjJOrLlWDdwmMOUuRaArpPqQHEeaGJjkKgANnhFtkKCQiIqgJKkjhkKcCHmHhVkKpPjsRrvPpTZfFzqGcCmzOoPhHdAawQqWDVLbYywWuUKwgGGoOgKcCXxkFtSsNKXqQzGgZgbBkDdIsiISiKCyYxKkXCCcJjcCszWlfFLmnNMvXoDNxFfQqpPXGgUucVvpPChHGgKMKiXxLlSBbwWsgDdABdLzZlSfvVFDdEnrfFAFfEeSTtsaNJjVqBOouUNvVnbKRtTrkiNnslwGgoOqQuyYvuUcXxAPpaSSZhHzznyYWMmVvpPGgOowvXxVNvVzORroAaZHrhHgoSsPpEzZMmMMFfwWJjuKOTtozZFfoOnidpFfQqgGJjWkxiIkcYyCfLOolNnkGtTzTtZggnNarRdDXxwWyYaAXxAGRZOopEedETtcCEXHsHhiVvIwYyWgGcqnUjlLJAaEdiIAaaADsHhOoHQgGqWwgSGgsdDIkAaERPwYCCvVctThcpPprRsSMmJYTQvDdXxlcCoOLMdDyYCsSNncFfWwaOKGggGTtClLhHEeckPGeJjuMmQbAaDYIEzgGZpPnNQviIVrRYtjLlJholLrRrRMlLmOCcQqpPuRAaigZzwWGNnrRVvbBjJCcVvjeEfUuYyrcCRfsSFrRFeEWwKkJwWHxIbpEePqVqPhHcCyYqkycJVvVbBjJxBqQbOopvVPQtTqngGLnmMuUUuNHiIdJjDhFJjUuIifmhHxtTtTXJsSjckKrRSKkCRtTZTtzpPKkjTwqfEeFQqWNnjwjugGqsSCcQJjuUwiIWvGJjPUukkUuKKvIiQqDdGgPpVXQmMuUomzKqDiBbIeiIVteEEYyVUOzDdpPIihdDHyAaVECaQhHqHhXvHhVeVvEaArRiIhHzZorGCcGgJYOiIYIkfFKsSIKgGNnrtTxXqQdDRrBkKhmPVRmMcIYyPbDdaADDBbdLzZSsYCckKRrvzZsSVLNpPnSsXxxUsSqSLTUusStmEelLUzZuGgMEerPpQOUuOOrRLGYqQygxzZzeuhwIaAEtgGfFuLWwDdhriIjCVvcdZzWoWwwWrcCIRPcdMmHLYhHTSLljJJjsQWWwWdJjSsZzBbZQdDreslLSIlWodAyoZLZWwlnbBNLznvOoVdDxCcJpPjnNCnmMKgBbGkNhUvVEVoOveEericCIRSUHhuqlExXPpesoOSEeqCjiIJcXmOoVxwBbvVEeFfWSskhHKPpFCpSseEPcmfELlKkAaefxgGgGXfstTSFyLlNnYRrnwWOnaiIodWwpPDSXUkYyKkKoOuEeYcCMmOomMXEezlrotbBCZsIiSzFfJjWwcTWwkPaAtrRiINngdDGTCoPpbllLCZFPvVWzZRxXlKZQtTqkVvKlLyIpPCclLdpPQqHhXnNDdlLWwvolRrLuxGgtTKkgGIiTtXUuUgkKzwGgxEiLlAauzlLyYLHFfvVAakycfgHfKkSsfwpPLaAhHlWLRroOpPfxxXXtliIIPuaAUPWwpjXVnNTtxPpYrLlRyENzZKknzZFfepOZzECcDRrybyeVvzZkmMLtpgGSgGVWwMidDgyADuIYyRriUPpOoujJaQTtqQlyYvrRnQunsSTtNVhHZOKkMjUsVZZkKqGlHhUuoOFfeNrRSkRGbqbxXBoyNSWkKYyJMmGgDdjwhNnlBkKSdMmhPqQpssSvWnCcNYeUONyYnyROosPRbBSsrUhMmeEzZIiIQpPNONfGYziVgGFFckKGgKkyxnuUNXFfWhUuQwRuHhPpTSsxXIiPpTBbtDdQqgGsSdDAZzLlirbjJGgBiNAanVvqQmmFfVGZzKJbVCsoOqQayYCcbNyYnvXaAxQOxXiWwIKkzZRXxlVxXvLnQfYrRNtDerSXbIikKJdzZDsSjBWuFNyYuqQGgWWBSOfRxXlLhHDuUQcCSBbSgGsHaAEBiIuUmFhHftKKkkKkTMPIfuUmMFbwIizZdDPpevTIZzitVgGeEvVnNxtvyUuOooOYcCvVypPjCnNjpPJEebJjNnCglVbBvsSOoSsgGLqSmlLMvbBaoKkmMdDPphLlbxxeTVvtLNhHnWwYpZzUesScCqQHtQnqJYjBbeKkEnyXxxXuUVvWeEwUhcDioyrlCcmfgGdDFxXfFLlyMvxpGglyHKkQqhHhBbOoYzZFbBrRDdEBLlgGjJyoOWlLsSsmMPpqDdQdloOIiLwLsSSBLlzZijOnNblTmMOrRovYUyWJjBXxIiZzToOjZjCBbRUMTiuUDdpPsFfrFkKfPzTKkHhAZzHgUoOrXgGxRuNvZzUZYEbmHhsSzZqdwWZJCFfcjgEtTYbByGgNnZzZcPpoOxmMXTtlNnNnLWwaeGGDdaHhgzsgymOQYyHxXhqoxXlefpyPyJjLlYPpbhPpHSsBKkDOuIiQquEGglmnlkqyKpGIOogGigKaTtAphxXASsaHPUVvuQqrRPdNnvjKjxQFfZycNCIUoOIAauUizZEeLVvMxXYWwuUVvacuWdDeoCajviIIIiKKrzBrhuUGFwWwWuUjdKkgGDLlUOcfKJhOoCbBcHjiIBbiSxnCcNwWlLMQqmDdQqqaaoOJjckKCMTXhzZxXbjJBpPOpPeEeoOfLiXxBTPaTtKCMGgftyWeEwUuYUuVdDvdDRrxXTVvxsSvVJaAjBXxbGRrgjJEEjJeLlGgMkngDdDdDoGcQNnAavhlLaAEeqfFJnIZzDdRlLrCcIcXxZziXtkxhHdDXKCcddgDhcJTzeYDtoZmJHhYVvTzZbCcjJBpPnvQzZqsSVSsEeCGIhMDsSqQBdyYNnDbPpdreDdEMhICwOlOLbrRBEWwegGknFfSYEBzZbJiIdbUsSuBDSgGCmJKkwWnHVAlFIUuUjtJmIpfoOCcTtxXFujklAaWGgTtwSbuXaJjpPJGxlEcCeAapxXPLMmEeWIsSCkKcbBiqQweEqQJRrmqgavVNnAtAaTsoOXxSUsSsSNSgGsnoOnNTtzZdJPsSEMjJflLcCFJjyYgGZRjJJjbBHjTzpPZtmMyJjQrkKRqGXxgGwIBEpyYjJLloOPfFmPXFrpGbdDBgjCVbByYwdwmMXxSyYLlwWUiPpVvVYkKyvpoOPLkKqSsQDVvflLfFFYycZZzQJKkFJjAaDdpvuUVPuUdDGuUgfVmMvnNGuFfUKeagzwWwkKVvWvSsMXIidzGJiIAdDlLTNnJjZzQxXVvPlLvdDtTBVYNSsvVeRrZBJjCcUfYyFudAavVwWIiUvOoBpZzWYHhIiuUMDKXxjLlZzErryrRYbBkiIKGgGMSsqoOzZmMrrRJjRtOgjZJjuUAuUBNnJkKbBmMKkkKYvwhsqQSxxXkKXwWHhHKaApKqYjRrJvVjJLlhHyjJPcCIyvidDIMvVmlLJjBVCcwWFsVvSUuZzKEZnLFfWwFfgQqGppYyGginbWwadDAaAyOQzZwtTIijHDeEGooiIwWOhHIQbQoOsSYynNqJjnNwWCcDUusSKLJBZzbjrRHAwmtTMGMMmLlsSWwmkSsGgaBfzmNHZsSdDVjsSBRrJEJjfFesymMZPXhHsSWwpPMQqNnrRrRFfrFfRIOozZiaxJjuUWwaALSDEedsVvIxhvkfFKaArRKfOZqcCsKknIidDNcCzZVLliDdImMvZDdMIiqTtQDuUXYGgEeRGgruQGgZVCcgGuBHcrRiJgGUulklxEEeNiHZYykPpMpPyYLnFfNlhHettdDTrGgRrRUuhmsSQqxkKrIiNaAGtTgMeEmMmptToaABOoBbqviICcLRrzZLlUKkbBulVQyZFtTIiuUsScCfnDKBbOCAIiIiLlahTMFvbdGwXBZpXjWMwWmMxXmgGKDiIRrwZEezijfJXxjSBbcCvucbBGkKgSgGgGsBhHfFaAbJrRjCqQfUuSPiWwOKJjTtkLlLrRSslFPSspcyqQGgsSzkKtFWryaAYRwyiIziILlKcpopPnzAaUgGurRZNMYxfFdDPNlMnnKHqZLQpelqQLWwTtPjNMMvxXVvdEelLTcCtCRrJpPRCcGhHgvVHhrHvoYEBbLsdLBbVCiGnNlLNEenKOokDjKjMmvGgjDInpYsPRSslnNnNSxsGgeKDZlLQPmHhhHqQvejJwWxXwWSoOzZxAahnNRrOoghtcvpNWHhQrtTfbSGfqHhIwWiIoTCGgOARraoKknvfRLlTtrFVxEqnRPHhprNQpyYCcPFfejJMmLlNnUFfuKJkASsiIgGyLlYVvuUAaXxsYyAXjpPyoOdSRxXrEhHwGEKkQnNqHnAKkoOvVOZnrRRqXOoksmMIAaiSKkBbuUiQTBcCbINhLAWwyYalHmcMXhjKkEeJHxcNvNDdqKkDCLlcdQnXEPallLLemMEAinCcrHaoxXKSsoRYyQkKKsuUSQvVqBsrRRdCkIIiizsQrZzATsSdDFfZbPbbBkKQtXxTqFfQYyFlLHhfQqUuJhHUjGEegfFJjJeklLkWwKNRrpStpPTsYypPscCSwWtDDdTqQnNtkZZzzecCtxbwWcbVkrRIiKFfIkoBbOUGgzCoOclLDKISsxuUqUuQTbWbcCcCBkMmcEnJRrjkoOnNnoOrpPYpPbtTYyMFeuUOoFbtoOlLlEMcvyOXsSxWCcHphHPIiEFCcfeuCchvsqQDIAdtwkKbBjJFUuZWHzZhfFVrcCnNZzkQWwYydDqEexUXxXxxXFmrxQceEmMRHhJjXbiNqWwKkzZSsrRHSTtVvjJPZQLlqXMadQNoOrYyjZcPpIinuUNOoCNnOojJvfRCcrkKLvVJjbBcCNOgGumMCcUBbCcqEoODNOXxonncqOoinYyjAefYyFEjrrdDCcKjabBwkbBZGgEhGDdQwPparLnNOoXYevVOeECcqQrRrRjJoEyFfkQAaIZziqjJhHagtKkkyYaKkxXoOqtTQAyWwwvWgGrRWKkkKiIZLlmAaUtTRrpPkKlLxuUXBrCddSsjgGSMmwWoRrgIiDmsSMIrnEeVtTlCFfoOfFZeEzcmMrRLvoVonNvJKaAlNUuRtHhTzQCcRrlLJpPDdGgcCmMguwWlLyYmqQUupPKXskKIiNdPWBbwOZKkzopPpzhHZKrxVrRvXdMmOoDvVWiIwyHhDhYSLlhHXJfFIijiIQriMuUphKkghHbbBBbqEyfPjJmDdlLQYyqmMDSsZftWkSsIiHAZXXxKoOkiIpzBMlLmUaXohTaAmXxMnNVTtvrRvTjJtDdvKmZzMiPlLoOpIHXWUaAuBpPbixwzBKiImMyYkokdTSsAatHQgGiefqpeEyYHqPpNUrAvaCcAEZqQzuUAuUaAaPpLpPtTMmDdUqQDduRrtTAVvahHzZNaVvAPPpWCccCFyYBbTtiznNdDTQCHcGgKkAYyLulLJjDdlLwxUrQqyYLlrXZzmesSEJlLdXJYAyOoHhGgtTFcCfwIiPGgYsLRCcHQqrRhgGzajTtJAFfcCAabvwkjbBweEiInfyYBbTtCcXOofFTtgGxxXJvVxXjwWGgYyXneEnNLlBRWZzvABnpHhjnTtkFsSZxMmXQaAjGgJgGqalLAzIiWwoSsGlLmvKkVeFGgDSYyOdovRrxkKAaXgHVvhgGvVFUuJQqjqoOhTqWwQtUXObPiIpplNnKTZPEWbDPIiYyZzlLliIwWLvXxqnNQvIMbLiIjJePpEIiEeVvOEeohsHWwsOoavbBvsSVAkjJKvEIEeiYypGMHhgUOQqazZBAEesdDNnURmRSEVbiyYlhdYaDiIrkakySejoOXPeEBbIfFAadDrsSZzDmquUOiIhHLjglLYynIjJiiksZzSJgrEewWnNRtTXcCFbBfLlqQqQpxXvVEePBVUjdDLlJIiiIbmurshoGQEeJmMpPdTtnqQEKkesgfcGgUqgGhNCeEoGuqQsUGdDbVvIwWJuUSsrYyRIijGWwJjsSgiuzZfFVDyoOKaPphHrPpPUuzkzAqvVOoYyzSmxXHhMsZEmzZknNKoOfeEjJikasLZzlFDdfWFfcDdClLNnNTtmGmuXxsRtTzvYySxcWnsRrWwUraxuUXzeSaAclAavVhHMYqvVjJQnZELpmtslIDpxjSmMsRrgpwWAwYyjKbBkJWPYVvSsRrwbBbBlLQNnZzaAkKQTtroaAvOPgGpfFTtaGjsSmTtauUobBWSNnswutTeEIismGgucVvxvvukVneEJjNLlkKDdjrMmRLlssSSjRpPhqlkKLyYLYMmCFfyEaACBsSNcyaAgxXYwWGgcCJjWxpPXwXxWwpPmEPlyYWzZKKwpkqCcunPLvVlAyYkhoOXxpCiIrRXqihEeuUHrRuEvVEggGFfKkDdZDGSLlvVkpoOiIPgGKvVtXxmUQqbBurkOiIKAnNaeEAqQkvYsqQSuYkKuFkqxOBbkXfadDAxUnkeQqLlQUpPLrRwSsWwWxXQwBbyYpPlLdDTtEzUMmYMoOVvXxSUKXxfQRrxpPXqurBKFfkQUuQqqRlLhiikbizZydDdDZzoVvWUukKCcQqwOTGgvVbnKcCkdDLlwWLlMmaLAalWwAMLCCkCXxTjJtZzjdDyMmPUeShHswdlLjaAJaBbAgGcCqQnrabBkaAaCUMkVszdDZDxwWtTwWjJalKhZRUuzZrKkphbBomPpgGKcKSWwyYmvmCQKqUufFQEeEegGLLlRgWaRRrrAxAaGnNXxgQqXQnEebfFXxfUhHpPBbkYyaNcCZzLkKlmWSMMUumXNAZSsRrzrRanVcrRybBYAapPEZzCcPpoeoOKFmMUVJMuwWLxXlJjlLiaECUusOoFlmSXxoONtLlCcbYqQmwbBUbSASsEjJsDYsZzfUqxBxXrCRsSrNfFnhGVPvBbVpkhMGESsRrFfrqeEHAaqQnNLhJlXYzZLmMlwWyeEDkeRrFmMfmHktTMgYdDtTnJDdIWoOwBiPWyYzZKQrpdDrGgRAiuUPplLICcWwyuQGUHTthwWAasCcIBbnNnQOodDjJWPpQraQqKAfJjKkiVzdsJQrZARJjSbBGEQqeYypAaOoPiEQqgIiGpkcCEeOikKQnWpPwpaAQeuUwzZWEvBbQqAaPTlsjJSsxXQqDmMWBEzZPdDQqoORrdDpaALuUlpeNnQXxvYoVeEGSSslLIqQTtibsyvVrRFzWwoetTZXeETeWwIcCCcpmMPEvVHhFfNnTLltFfPYRBCcbmyYmQqshbBcfcCfgiPFobxaJMocGgwWKJjkocGMmIUngGeENuqQidwWuCuUzZVvBmwVzZPjJJTtToDIGQFbaHJYyjAfXpfHhFlQqLAnknJjGBNJiPVOMQHhqgGlcCbVhQWLZFQbBTCpPGzlLFfZiGCcbBPjJgoNnrowmWwkNnNqQkZzIiAYycCzwWsScCzKkoVvOojTtJeUwWuLlEQUupzZUuPFsciwWeEICpPpUDduxbmMUxoEhGTQMFhVFOyYaANnsgqXfFajWwRPZzZzhRrwkcYvViIiBhJxaAIrxxXwtTjJWFeEfXRcwvVkKWuyGpVcSrRagXuUxPpxaoOAqFcCoCcoyYOdDMVCceQqvKYuFZCcJjsSeEzfUeEOojuUJyctTCclLYyPSLZzLGByBtTuMDTyXxYtpXTWFcCfBoMSsmbjJTVbgeEYyXZtPpzuUPGhHzNnZDgbCBmvOoYzgnNGgUaavVrTtRAeEFaQjNnJbBvOvlORrWAXxasfFezFjocCXCHhYoXxRgGIiMxAznNsSSEpIzUosPuXxblrRLBUdhHsiEeZzpPIpOoVJvlLVIdaqWQtCkKmMjJinNMmIeGPfEulwVvSdDsSKksSEvVeAajtLoERreRDGgSswIiHhMQqthHOXWXlAyeVFjddPLUBOhHvXxFfmmWPwbNnEbFfBUuVvhHusyYhHXxWAawHIiUJpPmMXxjlRRyNnkKrRguUBPRrpbJjjJnoQqnNsSwWYtUgGEBpPIiwWxXEzZeKPxCqkKBUCPpBboOgUHhAQGQlLqbjjJgFvAJqMdDMkyYKkiIOoxXtfFmrzTGgtBbZmMYxgXOoxAgQxXqEeRrjBCPpKaAdXxPSNnEeEDdosSnNOenZzmDWNbyTtVvwRRzZiBboOBUDpPdRNKNtTnzFfbBxoFfgjJZzvTUutOoGzKTtmbBcCldHtTfFCZDyiCcPSzsSZpPlLHGBbsSbBleCzZcsSuUEvVDvVdIiyiZeEzIFfsSlLAazfFuUZiEeIxvEHhZgaAxRrqjJQwaNfFiIYutTTtUYyhejSNKTtqQkKVvkYLdDHKXGwVwiyQqmNdDESsoZzOPeeXxEFoOiHipvrLJBEYxpvKXvMvTtVsWqPpQVHPgGqQUuCuLFRrbBIqMmtFqQPpXxfGdDEhDVqVfGgGgiIdDYokRfPJoVvjPHhNnKkxXSsVKbuQqBbUdRywLsJjSEeRdGgDuUNEHaMmnzygtTbXjMmRrRfrRFrEewqHYlfqTtaQTtWwfFLnNlLLlvZIDdpoOPikAahbCgGmBbMceEqgfFGblLsdDSqQbBeEKLmyiIYqUusMGgmCvbvVbouUXxVXlUMKksSfruIZzitWWhHwwTBwWdCccFGgiRrcCmaAfFiIYuUsWFfwohHZzOSPWwfngcPkrkzJqCMDdqQKkCTzRroKkoAEeaOOiIsnNSbuUBZgAROBsNkJjAXqMmNnkKBpPurNnRzZeAakBbaLFLGglvVsjhFfHJVvSzZzMeEDbBdOFKqQorROkfArSWwsRFnhHNrRRQqortThHCjIfiLMjJidZzDuUaAWlHhrdvjmMFfKcjFlllpmMPPHQqsIiyJjxgafFTdDSqwbRweESsfFIiWFfcCPuovVlTtzyYZINCFfMmMEemcHDQcImMiaAdpkyWDVgGTfirNWwvYYysSAeipAarOoRVFfUzIZsVpiHYXxNnKkIAbBaiGgKiSLQBTDdzWPpMmvvVVMCKpJDdDdjlqQhDnkPAacQZzXxTqDBbdPVBehhHHMoOmjJCyYFQMiPVamsgUckKzZvVlnNKkLZztwBbWBbeRUrRuGgUufZWwzFELlZzqelkoqGgLlQiYtmJjMfRrNoOzZgdDmMCcmmPpaYykKUuuGsRWwrSeAfbrRyYFfcJSsHhAYyTJuUPoOXMmBacyjMxXmoTZzrMQfaAFoUFfWwualLAMuqQZdSXxdcCOouBZzhnNzafFALlzZgRxXygGKrrMmrsSFUhekKgNoOLhueZzHcEcbYyjJhHaADdedKMmkbdRSRrbBaIrRiDPpHzmQzZwWwyrLlRYTtfmMMmYtRrNnIIcCAaiiDeEjaxbmfFKkMpSstgWuseUHhgvILwMJjUokKvVcCqnOaAVhHgFhHUAmsFzZUnNuPKkDzPVauwlLoNnFLzEVkKGmhaAJQqeEeLlFjsQIqQxkOwpPjJFCbBchLSsLTtqjaXbwYVcCaGgLsxXSjJltpJtAGIpfTtFeEvkKwvLsMmDcNnvjmLeSiwWIBbyvVXYNndXpscjEtSKCjsyISsZVRlLrAQqaGUPpEYyeInQqNqQiMmHEaIgGiAihHiIIvRqhAatTUOchZDrRzyraOAXxJjVNnTcAttbRgGxoQLdDRripcpNvpxLPpOoAAWULNcEjJYyiIeUFfcQgOofarRAmMlKgtZzkKOpPiIVSiDKkdMaNjHhiuWeMmyPpEXKkCFfccVEeAaoOvKQzZVvnKnWwdZJXxjrYyHJjhCFnlLjJNoAzGvcCVwmzcAFSvJJrRfFPUOouODZzRrdRxnJXxTtdthGaeEKkczQWSsVeEvoOwXadCRRPlpIlLQPjOoWIiZztDCcFMAaaxaDZUeqJOkGGdDYDddufTfGrRcuUmMvvHxNnXlLarRbTkXOaJjAXtTGwWwfysEeIVviGvZzHaAvuUYLgUZYaAMvaFfjJKkjYrAaLVmYyiSDypPGgiIYdUKfFQqcHOQngGfdhqUNzRFfMmiwWFfjrdDvVRrRyHhgPQTbRWipIPAaPppFfVgGDpTwAYTNnmDdIxXiuUwhlLDHhhHUbHDdNnhyYQqPHtjKpoODpveEEtTewVXxJjZfFiIAaUnJjUpkLzZEelhBhTgAimMreTtEgpdBhYdYDmslrMmZXJjiBdXVeuZWwgyvucbEaAoVvlLlolLVmMACcCYXxvVycuUtgJfOotciIyyhjMWOtVBRqQrHhbKqQrPQvjeeEEBLVbBsSJlLODtTZzpoOBGgiIHZVNnVQqkKuQvuARraugGkuDdthPPPvmbBMaAVpXokIZzZztOZEiISBbmMebfDdNnzGDdhpoETMewWEmbBfFtYybRkqxXBLAwPweBbciIGvejevGgVVvQqFfFfmMsLtTSpxPDwhWeQZzqONcFfyYmvFIdDZwCNnJaBKkDTBbHZJpiVUuQKemMvJOojVEcvVJDiyYsphqAyxXYYNYAfsVvnqzdDyYCcteEJjTnpKkoOVBkZzTtxYnNyfZsbEpPerFzZvxjqqsSQQUxXxXiIIifFDoFHhfZztIFfilTXiIolEnNXxbXEJjeHOVUuIcGgCzNCFiIdeozZOnNEDCZIDdiaAQYVcRZByEPojJkonbryYRwSxcGFETlSsmaAlskKSMmNmLlMyCJiIAPDAdoLearRAIrYyRiPzpHkKhSxorRPKNnBMmQqbkJwjQAIqfneoIixDdDUCcGgHDdopwOaFLFffFvVGIRfLtKBbzzagmgGqksTtSMnkKOodzZjvXgnMmeEtKektxPCcpLZziiIfIDFfxJKwJSOZcdDZzaAcSoONHPBkKrLwWpPpPWweqQnIDdOjJlYybbkKAalLzXHyGsSrnQtTrReEqeERfctpBbsSQqVUuEeMIirXOAlmqQMxhHvuUpUuPFaAxjMMmmJPMcRdiIDRnaQzFOqQcCgGdgGoBbOcgHzZHyYitTIhbBRrhnNNnzZnebBEeHsiIaDdNDdafFuUNFSmMuGxDdYboveeEIzIRPNKWrRrTHhNntwPoANnrdDrwjJeONtTlLWUuwhTrWVyzZYqbYyzuyYjqDdQDeXEexAaWIlLycChHYXLtkjJyYUugSRMEKeMgGIiZzZwUuGgWyTgAIXpPxilLgGlNuEeuNYdWzMmtPpTdvVfTklLKwWIANQbBNndDRvTtVdDlLaAIBshZFfRlLiVGDSsdghpImwZBKpPknNlkHhgnNfErTtQqPZuvjJEeVTiIDBbzMcjgPpKkWwonNJppPHhNnPmMBbjqKaAkjJjJPUupmRruMfFrRmfFUuxmJjwWisPwtMODdImoqIeYAaQqyBbrizjHfFIiIiljJKOokKFfyyLWuTIoyYRQLOolZzqxAaXeErbBDMGMmFfgWEewhHBbKyYkdLTxXsgGOovZzQRHckMnyYNtXOKrRhHeEwyqQYGCEemMEeTyhqWWjJiIpCcRZHAahdDkBbKTrWwmnNwgiVDaEebuOoDnfVvxguUbrXcGRrIoTdPKsPqrgGljJkUuzZzjJSsfHhFSBDgGqeEhTvVtgdTtNnaTtYuQiILfLQqdFTeErzZRpPqQtTtMfqXrZzRjhHGkHDdrJvduUePxWhHgVmpKtmuDdqWwQjXmMtqmgGMTtQQqTxvVCcSgGHhrvVadgmQfFqMGtOoWnNeEqQvRreZTsStBbVdzZBjrRkevsXAateEzwkKrowWxuVaAjkgtTVvEetGBbTtBkBbFBOonVdXuveReDNCYfFOzjdZKOowbLjdJEuMmZwUvdmDDddVUWPphFHyYSsIilbBZzzuBVWYsjEeewNnOojiXVAnxXaAbBNBbakFrRAUFfBmMhHQIioOIuadcvVCDOecPpCfJvqlLHUcubGgeBWCcwxXnGPkHDvAYxHhXyYWvVwgifbnUkyrngJKcCsSdDbNspaemMhHdsfFSDRUYyxLJpPpbQERrnDdznNvXxbsgGnNSBVhHmWqsSSaZzljFfanGgYhPcCsWMTtkKmJjrLuUJDOqQvlLuXbBxsSfZcKKjVwWOrdKkeqsYJrvThygEiIumMcrRDdCONCOkKcCoFfcBbOoBlLYDdUqQfFaAPhHdoaBZsSfuehMmxXGIifmoOmuxOoAaeEIoYxYvNChjRnNGgrSFYmMOIinyYJiazmSsZnIiKkeHhisFvVFHFSHxeWwYQAgRGcPrRwWxXAiIjxSsDEemDbmMsOoSnqYxSstTRyKkHhwlLWEekKkPKFzuGcCsSMmEEnNaNnjJSyYUzZkkmxpohBxXbHdDNYyowWCcXvVFfxmhNxyYwrRUGgcCLAeESFJIDXNZsSskKOXIjJnreERNmwABbGooOlLOcHDduOJjSsJRwoiIaAtCwehkJVfFMeQNnLlqjlLXKlmetGxwWvhHLGglBbSVMSsNuKkyHoJqdBKkRzmHdDxrqOgpjiLhYsSixjtKpfFHMmujkHXACcrxYNVeWiHXZLunfFAQYAoCcjJOGgoCcVMmjNnJpnBvmDdXJSsjxZXzFcJkKLIJgvIiKuouUAtTaUoOuIjJPxvLCSrQkKpPqVZzuWYFfsfFrXUCYphGkhHFdDUGgiajZzihgGuUuYycPvuOHEevXxYyiIwWgYDkbehULWrRTpPEiIeDdMDMnWhDdJBBbHnoONHmstmMMvaZLTtEKkuUelzqiIQCjpJjlGgVamXICHrZtleMfhIiNgXRrryYUgGuRxiSCYHlqQLlAHsjeoTtOalLTtEfoPJaHhFfHXzZxhOhhUuHzgGNqQNkFYjjJhqEsCcSUvylpIxGJFfwQlDdIYSjsbPlykLQqOotWQkluXJzaAQqhHsMUuVvnNmpfEFfMMchkKtXjZzJdjJIuRJOoYZvJjeBIAAzZzoRShvDCNnBbOfpMmCePkEtfbojQqXoVJvpPVjZRrerMISMmhEyMbaXPpxuUHewJnNkyCcRhFHiFXwWrSTOozeEClLcMmYyeClnwarYyGfOZSshOWwbwLWwQXtTUuxTPytKkKkcaAZLfDdeEdQOoTerqHzFfATAabBxzZnLGkNnWeqAzSsfFOcCUVPTRcAaDkJjWwVEpPoOcXEzhjdZXspPSMHhHaEeAhmZlLZyAaYbTmDiykPpKInlQiIxDdkhHrRAamDZzdMBbzhVVoKgGyYHviIHrTiWRHiIhJLJjAYpRrIFtgNJYUwWygPAafbRrUNgGAPWEGgLkWmHRvfbXxagGeDKfFocaDUxOmVwwKOoNHhHhnkwPOxiTGMmHeAkKaEoOKaAapPBbyZxPcCrmMbniIiNsSUoOunlLpybEwYyzWsPjJVvAtTJyDkEeKmMsNnPpnMmNefFtoOoUTgVvUiIWOoCVubBcCysSxbSvbfFBVPpsgGBXSsYUYycCvcpPvVwXxtsyQqYSTuGtlLIiuORsRrSrRYyrTeIiEERrNnSdYjapSbBwZrRWeBYeEPoOINBRpXzYAHhkhZcCzgtIXorRpWBbWWZzvMoXudACJjtTOkdEABFVZnNzrhEeMwNnKlewpaHhnuBtTFpGYuyjnGTrRfiwbBWPyaljpPrwCcItRhoOVhMmrRkOvvHZbBhxXHZzKXqLNiYUuIdMTaAttBzzSsaAnNxbBzEeDxXJHZexCwWevqJPkKpvPpVjQmMKdCrtpvuoIiZaYrRZZnNzzyQJjEwgFcZzCfgGGgNIinGKglNvCcVXcVvCwNRrnWtJjaFfZhQREtNnqEeDaAFlzgGCTTtYUuptpPqlWBoHCczoIiFgRDdAWNLcEZtsCccCRweEWxzZfIcChfEeyYHrYKjJjWEhGgAIVviBMmmYeHMmsimREzkKaAvOiIxXxJOBFTeKHhFlLfXdDxpEcVMmvPlLFoPpeEBbcdVHsrCcOZaaibEuLlUvVVzyjrUiDxTHCmCcSssLUulSmeFPSdUnNuDQqPpZVviIjTtxULKqwTKAakhHlKYLXxfrRFpBSJBmMbsyiLqWjgQqXiPLYbBVueoOQHJyDdfKnwSsWpPnZHoAjHhiIVvpOFmMWwexXAnNEJShaLFnicCINfbBhyMmcsIGnHFmBbELTEezRhLlcixMAFfxXvLPJcqQqQsSAmMVmUuhHmsxuUXSMTSMhuUALlamMhbFfjHwNNcCnmdmtwluuUHEBKdyGVhoUVpCUHIJNnANnIufKgHPycuxRSywcCpTtPUvRsqQclVXpiUuMmOUkPpVGjiljCfZxYyzDdpPMVbNPXxvOgUuGOtToaeEyGgqaNUlzxiIhIwEvnyXRaOAaoxhpPKJurRUUsSiInNhPkTJXIyHlqQIJPGVNnvoQRXhMZrvVbDQjOhYUyYveLAalEVeEnmvsVXFmMfgEeTEMLkxJEmvjKHEWcTPpOWrjVvoVvUmMlLhJVvjCMmoOgaWMHhilLxoSznxRrdijfsaluWTtMmXuNnUnHMgGOAanOGgZzPXGgMKKuswWjlMmLJzjJZcCAeegUBbZeEuUftTkpqQKYrSsXWwyIiFAafQNBdMfFdXmMJaxXpCgrGaqXxylHhLyYEXhhHszZfhffFfSIENgQFYyfWNFjIMwyYWmFfiJfnrRwXxqGzOOuUAaoYFfyoSsMZAIjNoPpyfbAjJaBbBsReEggSsGGiIGgFfrJHancCNAcRrRYyrnVyXyOihHXUMbBMFgHQqEUFXxzbAOBbDpuBbybnoUeGYHtVMmRjySjymMYUuJQaSsAEbBGgVvDTtRGiIgoOozZvJkOokCzFJjTtUvVkKVodjlRwDdSpHyNAJLAsQwMZNeqBAfFaPMmjlXYyurEAPyYWRrwzZSPpdDPpnBHhkRrjGlKkvVLNtTRYKJOoKkjuNBFIVvGcCyaVKYykdhKSiIspgNbEBBdYyDbcCoOMmAaUCuxkKyYTtXhQqOoQGcIiCgVjCcFpPEoAqQFfUiqmMbKaAKkkuafKkAaKAanNPpvxIJjJxyYXWEJCOUuocSqQyHhwkKvbUmMZEHhZzyJjYeLhqQfrRHtTwuGgnNvDdYynNyYMDNnVubBWhjJPnNpHzUejTtNnDJlnNBWqQtDdTkhHzDJpPZoycndErvVERrVIvCcViUxDvNbfKbRruUgTGGgHhhHKbBJvUOoPpaAXkKORIiWZTxSVEKJyYyYrRbDdDvnNzEVcCYywLlSsrRTYyrUUuujJRzNnZDAREMmePpsJJjLlUIiMTkvVPMvGwXpEBbVvDLlVjRNnhKgJxQFmOoTpPlLtfDlWwrMmEeRSUvNnVusFlvVKkqUytzZTADPpGkXxiIHhKHQdbvVZzsBbZFfKFfLcCdDuURQpSkpDtOigCxRBDdCcXxyYGIiXzzeEZZJjFuUNdUBAqQdvIGWMRtePpEzZzrPFfwwqQQwyVsSvYWHYtcgWkoxTmKiAJOonAaNjadgGDIChrqUuvVVSyYpPgGUuMmtlDLKVvklbRrBmdTtOitUsSwlYYkhHLVvEehJHuUQqhZpPIRYmMWhHvVwyRrEiQIioOOLlLlMvVHhaACcioOomTWpSIJyYjMXoOUnNMQGggGOLlGJCcCKkmZtNnNnThHdtoOuBbUnNFfeEUzjJpReFGKLbzoOWMiPPpCcDdHvIrzHSyYzZbirqYyNnnaitEiIeFDgGZwDyHhnSoOsUUnfAaFLaGtYzmEklLeXxmcCrsGSsKTtTlxtTiDdwEKkdcCJyYUNnEeZBQvXxwRvVrRtzZmMHjJnoLlYyEjTtJZzWRHhRoOaIiOGgpWRwSsOoknprCciaAZiOoEVOFfByXmwWzZMgUMmzZOosfnEePpAnASJjhENdDWwLlGCEeonNGgWwODQqqQofZqARrNrHhvVrChHHhmpAaBbXfIiBbVhLzZlHAaLlXLaoxRmMPpmUuvPpPTCFrNRJjgxXYhxZBFfBLozXxZmzZMiNEeEzZMmsSLlpPlRCtTcbphrRoOnNnsCCzoszZjYyWkjXdmDdMHhiFIlXTjJKEkTEeNgGGxrRVJDNmpPKQWwkKMGArDdDdRZsSZibBIkTlFriglfhHDdMmAmMoWPGgOxXhnNuUuBbUudXOENFHhuwWEeUFUulbIiQqBLfQiaHhqSsJWjgGpOXsxXdDPiIZOopLlENnlODadcCBbIipajcYndDLMEexXnNWBbwHhwWLFftefgCXsWBNfkKXxFOKsXxmMDdSOpAaeCLlAaOocYKkiIbzrCiImMjJvyqAHhazcfcnZiiIvohxBeqiIQLBbMmOxSstLTOwWUudSsuJXlLVfDdRBSzFXKEebUunDdNVdDvSsNnkKvPZzNNnZQNSFaynOoyaQrOoRHPlLSyCcGgYIdTtPpjCkqNeEXxnvftTFIPjzhGgtdbAjcWzifTtHhfFdDVmWwMMdDCBbnoEwHWkKdpXPslSrREkKJEjCcJVgdDCEWpBbWalbQYyZKrBeHEeCIdDtTpPHtjMmtBbTJThichOPXxHgBbZFBEsVvpPelLzoKgGkiITiLlZzKOWwxQqppHTPpUSsKGgwwWpPtTWtTUeEUVqzTtZUJjvyYgGZzvJjzhKkbJjwWPlLtTdojvpPlRrbJVqpRkvToLlwmJHYYCYyTFjWwGToLlObBvVRRWwrrgGaHhvcClLOLOeBHhCUVcCuUYGXikKIhHxWwzUEqQvxDbENngGgGeEeIxzRkKLSMdHhyDyHHhbDQqCcmMPGEemMRIaDdGtHbHwWKPuNClLcuzCcvWVPdPknNJThpnNBoOsOotTRriIFfRpIXxiPrfFSuqQDdDddHWMUufPpFAazZHbBhZzNntyAaaWtPdviPyYaAlGgJjLILlGgwrBtqJjpGYylLbqQBYJRrIrZnuQHRrDaAFNqohbBCkusIMhHvlRyJBbAAaVmyzdDuGlyVFfhLaAlzaAZVUugCcSYFWgxoxnNKtBAeEfFLlhsSVVCgFPpaAiItdDFUsSDwWDdyggKoGgjWrRwQElkKLjJDcCGgddwSsWDuzZzTtdCcFfAxaAXXoOAmfdTIiwJpqlLJjeEQqWwilLPLpjGgJruUrcDACAacxqZCAEegHTDjNXZzropjqQjVsfaCZMdDVvzZWiIgZalLOEeuPprRUzyXxYZiIfcYfdDFKkyoFfORzDNkNqkCZzxeYrnNREwTtUYfFyIJntTAmqmDdMQMmLlhHXxIsvaAYEelLyoTrRGkLFGqZzCuCnluwnNaalXPVnPCPOoIlQqqOmMXrBTaATazZCtvaokKUuARYZdCcQYyqMmzHCqQodDuNnHxXQqHhQrVekKhugvAaziSsYyYSZzJcksCWwdDcTgGeJCSPxcVvCDyxYEesvSsVkKBbElmMMJfUGguFVCdSOolVWVPpPigGSsuUgalLeEiIxXTGgtMmTjPLbBlTLlAvyWjJXxBxAWwJsSQllHfWoKXqQiIiBbqAaSJfvVEQqPFfpPoOpJjHhNnjJPaApcPpCJjjHcPiIpCVvMgkKZzTtqQveZlfhHOPpWAKkiIffFFaoOwWUAvpZdFfptTfSRrMGgaufGvOoojJNQOumWliVGPkKpAaucCESUwGTPuUcgwWGCxTtXBXAJeEdIxXiQqGgTymnNXxqQMmgGMlLFWqMZYyJjhcCdAtTIisrDPXxpBDEgGDdBCeChEUHyYlnGEHufRuUnqQNRRkYdDxXrGqQZHbUfhHFPpXxDdDXxsDWwzUmhHOqbWwNnBmRBQqbtOCcvVPpJYCAbxAkmMKapjtajCBoOFXxaBbEgWwUAMMGgGnEeFnNHhuUJjTycuUCfFcCIOKnNLaAEQerErtTRWwGgTltTLrRHhvVCuJjGSMjJAvoOpDtTdIEeHhmqfeUuEceEEUubvppPRrQtfkKFqCtTpDdKNQqdZzHhHLowJjtTWOPkVvXxcmMeEHhpPsSmwZTbNnviIZzVZKkzBfFtDEebBdtbqltBbTsIkywWhIMmjJPvSziOCcoZuvPgGIEOoeEdDayVQqnRtvVJjsSTIFtJjdDGgvdQqQqwYKkKFfspPSPDBblLCqhoOGgEeHdhnRriLDdOUpBbrneQqENzZBWQxXstAGHhXtTYxXtJjTShpLLzZLfJCkLlJVDkKRpPcCLuUwKkImlIJjfFFigGJcRvVOQqrpjJEePfVvaomZtTsyYNUunYBbyVJgGjvSqQMmpPflzUusSZPpmtTQjJtTqMAKChHmMcExoOMmbBXUbNtTxXnQBbxaKvVnSboRrraGzcMmCUXxeEaAuZtcmcQmbBMjPpZfFKlLRoOKpXxCGNFplLycCMEdDecChHBNnbIfCCcDbUSsRFmBbiIuLxvHhOBBVcSskKSGgQzZFfMlkBxXKkQrJjRyYBTtHKzVlnNpMmPqfFApPmMgGQFLAaNnyhQWLlRpPHhrxXJxBGYmMZNAoXxOzmeEMZhenbZzBPprwWlWaxXAlLYXxuUrDyYBkunfFNUvpJUugGOjpFrKOyFVvvQiGjJgIvNndWwHegTQiRrNnflUcCcphzZiIvpPwSDdYymtTIiiIzZVxROorXxcrRUaAuCkVPAaXLlkKygGLlebjlRVPIhIfLlEpeSsnMYIWvWgxkhlRroOnNypHhbBJjPnsrRJEHynAWXdDrRmMGzeVXYLghspnNOowWIJjYdBbBbzcJTtjyYxXtThQqYyFSsfDVvLIiMgxXFfLlGaAkBcCbgGZgwWeEwWVjdZzDJGOXxXtTZksSnrublLIkIiKrKkKAaWwkrWYBnwdMNspuUfthHTFDkWwPpczZbKGgkJRrooOOQMmqSsBboOGaXxGvYyBLlbVXVTtMmwWxuUXvyaAZzbSiICcFfsBRMTKdDRrmeEmQjaVfGJBbBNngqauGaAcubQYycXpXxkSzZscCboOeWwuTJjyONGcCCpPcYrMmrnIiNrJjRLXxuhSVvslLSUPpzZMjFfJmdDvVBbeBWTteEpjJwMMVobulpDUqaAQsSuDJfvEKkYysZzIiSYDdBbaLxwxWwopPTWwlVvLmWNnTtdDdROorryYuUOmMquUQlThHJsZrRzBbWMmLUeFpgEcTqZzwQADzZZDdziYyjmpPMXrRxoMmOiIvMmPiISFfDpSObBuZxXiJjPesZaXmrOyYyTtcxOLNnlvVJfZESwFeEfoLVoVHhHhqADdfCoOcAuGgGZlLyOoVMbkKQqcVvBGdgpZTzxuLleEUGBvtiIBObwtMTDdtmfFxPhHfFdmUiIbxXYbgllNPpouwWUOnspCkVcqaAQCLlyYEyYvJjmaAnPQqpNOfQXGAsCvPAasSiIgYUjJCiXjHGgbIGqQgNuUnyYyCPpXxBbIidmMYyDKWDdpPTtHZzSmMLlsprJAfMmFxQGSTtofvHbEeBfqQmqtRrazjQqJZAgRrxXHeOXuBXUBbDmMGgduOoPcCSfvVqrRZzYyOZaAZaKBhHbnKMYyWORKkOfFGLFfljJpgIkhHKgcQJjqWwtXxUuqfzlwMmZQqzqHvXxBLgGmovpmMIjnyYbgNKeELlNAaUuaPxFJjfFahABfqYyhrRHgidOtCcjpYyvgGWOoMbpNnPuUOKkhHokKAuUTtacUDEegyYCOCOCcmFfjtTAXBOlLfzZrRpIGFFCTtHoOSMMjJBbrWwypAaaAmMeiEgkfFdDhHKKkGtxQqzEOZfYSBlLsfOoFeEgoOvOyjJcCkKVqUuEPebwdStTLtpVexXEAnYSsNeEQRBblyYLrqnyNaqPNqkKIoKPgGCcEeUuQwWqtTsSeCuxXUYyKkcOZhHzRroIOofqQFgkKsBxXKbBpPkbgGraHhzcCRkcCSsKrRqjUuSDZvVzZzZvHhIyYFbBakARqwqNaAiSugGgSsqUYaPRqkyYPpwpeEWwIbiZzUujNnlLsSNLlaAyGQqrRmIigGKhMPpGgPpfzZFEKdQDdqqQNnWwxLNnjHlhQMmRrRFuUfegwyYUuWmHhHKvgBiIbHcRyYQrRbBqJjbXmMFfQtTbTtBsSYykKuvVaAQLlqFSydSeDdaRrsBVvyoOtTYuWJDdpPXxjMyByYTncCcQqCoOsRrMLtTsSfADdaScOoiYyICDdceAZzIUmjSgGlLsvufkgGEOeseEIiPpSGgCvxSyYsmUuswMuUrNnRaAniBbCcIAKuFMmBNYIiyEeBbqBbwGrHhlziIZkqcMPeEpVMskCtTkXxMOdDHPgGziMmIHkLATtPuAaUpPpadDjJAjJwWXHhbhHBCwWcdSvKmSsuqQAacAKABbRNqQfLlFgaAGYyeEDPpWEupeEYHhJNncKccTtlmpPFzZuVvUcMmCfNBtJjhHFfpPYIBlEeLvVKIIbBkKHLlsSrnNbRtTHDdhUAaaeEAFkusOoOAaotTmCFrRgGfcyuZCciIeGWwgkKWqQqrRllLuqQxOoEeeEOoXqzdqkKQDZEwWtTKNuXFxMmKoXgpPsSGQKUaAusSfUVvyULlHhVvyVKEeEePmMpakoBbKRsSqQJjMPpYybBTsgWkTtKwdzGcCYyeePpUkKIhHcCQxcPAHhaKkHKyYaqQZzpNSsxXUQKPWanNQcCqsSnNAtSsTkMmkwjJLdDpyYQVvqeMCcpbGgBPpPyGEeYCCmMRrcnsSbceYcyRrYylQayYAHNnJyYjBjJbrJwWJDdMmvKKkUVVjJXRFfrCUyYAdDaMSiIAacvVCtTUkKTtOAMaVvAqQoOJgAoVHhSsbBOhHEeRqmMlLAaqWzZDjnNJdPpypaPnDvVdxXSsMFfqGVvgQmNbBGqQdyYDJMmXPdimMzZoOLSxXTMxXPleVvzNyAamLCsBbKjJkEjmMUuZzzJjZJtBbUuTBbvVkKZAGgnGgNRXxuSNJjQqwUuOoCXsVJjZrSycCYUMgMPpLZzZzlnqQprRPKkwsSSlLAKImMFkKVvMeQalLZKZoOpRwWNnAkIiYdnNCWwQqchHWwvFwWfUuUIiBRrguJjPpKkTttTSQqhZzHUgyYOcFflLnxXHIDdiQuCFGSgGNDjqXxiIgchHCOHSSsZzRUMqQBuCcvboOxyIiLlYGjsSKIgGaANGgNnWwGJlAaWwoQqQRRrrMdRzZipRryPpYDdwWxJEMmsYfEeHLlNnhcCXxFKfFAKRbBdOoqQAyDlLHLqQhHIBzZsSvhHesrMreEunNSUutTabAouPpHhGEemgPeFfVaEVvJjeVvpPVAcThHKktONnoCSKkhSHFfovVOlBBbmOoiVVIiXBblLxpOMmoKuUkdByYweiIvVpztkLPCNPpncBEeoxjJuHRrQfHhGVcmOoMCODosdsSHhfEMjJgOXxfKNJPNbaVwrbxXNxEeJjhrRHFGgNTtLloOWEezkKHhZJjJWxXwKIiCRrcWfFVBsSZrlSHhypUuWLlYayjxkKDjQFfqMxRRTtVvVvmMuhoOHXTtWwnmMNWiIUBblvVaQqCFfhpPcqHAahtZIbBfwpnlsuUSpIiPlLGvVgeVaRunQhXxbBPQdDXxFrRNnEIqhuUDEeKOlLbZWFfXvVIwxhbMmBkVuUViIcCoSsOUutPpyYHOxyYzZAugGbizZIgGZPxzahTtKHhwTFziDdIdMpFYeQvVBIiGHPhtTHmIRqxyYsyvVqQHdYWwRkDnSxkSsMUGwFfWIiJjfFjqZrnLlLCcMmkjbXxxXVvBVOvOmACcvYyVaMPpNdDRieEdIiMmGeEOsJDlqQLEeDcnlLNZzRblLuMzMmKdDkkKwwWwVWYZzaUjJoOuWwhHlaALAKPpTGAvVHhKSyYsDdxlWwRAWNWwCcnqjpPJzZgHezZzKWRrPpXiIxAJkRJjRJaYyRmMrJNIQbBSsCNAadeQhHontTlrRFJjVAazJHhEeRpbBPrvVRnqCcDEeAmxzpOosLlyYPpFffFJjpPhQTtnNnWwIBrRxrCqotTOSsXhAaPpiIHRTtMMmvJyYjVfuXKVvRAagGvwzfaVvAWAqQdMmDVvaTDaidSVHUhWrRwWwwoYVCmeuXxUfFrRLTBffvVFqQEfmBrkKRpPLlyROoNrRXxvVKNeCKXxwHrRhiIFpPfPpBnNtXikzZdZbBuFlLxXfKwWikerREKLlvJIijMmBCBLlKkXTEKXiIiIWwrRxTteEdRrkKThoOHPnyYoOKEuzZVvjqBGEegpuUBztaRUuqSZWwKcxXDuUrSBbBbqQbAaEqQeTtTtkBbqMmGTtgrOQqkOAhgGRcCNIaApexVnCzZnNmCIiYyKkMkKtTnKkiMmtqIKxjJJjwWQrvVCclLTtNMmzsgRrGSoOYyvVoaNheHhLlKkgWeLlsDXHhqQEexYJxaSXxHhaKSsjkdDXtTNRrhEeHCtTuUaAccfFtOiWwQFgsBiISIisFRqwnPVBFfuUbCTHGXxHxXXsUyYuEXxnNVMpqzdkeErRESXsLmMOorpZzzZLiIcClSySsPNivVBbdmMEeJVRrwWCcJkJdmgGMTtguUIcvlsSDSDJjdleAVWwmMsMmSviIayYtTyOVhMmjZzcDuUVGgmmnPpTtJpEwmMWPqcCluUHaAlDdsSfPpFLHhhzQhHoOhkxXNNmLnpXYYyyjaeEAJymmMoOnNqQOmMPnNCmDzZdMkZYfbBTaAZYNnCiIaAVvWwfSsopPVvNnWwIMmfFkKrRpsFGgvXxXxVUBbVsFJIWRrdwWkiIwJxPzYybXxxWSsgDBiIVYyffqQFmTtcCCctHieEIEeEecHhoksShRrHQqdNPpMmhKkntrRToOgGDdNHJjYyxXzYbxXOyYPaAnDkKdRfFxXXLgGIiyYltTOoMpfFPHJwWjtTsSKHhkTEmbBKzhIVrbBRvneHhXLKLFGgfjBzZZmMzbzZIeZmMoOPsStTpzECBboOheELlbUvKLlkVvzvVqUQqydDyYHhxdiSsIcClLmZzzGXAaxyYCcgSQGgzoYyFlSsLlLkVvVHQqXGgSsiIivVjJHhnNlXvpPVbBbBXxAwWIiBbmxpzYdDyYSvVEejbsSxRrvxXVaAXCcJvzdDhBbnpPMZFbAyYzZPEepTtdDKGgxXzZgmJCcjMcvVCWQqrRSsGgahljJkdBNnqiqQZbBYIiHhyzZzOgdhJqQWqLlrHeEEehRhHdDZzoYBNOoxeEXskKEeSIPjJcCPSslGmMgyYNzektTfvbVYdDZoOzipQgGkvVPjpPJNnkDdWSsVyjXxGgDcCwWdbaTGgAazZtzJGdDoTOpPorRfFKkBbQmUugSszZiIRReJEekdUumErRoOeyRrwwKrRkWUuSsPbVpPuDbBaaAADdbzEnyvbAaYqQyTteEVpeEqRrLlqQtwLlWxXDYydsSeESsPpYnNyGgaSsjgZDxdDmHhBbVZGAsSEdDkgfFjHKkhqUuQqEuUeljJZIDdizLIizzZCdlsSsSWwVeEvImMkKFOovVlLfusqQRrgGWOjwWiIHhGgJoUuDWvcJlLPRfNnxRrpMSskKwWOYvVyrRoEeebiWgBXAaoOxbYhVvpPEeHJjJhSsVvOoWLlwrzmepjDmMzZukKbyYBGDdVFfvsSXxQMUujPSspsXxSvVeEXUPCuUcwWPjJppugjtZzTUuyYrRAnNxUbBBsLKJqQdaADUBuUbPiMjRhHrLxXlFfTJeEuifLSsqQavsShzZNQqfFjvVTtMcfFswWjeOoysyYQiIqmMNKgGQkKjJqloLnNoNnaAWciHmRmHigcoONQwWCcJFfjSsqTtktnNOoyjMzFfOIidDwWTdybBEJjjUuJFfZNoOntjCHdRrVvGDbBDTXxxRrIKEfFeXxnzZQqNdDKkCwWyYiiNjQHVqCaAgOdDdWwGqQdMmDNpfFPKmOoeXFmcKkkoOvaAVvVAjJptbiIIlWwFENnoAaHRrgGxeEtmZzBbAAQXCcWwsIjtTKkJYfFykFCrRJjokKOPpoBbsSiIXwWxlpPsSLusSLlJQqfggGHLlRpgGnNGgPzZbZRkFzZfCckihiVvIDdjJHdDVJAcEeOEuUbBwDdDdUqHhQdAaDCAlLygGPpmluSsJjVvxXxXicnCYzqXQqJEebBkJvVFfkAaKrzZREeTLlDdtVDpkPkYyYQKLNxIYyiXpKksSPMLeUDdDdRrUodpYPFUueQqFfEqEeQELVcCyYIiSeEsvMYmMNIinGgGSZzZGKkAggEbBcCPNvVLiIlnpACcCzsSWwDderRGQqzDQTZztsSMBAammHhMMeyzuVnGhGgPnNpaXNwWnxVoOTtvEetPpkKwWZptwWTRSItmudDrcJzSsJwWUuUuHhtbwYfFuyVCKaAkjJcmMtwWLBnNoWCcwoOJIbsllLaANnWDSwGbBbBJjgAaYEebeyeOoGgEYfLPXVmYMLRFfVvYwWOATtCcJjaIXxDddCHuYNJytCcTcCjWwQNqThEuJjPylsSEXXZzvLlKkVBwWHOJjAycCoOyYYVZzYypPsQhxXHEeGcBuUEenNTAaKsYySktXnNzzZZFftKkTxcJumMUYViXxITXEoVvOWBipLlbBbeuUFfhsxRrXqdlQqLrnuUNxXsSsSFosMmbwBbwUoOnFfaBbAfUwxsREdTnyFqOoCcNYyqQroOImMiSsoAabBaACcqVrRkKuUBAScvbBOpPoBbWwBivRrVIjNnkgUusSJjZzdXxxXDvohHOTtMXxMdDIVuUvyYRvVIBfFbrRaDQqdAaTAatNaAnpPtUrIiWsSqxXHwyqQYYtTWwwWLlhPpzZHCcClLYhHyffzZvVvtTIZVvygFnDdonyRrYqwWdqQDopPOKWwkrRnNiHuBbAaxXpSrlLYoukKnjJNEyHgGhwrRqQfFJYyjEeWgHhGwdmMDzZVmMSHDsPjJpLlbPpZzLHsnYOQBgrkKKxXsnEkKbBLYqQBbyzdPprRDZhHgQzzmMvSuJmoMRrmVcCvbBzvUFvVfHwWhqbiIBNVLvVPpqAUdYyadDuhHUYGIUEeumQLlqvBsShHbAGgGIigGgarRsPiUuIWIoQqOiiIwTlKEYoOBoOYdSnNseoPXtTvxAaSEesJyYIJjiOopeEFfizZLeECcTDdXxZDdZzFnNfzwWNnnNmMFlFFQYtTEPptTIieyqhvoOKkKeEkVaqQpPAmMYYyyGtTFCYfFKvVhlfFUqKkQIIiPpeXWMmULsSluZGHheEFfNnSIikKsOuUVmMlLxDGdZZoOzTtziIDgiYQrRqiXxIzkLrwptTHhzZfGgzcLBYbGgByVBrRPpbQqXdDomMwWOxvOKkcWwnNNnpKYyluULuUORLZxtTyxsxXOLlxmMXKkAXYdDyxpPNxhHWwidDIXoNaAhHrRUuaAaMmANnFFMSsflLwWjnNJMowWOmQqYRryXvMxQcCBbLQsugEAagGIQqieGHcXEeUuNnNZPpkKpPzhHyYlziQqZzdDIOYaDMmXGQqgxwLlWOwfFLwWiZzEzEeZRqzzZuiIUvVDRrwwbByYqtBqQlLbyljCcFoOfJhtHhTXxDCpaAIeEihHUuriRvVYyJYmMyjOwbuUBPpRIirDJRMmyYzFfuUZHlWmMwUTeRrdDeEiWKkHUPpBBbjJuUbEZXlCcoxXoWwqQowQqWqRlcUuOoCnNFfSspPzZsQukwWvVKBQqbXgGoOltTaAyldvVVvmMBpiCXxenUuNEkbdDqQGAagBSsKraAvpoCcOMGgHkeEKmMbRkYyiehHEbBkpPKlLlLCVvciyxXiIoiIlLWwYqQzZxXvVOoyypPxXoOiIYyjgROEegqQwWOoGBbIiqQuUhHxLlFckKCQqfViIvAclwWLevYZouQqvexEebBJjpAaPXwqQWTvEcCeEEeyYXxdQBbkAaZMnNOiIKkqxpPZzRrYyrQqRpgrRVwoOWFRvVrKkfAEeaUQqJWzZoOJPpGLlgZzIizZwQWtJrcsXxqQqQfFoOpPiyYIaACvVYyMFflNiIMmSCcLlnNsGgXtQxXqbBTvjViIcUuCvGgbRgGrBuUCYKQpQvQBlLoOiXhIjJyYrURwtTWimMIrHZKjJkzTsSWwGgTtuhHjJUYyuGgUyqyYeCpPAaciyNndBqUbBxXEgpoAmVgGqPplzZLNSsnNXxgGnNIintNnNnyjPCHcyWSspcCrkKeCvVHhcKiGYytThSeEejJuNQCSzVvZhxlLeLHhleMmXZcCzxDPzrKFvzZVlLKlLXKwPDGgIrrRbBRNkUuUmAamrReItTiOSsGsSReEiIhjJZsKkgtTGsCVtTTtUrRWwWLSIYyQkKCcTtvTtnRVvdDGgNjwWJesUuoeEOsSDbaaAGoOIkmAacCknduFfoOoOeECcUFfOxZLlLlzkKPIYyipVwZzZScuUxqQXLlcOoNnGMmzVvNoOnZxYygGkfFnTxXhHfbBPpHhfXxFWkBRrlFfjJwWvjJpgGZMYygQpPtKkSslLEEemNnMeVLlKkSJWoOwjJtTBNnbCcCuUcuUmMvHhEeMGCcxXcRrTftToRQqJnNjmCcCcMjJobBDdZzllDdgGvVZpPzKlqENPpCFKTtkXapPAMDSsTgGtdeqapIiSsPAbBQPpfpLtkQnNJjSsqQqJMGgkkKKvXxVvYyeSsZziINUvVbXxXxYmcdDCMeYyEDdRrWhHUQRrJgIEqMmGZoOfrBbStTshHBbKkBbeEQYEeuUsqkAsSHfGHlLhhHgFhqiIPckfxXFnKkWwdDdDlFfLKvXAmQqpFcCQIiwtEeHlLlLNnIxXsAabTpPYfFMmIiyLltBwqLlnNPpiIfxKkwWeyYGgPBbDdfFxiQqIMmQquUAhHhfFKAakWWghRUuAarXxRTTTtqvVjaAINnbEeBcCiLEeuUlIiIRzfFZRrVVngdSDIFdljwWJrRUuaAQqhHtTsTwWtFfoGgOTtdDSYJGVFfvUVvLLlllLcQYtTIWwOozZpPibBqdDzZSTtWpPpPRCczZwWvrRVbIgbeEUuBbBfwgIGIXuUVPPpRrlLKuBYyqYyQbUmnVvgGKnNkOCxfFXVvkKTUFpqdDQsSgEeBbjlLUeEuJqjJRrjorvVWwaHbcCcTtUVUuvsSwWaAvVueEfJjCcIKkeELlfFiEaUpnNPuWCOlXiIgGGmMUuxXiIeOnAIigGcjJCknzaIUeELlJVYyOkfFKoQAgGkKiINnTEetzZkTwHhtTiIzMmyxXWJjwPiSxXnbmMBEbBKkoSsvVtTkEvzFSsSNKZzkMmxHFLlfXxgPBbTtpybBgGXxRrVvYHFpPgrfEwrRiyYxXSfFlLssrReEvVcCrrRnNfFODdBbgLlFtTfcRbBDygGmoOxNnHhSsBUrQJOojqRTPSspHPEeoBbNuUnOpuJjwPBboWwOpGdSjzZCAlLPcUuNvTtVxaLlWwMiIBbZIibvVgGeExXKkQqseESGgLDyYdEFQqRZzBTtbcPvOouAaCZzcUhxaAXCyHpatTALqLJjUuUGguSwWszzZGgAazjJZaYVCcOLlovdDRrvVFfylLcLlAaCApFNjlLsQqSXpKTtYyjrRJsvAXDdYyxqQFYyfEemMvVwEPMzOoxLlEeHhepLlJjaAPBNnbrVvHhRpTtAalZYBbncCNynNvVeVqQvnNEtCpPcqsSsSUYyJjSoOhHzZUujJGfTtFrRYyoIBbTtiOKNnkueEUfFsCjYhHvVoLliIoUuWSslLRrCcmxvyYrRRBKkmQYTtkSGgsvxXyLlYpPIKkibgEeGhHNnaAWwAaBcHhHoOhtTNnijDqveVvKMmjJyuUdDdSgGqXxZUfLhHSIiuUsiHaAkKhnNqPpQlLkKkTRrtbBKEBCcbJKkjxIiSsOlLoVmMvepPWxXguUGBwEeWiIVdDeEwWcXCzZcvVYybchypyYePpOdgGwWDTtogGEPptaANCfYyFLlbBoOPpPRSUuYoiIhqzmMIhjYyJyWwVviIWwnuUrRZRaYVvrnNiIOJPpwKoeEgKPGtMmTkHhKgdMaGdkKDyRHhrfFTtgTcCBaAbjVvEefFfFeenPMzRUuPpdcapPxgeEojhaAqQHxLlQqXMmKOeEZzoVvQqLlHhGQqgtTNneEMmtpNLlnlOqtFKFWOoRrwPBfFlLyYbmDdMyAgGaSWwqQvVQqzfPoOplLgGKkoJPjJpGRHhHhbVvsSWwSMbBmfvVFlLeEUwvVWWwDdAQqaiIMkKyYmAacNqjJIiggGuUoBbObCWaSdMVvWNTtaAKYNGwWgnZzyWwkliILKRaQzZoOQuUtFiiInNFHvxXVzZSsCsScvVABbtGgEeTyHhLlLlYQBbDdbupTZfFeEzbPrRfLlFaApVvGOogWAaUXxuVNnxXvCEeugGUuUnDxIiXeUzSsLrRlZiIeEFfkKDycCGutHTarBbNnMyYRiIrmbsSTbBGgzZaAwWZuFfzmHeBbEhMZjJTwWtUNFfeEVvZzEeTtAMmHSeEsbZzhKkHfWvVoOwYyLJjFfhHTsSiIlWwzZjATxXqHMmCcbjJyYVvBsSrRMmgejkKJhQqLXxdgGDleMdoxgzIiZTtGAkKaaAVsJdDeEvjJQcCbXxdnHhohHnNzGgvmpPoEeICcbBicDEeaAfcCyYCcgeEGWrRfFwxeqQEXDLQZzqoOGeEbbBfOGhHaAVMtThHjMkKoBOoFyGgYfAlWwLdDgKkGIpPiUuXNbKkBniILlxabCoNOoFOlzZmMwWLZzDdLllMmyYdDTthazZtLlGCFCcfufFDrRbNvVWwZjtTJEeeQqEYydDZHEemMOmTkKmIiZOoztTgnCQxuUXTtqNprYyvVRpoOpfNDdnFCBbcoORQoJVvPJjETauUAUutepPcPxXQqUuBEezTtZhKkbSTjJEeNnDBQDNnzZzUuwWXCcxyYHUuXxlOoOoLlXoWwcCYyXHqQhzzJVvjtTuGgiIMRJkXxuUbBKRWjkBZzbMrelLEWPKkpwSHfFBWwbBNHDdKkhfFnvUCEeSsclLniINulrWwRLxgbvVYOoKDhHNnEeQdJjluNnnhbBcClPpdDUgGIOouHhyHhYFfqZzUcPhHpUsLlSGgnMmgGTtXYyfgGlwWwQzcyYYyrRAazRFfrwFgGyjJPzZAcCXxrLtPsaVvfXxFAfxsSiORrMUZjUuJsSlLkKRotTOdDfFbBrSDqQdJjCdZZzzYyDvhHNNstqrRAaudOoNooOOnsSxXqMmQDqnNkKQIiIcVlvrRVeAajpPbQqBxwjcwWnNWwCWjJiSsIwnGgNAOoZcTtCsjJSUuQqdDbhNndkIieSsQYRryakKkKAjJzwWkoHiOJjoIhCcOzZlbkKhHBvmMrRVPXYCcXpPxPzZpaAEehHyxpJcSsCJjgGbBOsSoxWQhoQqOPpzZoORAapVvZzPhDdHnRwQqIYyEeMmiCcIiCDdxjJXwbBIipOoPWaooNpUuRraALXxlVtTveEljIaJjAiIuUpPxXoOGgxOoXBrhHOoRiISsPpygGwuUyHhYwEecCDbBgGBbddWwaADWwWaAbBJjXxXAJYxXykKxXCcOxXoAXgGVveExbnwIzTRrtXxkKhcCHDHhduUnNoOUDdLloOuEFNUunfLBbHhOolsjGgJxXIqQPpiwrOoRThHHFMmJjwjDduOoUbBCcpzZFfZwaAeEWzPwByYbooOCckKBgEeGBbGNnxXLlSsZzgVoAaOvzZbLiIldPuUxBbWTrRAatwEvVeECvTtVceAsyJjXxYKkXWEEeFJjgGhHJQqZzrRYybBaArRiIpOoUaAzZzZJjVdDmMUuvlDLLBzZbwPpIiyvVSQqsQqBEebUNniXxzZIKOocCkuMmVvCJMcFfCmTnNwObZzBVeEVXxwWYdDyRrMyYplNnLlELleLXqdDQxbQqEeXxWeEzfaQwWqAneoAafFOEFpclLmeBbIiFBAzZabKnNkcCfXhdLlgGDqaAdZzQqxXqmMQVQsSvUueEiNmMfHhMiOopPGgIdDfFBuUyiIjJLlYeEgGakKAhHhHQqJbBXxYyPDFclPpvVsSfcCbBFgnNGuUOmrLgGgGlwWRVxXfgGEeIkKQYTtHhyPSeEsuAakKABbQYsYySyxXVjJjJarRfFIdDUtTKRhHjJHhcCQJjFRnNrdBzqtTwChYyVEelWuUGpCcPLlgqyYyCcYAoDdOGhHxXayYmNVaAWwvnwGgWZzvnNViIiIYwiIWXRrhhiIHgGVnNKkCcjeyOoqmMmMIixXhHTtKVRrtTqLlnHSCcshkGgAaeEwpPVvkKIKkRrpqQjJbBQvVvnNVZztTNnqLoSrCrRcRiWweXPpTtxtnNTpVLugGYyYcFfFfQqsSiIQqrRDddDjJcCIkpPYyVyYHoOhvSsdDgGuxXUiwTtpoOrRPRrCcaACcWAfFGqQcZRiOobBbBIUuIihHVvbrcCRrRyTtYBfdDfFrlgeESIiILvMmVlzZinNACcHhPpBbZfFEYZzyIiuUhHeHhpPhHWwqQauURrAJjcmVvMLlmMHGAacCiIKBbtTtTAarEkKxXeRfFQWONnJjZzAHjGgzZJeEgGfVvPCcNGgnxXsSpMFfSsLzcgGKkfotTAaCfTtCcfFFlLcbTtiqQYyEegGNGHhGtTgQqDdbBJNGgnjVAypDdZtKkeyYEVTtQqBdDkKcAFfEzZeIZkIUuHhwXxIWWqQmMwwuViIvUJjiTtoOHIiLmMNbbBqmMZzuUHhUuIZRrYbBKkfZzFyJKlLkSswNnWAtTWIiTYycutTUHFBbfdDmMHiIoOhTFffFtQNYQqWQhnNlBcXWwWwKLLgHnhHcCtIDdiJnIxxXXitdiIgVvfaAsSsqzZQLlduUvVejJEAaIiqJwWguJOEePpoxXWfwWWwfdsgHhMIiqGgfFPYiIypPpUxXcwWCQYaAywJqQDdRrjFLJjhHlJjdDPOopUYCcyGgnNMmUuuuUEtuUpPTiIJuUjeHnNZiIHeEhTtzgGFiCcKnNkIfijJLlyYIwTtWGqQJjVIcCiBRzgwWGrHhRPpCcBROorbuUTtdnNDgJjWuUwGqvVQbBEWxLlhHzZmMDdgCQqQqlLFfcvqJjcCJAajKXxrTtXxqpPKkQGFfMmgzLlZGGgcxXCloOLgYysQeETtvVdRJKkjQqVmMvkvGRrWwjzzZZdDuUhHrgGWwDdRzZgGrTtYyDdhRrxKkfFtpPCRrRrcYyObBhHXxOlLjoOpPJJIijmMdDQxYiINnJjBfFQqPDdIiItkKTPfjJjlLSsGYjbIqOopPQiSsbBBqcqaEExXmqQMtTtTwWLETtVNnvxXBjJbeOPpwJjWZzoOoHhYuUyMmpPtMmdDAadyYmMDRrDdrRwDgGdWFfUTgGzZQnNqlqQllLLwWBguUADlLxXZGgzdHhagGGNnWwxbXxwlLbBWHhBUuBbTtXrNnHhSiIsBbRiUudRrjJDIbjJsSorNnRUgSsGtLlTuYVsSyYJjTtvNhHiiINnrkKRckKhHCJjklLwDdrxbjqQbVgGWwvzZqgGXxQCxXXxcRrfFIiuuOoIiQqOoOoHhvQqwNnnNWBbUuVmhHlVzZDdcyYCQqrRvLyYcClLicCIPDdlkKUuhHLiIJfZzFjsSxaEGiIgbpPBXIixYdDyDiNncCDdmCcMWwSKksXxILlMWwxXAjwWlLjYyEZzPnNDdWpBbnNXxPyRrmMOoAaWOoOLlowsSTteEYfXxZKkxXYXxywWiIUyVvYumMZzpPftTOBMZzmZzLlTtDGgjhHZztrRTAaMpPTtTtmhHaAewWOsSgGXLlxoEfFJIHhiJjcCllisSIRrLPMmIixAIijJaXpmMLIrRaWwNKkczZCyYZzzZpPWvZzKCckVwtqQkcZvVVvzDCcXxuUlIiLdCaIHhIiiASsqnNqjJJfoOyYWwcCFjfoOFPpoOQmMTtVIivfhHFJjOaAUuosaADdkKSIiesSIiNnMivVTesIiSEMmMRImMjJNeEnCiIkKvkKyYjJvZUlmMLuDvViHhITtSWwHfFPpXkLviIVsqQSMWwcmMGgSYyMWzhFdDfHtwoOVWvVwvoOcCyVvzZqEDaAdSsewaAvGgVvVPctNsSnWwToeEOGgcNOsAaSoxXChHRrJuUiqQFLlWxXpPxXmMHhypoOPbBYeOowWIaqQtTxCcXAioOxKkxXaSsphHPZGgzFfxcCRrfWwFXcSsCAjJSwWwSshHDdeEoOqQwWKOowWegGHhAaEWyGSUusgBbYmTtRrHhRTrRhHiqAaQkKHhIYJjYzyvJpPjVYSsoOoAanpmMwEejJWUXxueWwmjJMsSAasSPpEFfPLlvZJwWjzVNTtBIifFFfRYYyXrBCAuXpmMSshHXxgGWPpwCyyYFQqpPdkVvKENnmMyYapLlKwWmMGgMXxxXmpPkVZzOomMPpvjjnNCcjJJdDUubBdDJcCLpsSPmhIiHMfOaAgGhOoHIFNnfiMmXxeuFfUOgnaAQqGxqQiIoGxFfTtJjbhmcCoODqQdTDdzZOKkoiIqkKzrUNnrRuRZHhclLOHdDGglLyCcJHhpSnMEOoelLlYyfFLWwXBbFpLSsljJPBbfJjxmwWPwAaZSszjJnNAYyMvAaFfVGgRrQqfFBOoOmMiIgcCGgfDdFGMmrTtkkAaUjVvUzZFHhTVvtvVGgFeAawQIihwlLKkwWvVaANwAagGhHIDAadQqKktMmvVlLoajJVvEMmXxgGOoeDupPySsJjYzFfZUmMXxRqijtlLTJQqQqScCsIAaOoShHsXVvuAvVMmeEDcCEfFeukKKiIkoWSsLlwOsSgGoOnNkKOoOoBaDdwWAkKomzZmQqMmMRrMLlZzLlnNZzCgGcDdUuZzqQFfIimUuvlLLKdDhVvHBbvYyAaVIQqkKiaAGgvhHeOoEdDjNnqQJTHNnjJJCccCsSxXQgGhHpPwWQRiIrSsyYRUuzUuZzZfFqQLlMmNnecbYyBAagGcWwOCcogGglLCecyYSsWwCqOTPptEewyYWqQLreEmMnVxXkEAaeKqoOBbwbGgFfjJBmLlMgGQhOoPuUpLlHjdruUlLoOCcNnCRrcTtyPhOoHSsfFbdwTtWmMNxXnDMzZmBsSPpbFfoOkKiIipPzxXyYZoEeOFEepJjPIuuvVDNWwEecCAandUPprTtLlBbRUuVvaAsSeEPZzAXMmxFvmpPMVfEeaFfKlLXxSsGrJmXxMNnjMdDeGgzZEpPZzRreaAMmwnNGaAgBbhhOjJtSsJjyYTaAkzZKorRlfJzZcCjFxXiEeIYARehHVvFwWyYfEslSsLLlSDxGAagXdrayqGgQkmMpPdDrHhREsSezZtejJETRrCcKDYyJvsbRcCrzZwWcCASsFfYyEeEiXxIyfdUuDFoKkOYeqEeTXxoOWwnNnNzaAcCqQvVZnuUfNnTlLthBhHtTbNiIkKnnbBpPNQqRWwtizWwSsZAaoOhoOexYLliIyXEXxdWwDHiqYymRrMlWwdDLuUwJRrZzjuUvVxXWwkKuEEeepPUhKkoOHxbBAaAaYloOLRWwVouUOWuUJHhxXnNjZoOjqRrhHQhSskKHbBlLBwWbazZEkiIHXxhBCcbiIYmMyYyKeRrJRrjjMmYyCcaswltOTtlLonNzZCcckMmKBoOSsjDdJbNBQWwqbnXxlLCdiBwWbVvRcCtTmMIimMDdsSmXxMDKkGgKkdiIQqGdDEegQqceRBoOjJWwbbgGBwWrFfhfFAakvVYycCNnpSsMfPKkpTxXtFmvVYqJLlUBbuKvNnQqSQdWwDnNqsoOrvVaJjAkKkKcCTttqQFfeETMmEpkiIUuKqQEeXxlmvDdFfzZvVVhFKkfVuUvNnqlLQylMmLYZTtwaoWwOASslLnNUuBERrewrRlLWxXPpRTtCxQDdqDmMaUuxzhHZGgXkKqQeEKXxkiIVKBbtToOkFfyYoOQItjJTiniIzTkSsKtXxIieMmEZIiNuUqZYoOyNsSnUumwfiIFfdDqQAaRrCcFXxMmjJoUZkKelLEoOeEQqRLwWaGgAcImgGMEeihbBCclnNLJjwYylLldDLVvWtAVvaTnNBgTtpPwWGrRihHIbakKzlLCcwWhPMmKkpHWwrRltTaALlLLcChHLlqQzZdDUuSyYsmfFcUUuGfFYytTsSnNXaAJjUuxOoyYmMJjguUiIcCuwWIirqTQqyYEejrRmHtThMJWwtTYypPuKlLXSvVslmMmMLxlHhJjmMGgyWzZwdrRQuarWqQwBoODdiIvTtYyUVUkKuvwWIgGiNSkhHKsNnxXnNvVQqiIGkKgxwcCRrVvWnNZUuPpZzoAaOrRRvPpjJkFfZzbBSJjzZssSqFfQKRKzZjJrmMRkbBPiIdDRrQqkgSWKieEIkwsrRXyYeJjlLEZdwWDuUzPcCpfFxiktGgpPCqQcCAanNIihHcVXxTtkKPqQpXxRlLTtXxrvOEeoNDDdEPpeVvtTeEDOoKksSoWwOQqNniIpPJjyYEyYxgoOGXwLlLlOobBDuUdQRMmrVvqhLllLaecMmCclJjsSwMRrmvVnWYywNEeFfWLeEKeEAakAaNlLnrsSRfFeEKkoOVvZzzZljJjJmMeELhHAPMEemKTtJjkwlLWpOGTOojJtgCNZznLlHhckKkKomMwWKQqaANnqHhjJsSEoOePFfLlpvVQJjbMmrKkRBGgkvsSLAalVafAaaWnNJjwYyBaALfFlOjJouJxXjUkKZvVzXzfFuSHhuUVvshsSHGgpIiPUeEXxgnNeTyYtEgOEeEhHeYyTKnNktCvVvVZzRsSDznNOoZdAaWUuhHBbNvVfFrRLkKlnwpPkKrdDOOjnNJGzZgKAajVvrRoOJqQzZXxnbBNZzKIiVvbBkSsZzqgGQGgAemMEILliaLlGgzPpGgZthHfFDYydTuOUuyYRroYydUuDhHtTHOohtTUZzjIiedDEJkXBbWoOyLAaeElQqYfUqQuWxXYdDyuUwWwcCzZLlAkKaiFfZFfzWwaAFfIPpTtTRrtPGgpkKaAFSoOsThDdUoOBbEeVvAayYuPCkKcfFbDTtdBBbalLoOttTTAMwuUJjTtBbuUmfNhOLlyYoHkZzKbBfFSDdCcmMcCuDYyjJdUsJsSlLZXxnmtRrTOuNnNnzKkTtDdxWwXEeJjlLZUlLzZoYyJjqAaQqWwaEeJjSNnsRTtPpwYEeyWrAthHTeEXxVvsSbBgjOQqoJGjvVJTtmMNnYyTmMiIzZYyCuLlUWwIijJTzZtcxXLlMmtafMmFAkKuntTbBNpPPpRrcCWwwFfLUuIihHAawlkKhHgGOoLDpPdrEeWSCcMmSsPpswleEbBLkKykKXxYpPOfFfeEVvTtnNuLlUIiWVvwFtTZzDdZzlLzZPvVAapvVVlLuUnNNnrKkvVmRrGgMSsNnyUuYRCciqHhZzQcCDqQDddQqFfYSsZzRrxXyNRrtTnYySscjJYjJyIoOiCKWdDwklLwIiWIkkKKiOojBbFfJRrtRrTvTtXqnNQjJJjVvyiIkyPppPYKYYyeEDbtaATnzZiIXxNnsSXAIiadhHVvVJYylLjKkyYuUqlLUfFuQtTiIDYyKoOgDdGkcCdeCcEQnNXRPMmpYyYsSHhvTtVYyUuFEefcCsIiAIiaSyEeYynNgGXxSsfQqzZZzZzGMmrhHFUufdDMmdDWjJwdDiIeEmuUOolLCchHqQsxXEeLljJgmMEeRrGSzZMLlIiSsmIJjiTtvGgVyTtYMRAuUuRqQyYyyQxXYSssSFfyYbBykKxcCSsXqYDdbBawGgOvVoUtTHhuqQfFnUuNlnNLEkyIiYAIiaKKkeRryYyYmtVvTfFtTLHhaAfFsSaAlMlmMLntQqTNPpPcjJCFfJjpyYldDLhQqpIicJmMoOxXjBbfFNhHcCHhEeyYnMmkJjxXRrbBvFBboOfyYVDdmZzMDdiIIiBbIiXxmMFfiWwpPhHtTpAaGgAaBliBbIQqYyeERDdDhHWplLPwdsSAarDdfFsDdaCcAvVSLHhlYFfyAAGEegaazTpPtZZDnNdGNnggOnGgNRroGzLbWyYwtfFrRjJufFsSUgGRDdNnZVvvVzrQSsqQqYyIiGgLlRrTmyYpPSsZzyBvVnUuNjJbYHhaAaAMBGgTqpPQVvVvHjZzJGgMmhtMLlmzSsZdDbvVBxXCJjAaOouUXxjJDfFIidaAVvDYWwyOohHykkKKLlYCctIiTSswWaEaAMmDdepPACcTzZNnbeGgEBaABKkPpUuWkKwIimMOoqKkuUqJjQZnBbNzhHQbtHhPuUHhcCYypKfFkKkbOkzZJjcCSsiIKDrRdrRHdDTtiIkKMrIsNnSisSRvVUufFBbEetcCTHhUuCpmZzuUMaAPDdnXxXxNWWwkonNOoOKutRrBbBbDCdDnNcVvdbBcCVWDdwvpPspPSpETtuSsUeAaXxYyCzZFyxXYffJjFVUuvsSTtdDfGgVjJvXxjoYhHEeyeJjpMmPIiEdKPpSskGWNnwgduUbBDTtDXYyxcCgGvfFcnkZLlzKKkvnNRzZpPrVjsSwWJLMZzQqeEmYuUysdDmMSNnqJjQsSFfRXxGgrHcCPphWDdwlpPLKeyYEkKkNnKSsLJbBjlkqhHnNQlCEecjEeheEOogGHnNJoOHhLCfNsSnbBKkeEFcLlnNlNCOoYmMTOrRopPZzLltFfipPItTwdDWNYyIinBVvWQqwoOFLlfFfGgbZLYxXyoYyOkSsrRgGKHtTiIhlLHcChSspEKYiISsQHRrGghqyfQqQNnlLfFcCOoWBbNnwCEecXxMnQqiINmzpPaIiAZeEkVrRvhWGgwLlYyHmnNMXxKDKkJjGgIiQfFrYyRqsSGbHhUupPBSsgGjJAahriIRRWwhHOoNnYyrKkOoweECcWZzVvXyYcDdCFfXoOmMxBbjbzZBuUUuJqQXxFfGgXxuUNPpXFyYfrRFiIOJjWwoUunNfLXxlTVTPpxXVtTvtdTXxtDvsSIbBEeiLlqRrUuQZdDzDdZzoOaAQqtTzZuUgGMmpPzZzhgGciICHZtTmMwyYUuualLmmMMAmMUiRrIOoBaKkwWyOoJjYAwWvVteEMUuwdSsjhGgAaXxYyHJBbDuRrVvFrRzZfUpRrjrRJrRbrSVvqQdDlLsRKkCcsjJLlMmEeSBsHhQwWqSpzqQrRSsZkkKMmKeYyOoExmMAapPXOofuUKkFnNoOvVZcCzPSstlLTUuuUtTIGgFfiLyYlPWuUNNnwWnaAuVvUrzgGRrhEeHWwgbBjJGWAaPpwGfFgSJjsaOdDVMmDdvVvkKWwoeEgGWwHhFfnlLNyYAFDdfAVvwWBOVvolLkKKkeEQqbniINIrRiVvaZBbCcYeEhHyBbKxTtvVXkTNOWwVMBbmTWPpwuUtvtTfqQGgFzmMZonZzWwKkWaRrAmMwXxNrBbRnNnqGgYyxXZzQtTeeEPGgAaSsaApIiEyYEeEetoOvGPpwWdDgVzZiIOoNnDdVyYvkKVWwceECHheEvCtTciISsAaXqQuUcCxCciILwWlmMnNQwWqTGgPNnwSsWJjDCuEeUBbcdpSswWrRWxXcfcCsaMmARRrrfaAkKFSkKZzFfROorbBOoneENxyWwEgGemMYvVUYxOoXyuUunXxFjJFfXxfsEeShHNMmcCXdfFDXxvVGgRVKkVxuUUuXZzGgvwkzZoOKDdWvbBbBZzJjQPsSpqljJfFTbQqdDZzBkKhZzHSvVsZzpWwcCTQqfFvVAaFPptBbTftxhHzZTNntkrVvBbIiRKXPRrXxMmMJJMmjHgGsSwWhvrpPRVjYEepPtTmMyVvwvVWPOopksjJJjSKzTtTxXtEqQeZcuUCiIEeLEPpeEpeEStTWwOosPnNLltTeEDdkOozZTtKeFfxrRrRXlDFPpAafsHhSYZzuUyoOdkKkaAAaEFfeLlKQqTtPpEuqQCcUIMmiegGKBoOTtZzBbhHbkUubflnJjNLRmUuMrhHUucCBbXiIOoxFjHAvVahVvJKkXxUnvVYEelLyNYZcCoFfOZEeznbBjJNzeeEEoOmQOoqKkwWnNBMmbFfCDdcNnYWwjxhHXOSsoQqOcCoqntTNRraAQJyMgGmMyKcCkFfyYCgCcAaGlLcDdafFAVAavZzszZPirRLlrWwRIpgGuIiQqLkKlkWwQBbqKKOoUuFfJjuUkWwvbGgaAnNiIBJjndDNvVcCPnNLlBeEbpUSbBvVsuKkVUCcuNnUiLlIvVDdSaAXxGgfBnNkKsSbFqSYyuEeUQOIijJlLohHqsVvkKGgNnSuUAaBGyYgbSfFssqQuUQcqxXQCEeJjUuxXfhHASMmdDsEWwtEelLTeFfmMsSaFiEeHhXWCcwvrRblLBVirgGVvzKkZRIIiiIqQrRMIimxIwgGUuAhHrReEaHzZhWCceEYXxMiIvvVVczZEeJjCmozZWwOVnNvZUuzHhSYyscCWwzZZzyMqQmCfFcnrRNx'''
+
+DAY6_INPUT = '''\
+252, 125
+128, 333
+89, 324
+141, 171
+266, 338
+117, 175
+160, 236
+234, 202
+165, 192
+204, 232
+83, 192
+229, 178
+333, 57
+70, 243
+108, 350
+161, 63
+213, 277
+87, 299
+163, 68
+135, 312
+290, 87
+73, 246
+283, 146
+80, 357
+66, 312
+159, 214
+221, 158
+175, 54
+298, 342
+348, 162
+249, 90
+189, 322
+311, 181
+194, 244
+53, 295
+80, 301
+262, 332
+268, 180
+139, 287
+115, 53
+163, 146
+220, 268
+79, 85
+95, 112
+349, 296
+179, 274
+113, 132
+158, 264
+316, 175
+268, 215'''
+
+DAY7_INPUT = '''\
+Step G must be finished before step T can begin.
+Step L must be finished before step V can begin.
+Step D must be finished before step P can begin.
+Step J must be finished before step K can begin.
+Step N must be finished before step B can begin.
+Step K must be finished before step W can begin.
+Step T must be finished before step I can begin.
+Step F must be finished before step E can begin.
+Step P must be finished before step O can begin.
+Step X must be finished before step I can begin.
+Step M must be finished before step S can begin.
+Step Y must be finished before step O can begin.
+Step I must be finished before step Z can begin.
+Step V must be finished before step Z can begin.
+Step Q must be finished before step Z can begin.
+Step H must be finished before step C can begin.
+Step R must be finished before step Z can begin.
+Step U must be finished before step S can begin.
+Step E must be finished before step Z can begin.
+Step O must be finished before step W can begin.
+Step Z must be finished before step S can begin.
+Step S must be finished before step C can begin.
+Step W must be finished before step B can begin.
+Step A must be finished before step B can begin.
+Step C must be finished before step B can begin.
+Step L must be finished before step P can begin.
+Step J must be finished before step V can begin.
+Step E must be finished before step W can begin.
+Step Z must be finished before step W can begin.
+Step W must be finished before step C can begin.
+Step S must be finished before step W can begin.
+Step Q must be finished before step S can begin.
+Step O must be finished before step B can begin.
+Step R must be finished before step W can begin.
+Step D must be finished before step H can begin.
+Step E must be finished before step O can begin.
+Step Y must be finished before step H can begin.
+Step V must be finished before step O can begin.
+Step O must be finished before step S can begin.
+Step X must be finished before step V can begin.
+Step R must be finished before step E can begin.
+Step S must be finished before step A can begin.
+Step K must be finished before step Y can begin.
+Step V must be finished before step W can begin.
+Step U must be finished before step W can begin.
+Step H must be finished before step R can begin.
+Step P must be finished before step I can begin.
+Step E must be finished before step C can begin.
+Step H must be finished before step Z can begin.
+Step N must be finished before step V can begin.
+Step N must be finished before step W can begin.
+Step A must be finished before step C can begin.
+Step V must be finished before step E can begin.
+Step N must be finished before step Q can begin.
+Step Y must be finished before step V can begin.
+Step R must be finished before step O can begin.
+Step R must be finished before step C can begin.
+Step L must be finished before step S can begin.
+Step V must be finished before step R can begin.
+Step X must be finished before step R can begin.
+Step Z must be finished before step A can begin.
+Step O must be finished before step Z can begin.
+Step U must be finished before step C can begin.
+Step X must be finished before step W can begin.
+Step K must be finished before step O can begin.
+Step O must be finished before step A can begin.
+Step K must be finished before step T can begin.
+Step N must be finished before step O can begin.
+Step X must be finished before step C can begin.
+Step Z must be finished before step C can begin.
+Step N must be finished before step X can begin.
+Step T must be finished before step A can begin.
+Step D must be finished before step O can begin.
+Step M must be finished before step Q can begin.
+Step D must be finished before step C can begin.
+Step U must be finished before step E can begin.
+Step N must be finished before step H can begin.
+Step I must be finished before step U can begin.
+Step N must be finished before step A can begin.
+Step M must be finished before step E can begin.
+Step M must be finished before step V can begin.
+Step P must be finished before step B can begin.
+Step K must be finished before step X can begin.
+Step N must be finished before step S can begin.
+Step S must be finished before step B can begin.
+Step Y must be finished before step W can begin.
+Step K must be finished before step Q can begin.
+Step V must be finished before step S can begin.
+Step E must be finished before step S can begin.
+Step N must be finished before step Z can begin.
+Step P must be finished before step A can begin.
+Step T must be finished before step V can begin.
+Step L must be finished before step D can begin.
+Step I must be finished before step C can begin.
+Step Q must be finished before step E can begin.
+Step Y must be finished before step U can begin.
+Step J must be finished before step I can begin.
+Step P must be finished before step H can begin.
+Step T must be finished before step M can begin.
+Step T must be finished before step E can begin.
+Step D must be finished before step F can begin.'''
+
+DAY7_INPUTo = '''\
+Step G must be finished before step T can begin.
+Step L must be finished before step V can begin.
+Step D must be finished before step P can begin.
+Step J must be finished before step K can begin.
+Step N must be finished before step B can begin.
+Step K must be finished before step W can begin.
+Step T must be finished before step I can begin.
+Step F must be finished before step E can begin.
+Step P must be finished before step O can begin.
+Step X must be finished before step I can begin.
+Step M must be finished before step S can begin.
+Step Y must be finished before step O can begin.
+Step I must be finished before step Z can begin.
+Step V must be finished before step Z can begin.
+Step Q must be finished before step Z can begin.
+Step H must be finished before step C can begin.
+Step R must be finished before step Z can begin.
+Step U must be finished before step S can begin.
+Step E must be finished before step Z can begin.
+Step O must be finished before step W can begin.
+Step Z must be finished before step S can begin.
+Step S must be finished before step C can begin.
+Step W must be finished before step B can begin.
+Step A must be finished before step B can begin.
+Step C must be finished before step B can begin.
+Step L must be finished before step P can begin.
+Step J must be finished before step V can begin.
+Step E must be finished before step W can begin.
+Step Z must be finished before step W can begin.
+Step W must be finished before step C can begin.
+Step S must be finished before step W can begin.
+Step Q must be finished before step S can begin.
+Step O must be finished before step B can begin.
+Step R must be finished before step W can begin.
+Step D must be finished before step H can begin.
+Step E must be finished before step O can begin.
+Step Y must be finished before step H can begin.
+Step V must be finished before step O can begin.
+Step O must be finished before step S can begin.
+Step X must be finished before step V can begin.
+Step R must be finished before step E can begin.
+Step S must be finished before step A can begin.
+Step K must be finished before step Y can begin.
+Step V must be finished before step W can begin.
+Step U must be finished before step W can begin.
+Step H must be finished before step R can begin.
+Step P must be finished before step I can begin.
+Step E must be finished before step C can begin.
+Step H must be finished before step Z can begin.
+Step N must be finished before step V can begin.
+Step N must be finished before step W can begin.
+Step A must be finished before step C can begin.
+Step V must be finished before step E can begin.
+Step N must be finished before step Q can begin.
+Step Y must be finished before step V can begin.
+Step R must be finished before step O can begin.
+Step R must be finished before step C can begin.
+Step L must be finished before step S can begin.
+Step V must be finished before step R can begin.
+Step X must be finished before step R can begin.
+Step Z must be finished before step A can begin.
+Step O must be finished before step Z can begin.
+Step U must be finished before step C can begin.
+Step X must be finished before step W can begin.
+Step K must be finished before step O can begin.
+Step O must be finished before step A can begin.
+Step K must be finished before step T can begin.
+Step N must be finished before step O can begin.
+Step X must be finished before step C can begin.
+Step Z must be finished before step C can begin.
+Step N must be finished before step X can begin.
+Step T must be finished before step A can begin.
+Step D must be finished before step O can begin.
+Step M must be finished before step Q can begin.
+Step D must be finished before step C can begin.
+Step U must be finished before step E can begin.
+Step N must be finished before step H can begin.
+Step I must be finished before step U can begin.
+Step N must be finished before step A can begin.
+Step M must be finished before step E can begin.
+Step M must be finished before step V can begin.
+Step P must be finished before step B can begin.
+Step K must be finished before step X can begin.
+Step N must be finished before step S can begin.
+Step S must be finished before step B can begin.
+Step Y must be finished before step W can begin.
+Step K must be finished before step Q can begin.
+Step V must be finished before step S can begin.
+Step E must be finished before step S can begin.
+Step N must be finished before step Z can begin.
+Step P must be finished before step A can begin.
+Step T must be finished before step V can begin.
+Step L must be finished before step D can begin.
+Step I must be finished before step C can begin.
+Step Q must be finished before step E can begin.
+Step Y must be finished before step U can begin.
+Step J must be finished before step I can begin.
+Step P must be finished before step H can begin.
+Step T must be finished before step M can begin.
+Step T must be finished before step E can begin.
+Step D must be finished before step F can begin.'''
+
+DAY8_INPUT = '''9 11 7 2 4 5 3 4 1 5 0 11 6 7 9 7 8 8 1 1 6 7 1 2 3 3 1 1 1 7 0 11 7 7 4 1 3 1 7 9 4 9 7 2 3 1 2 1 2 3 1 5 0 10 6 3 4 9 1 7 1 5 8 4 1 3 1 3 3 3 3 5 5 3 6 1 9 0 9 7 5 7 1 8 6 8 3 5 3 1 2 2 2 3 1 2 1 1 9 0 6 9 3 7 9 8 1 3 2 1 1 2 1 2 2 1 1 9 0 9 6 8 2 7 1 3 4 6 9 2 1 1 2 1 2 1 1 3 1 3 3 4 3 3 3 6 1 7 0 10 1 9 1 8 9 6 9 7 8 7 1 1 1 1 2 1 1 1 8 0 10 1 5 9 5 3 9 9 8 1 2 1 3 1 3 2 3 1 2 1 5 0 6 2 7 5 1 1 5 3 1 3 2 2 5 1 4 3 3 5 3 4 1 8 0 10 6 8 8 1 3 3 7 3 5 7 2 1 1 3 3 3 3 2 1 8 0 7 1 1 2 1 2 1 3 1 2 1 2 1 1 1 1 1 6 0 8 9 3 5 5 7 8 1 5 2 1 3 1 3 2 3 1 4 1 6 2 3 6 4 5 3 3 4 1 8 0 10 8 1 5 8 2 3 5 6 1 3 3 3 1 2 1 2 3 3 1 6 0 8 8 1 5 1 1 2 6 6 1 3 1 1 1 2 1 8 0 8 7 6 1 9 1 4 4 5 1 2 1 1 3 1 1 2 2 1 5 1 3 6 1 5 0 8 7 3 4 7 7 6 1 9 2 2 2 1 2 1 5 0 6 1 5 5 9 9 3 1 2 1 2 2 1 9 0 11 1 2 4 2 9 4 1 6 9 1 2 2 2 3 1 2 2 2 1 3 5 2 3 1 1 1 3 5 1 7 0 8 2 9 1 2 3 8 1 5 1 2 3 2 3 1 1 1 6 0 11 9 8 7 1 9 3 8 2 5 7 1 1 2 3 3 2 1 1 5 0 11 6 6 3 5 4 5 1 8 2 7 1 3 1 1 1 2 4 2 2 5 1 3 7 1 6 0 11 7 9 1 6 9 2 1 7 1 6 1 3 3 1 3 3 1 1 8 0 10 2 1 3 1 1 9 2 2 4 1 1 2 2 2 3 3 3 1 1 6 0 7 7 6 9 2 4 7 1 3 1 1 1 2 2 3 2 1 5 5 2 2 3 4 1 7 0 10 2 1 6 4 5 6 4 1 7 7 3 1 3 2 3 3 1 1 9 0 10 7 4 7 1 1 6 9 2 5 8 2 3 2 3 2 1 3 1 3 1 9 0 6 5 1 3 1 4 8 2 3 3 2 1 1 3 3 1 3 4 1 2 7 4 5 5 4 3 4 1 6 0 7 1 4 1 1 3 2 5 3 1 3 1 1 1 1 8 0 9 3 1 1 3 8 9 8 5 1 2 2 1 2 1 1 3 1 1 6 0 11 1 1 6 3 5 6 6 6 9 2 8 1 1 3 1 3 1 5 3 4 4 3 6 1 9 0 7 4 4 1 9 4 3 7 3 3 1 1 3 3 3 1 2 1 5 0 11 1 7 5 7 9 6 4 5 8 9 6 3 3 1 1 3 1 9 0 7 4 1 7 6 1 1 6 3 1 1 3 3 2 1 3 3 1 3 2 4 5 4 3 4 1 9 0 9 6 1 2 3 2 1 3 4 4 2 1 3 2 2 1 3 3 1 1 5 0 7 1 3 1 2 9 9 8 2 2 2 3 1 1 7 0 6 4 1 7 4 8 2 3 3 1 2 2 1 1 5 4 1 2 3 4 1 8 0 9 5 1 4 1 9 3 2 1 2 2 1 1 2 1 2 3 3 1 7 0 9 4 1 5 1 4 1 5 6 3 2 2 1 2 1 3 1 1 8 0 6 4 2 8 1 1 8 2 2 1 2 1 2 1 1 4 1 3 1 3 5 1 9 0 9 7 5 3 3 5 8 1 4 3 3 1 3 3 2 2 3 2 1 1 7 0 8 9 3 9 1 9 6 1 6 1 2 3 1 1 2 1 1 6 0 8 3 7 8 7 4 1 3 3 1 1 1 3 1 2 2 3 5 2 5 3 6 3 7 4 5 3 6 1 9 0 10 1 5 4 5 6 6 5 2 6 1 3 3 2 3 2 3 2 2 1 1 6 0 7 9 1 1 6 9 1 6 1 3 1 2 1 3 1 7 0 10 1 3 4 8 6 8 1 7 6 6 3 1 1 2 2 3 3 3 4 5 4 1 1 3 5 1 5 0 11 4 6 9 3 1 9 8 9 4 1 3 1 2 3 1 1 1 6 0 6 5 4 6 6 4 1 3 1 1 2 2 2 1 5 0 11 1 7 1 3 5 5 7 4 3 9 4 2 3 3 1 1 3 2 1 1 1 3 6 1 6 0 11 1 6 5 6 8 7 9 1 8 5 5 2 3 1 2 3 3 1 9 0 11 1 3 6 9 6 4 9 6 3 6 1 3 1 1 2 3 3 1 3 3 1 7 0 8 3 8 5 3 4 1 6 6 2 2 1 2 2 3 1 5 1 1 2 1 5 3 6 1 5 0 9 5 5 1 4 3 1 3 8 9 1 2 3 1 2 1 5 0 6 8 1 5 9 5 3 1 2 3 1 3 1 5 0 8 2 7 3 1 2 6 3 8 1 3 2 2 1 1 1 3 2 1 5 1 2 3 1 1 5 4 3 4 1 9 0 7 5 8 3 8 1 8 3 2 1 2 2 1 2 1 3 3 1 7 0 10 4 7 1 2 7 1 6 8 7 5 1 3 2 2 1 1 1 1 5 0 6 3 2 1 1 1 5 1 2 1 3 1 3 1 1 5 3 4 1 8 0 10 1 7 9 5 2 1 1 1 9 4 3 1 1 1 1 1 3 1 1 8 0 7 2 5 5 3 6 4 1 2 1 3 3 3 1 1 1 1 9 0 6 9 6 6 8 6 1 3 3 2 1 1 1 2 2 1 1 3 1 4 3 6 1 9 0 9 1 2 2 1 3 5 1 3 8 1 2 1 1 1 3 3 3 2 1 5 0 10 2 1 2 7 2 1 3 7 6 8 2 1 1 1 2 1 7 0 7 5 6 9 7 1 6 1 1 3 3 2 1 2 1 3 2 3 2 4 2 3 6 1 9 0 8 9 1 1 7 1 8 1 9 2 2 3 1 1 1 2 2 2 1 7 0 7 1 9 7 9 3 1 4 3 2 3 3 1 1 1 1 6 0 8 1 7 1 2 6 5 4 8 2 3 1 1 3 2 2 3 3 1 2 5 3 5 1 9 0 10 9 5 2 1 1 3 7 3 1 5 2 2 1 2 2 1 2 1 1 1 6 0 11 9 6 3 1 1 1 2 1 6 7 2 2 3 1 1 3 2 1 5 0 9 2 1 5 4 6 5 6 1 4 1 1 1 2 1 4 5 3 1 4 2 4 5 2 5 5 3 6 1 9 0 11 5 9 9 7 8 1 2 9 8 8 6 3 2 1 2 1 2 3 2 1 1 6 0 6 4 9 6 1 1 5 2 1 1 3 3 3 1 6 0 10 1 5 3 4 6 3 8 3 1 2 3 3 2 3 1 1 2 4 3 2 4 4 3 5 1 9 0 6 5 1 1 6 1 8 3 3 2 2 2 1 2 1 3 1 7 0 9 9 7 1 6 6 8 7 5 2 2 3 1 2 1 1 3 1 6 0 6 1 8 8 7 7 3 1 1 2 1 1 1 1 4 3 2 3 3 5 1 9 0 9 1 2 3 7 8 5 9 4 7 3 3 1 1 2 1 1 2 3 1 6 0 7 9 6 8 1 9 5 1 1 2 1 2 1 3 1 6 0 11 5 1 5 5 9 6 1 6 5 2 8 1 1 1 2 2 2 3 4 5 2 5 3 7 1 8 0 10 5 7 1 1 4 1 4 1 5 5 1 1 2 1 2 1 1 3 1 6 0 10 2 9 7 6 1 5 2 9 9 4 3 3 1 2 1 1 1 7 0 7 7 1 7 4 2 4 4 2 1 1 1 2 1 3 1 3 3 5 4 2 3 3 6 1 9 0 9 7 3 7 3 6 6 6 1 7 1 2 1 2 1 3 1 3 3 1 7 0 7 7 1 8 9 7 8 3 1 2 3 2 3 2 2 1 8 0 8 6 2 2 9 1 7 1 4 2 2 1 1 3 2 3 1 1 2 5 2 5 4 3 5 4 2 2 4 5 3 5 1 8 0 9 6 9 5 1 1 7 7 7 5 1 1 3 3 2 1 2 1 1 9 0 8 4 1 4 2 3 1 6 1 1 3 2 1 3 2 2 1 3 1 9 0 9 6 9 8 3 2 1 2 8 3 1 1 1 1 2 2 3 3 3 2 1 5 4 2 3 6 1 9 0 6 4 7 2 1 5 6 3 2 1 3 3 3 3 3 1 1 8 0 9 9 6 9 1 9 1 8 7 6 3 2 2 2 1 2 1 3 1 5 0 8 7 8 1 6 8 7 6 8 3 3 1 2 2 2 3 3 4 2 3 3 4 1 9 0 7 8 1 7 8 7 8 5 3 3 1 3 1 1 1 3 2 1 8 0 11 3 7 6 1 4 2 2 8 6 3 1 1 2 2 1 1 2 2 1 1 5 0 9 9 1 7 6 5 9 9 3 3 3 1 3 2 3 4 3 5 4 3 5 1 5 0 10 4 3 1 4 1 5 3 1 4 2 3 2 3 1 3 1 9 0 11 5 8 1 5 3 9 1 5 1 4 6 3 2 3 3 3 1 1 2 1 1 8 0 10 9 1 8 7 8 9 1 6 7 1 2 3 2 3 1 2 3 1 1 2 5 1 1 4 6 2 4 6 2 4 6 3 4 5 3 5 1 9 0 7 7 6 4 8 3 7 1 3 2 2 3 2 1 2 3 2 1 5 0 10 3 8 5 4 6 2 3 1 1 1 3 1 1 1 1 1 7 0 10 1 1 1 5 8 1 3 3 2 6 1 1 2 1 1 3 3 5 5 3 3 2 3 4 1 8 0 11 5 3 8 8 6 1 7 6 5 4 6 1 3 1 2 1 1 2 1 1 9 0 8 6 1 1 6 6 1 4 5 2 2 1 3 3 1 3 1 3 1 7 0 10 7 1 8 3 1 1 7 2 9 5 2 1 1 1 1 3 2 2 1 2 3 3 5 1 5 0 7 1 9 2 5 2 5 5 2 1 3 1 1 1 7 0 10 2 6 1 1 1 6 1 2 3 9 3 2 2 1 3 1 2 1 8 0 6 3 3 1 7 2 5 2 3 1 2 1 1 3 2 2 3 5 2 5 3 4 1 6 0 8 9 4 1 7 4 5 2 8 2 1 3 3 3 1 1 6 0 6 4 4 8 1 1 9 1 2 2 2 2 2 1 8 0 7 8 3 9 6 5 1 9 2 1 1 1 3 3 3 3 2 5 4 3 5 1 3 3 3 5 3 3 7 1 9 0 11 1 1 7 3 1 4 9 9 1 4 1 3 2 2 2 1 1 1 3 1 1 7 0 11 5 5 9 3 1 2 5 3 1 4 5 2 1 3 2 1 1 1 1 6 0 6 5 9 1 6 3 8 2 3 3 2 1 2 4 2 3 1 2 3 2 3 4 1 8 0 9 9 1 1 5 4 5 9 1 9 1 1 1 2 2 3 2 1 1 8 0 10 1 6 9 9 8 3 1 9 3 5 2 1 1 1 3 2 3 1 1 9 0 11 5 6 4 5 7 1 6 2 6 4 8 3 3 1 2 2 1 1 3 2 2 1 3 3 3 4 1 8 0 6 8 3 1 1 2 4 3 1 1 2 2 1 2 2 1 8 0 7 1 6 8 1 1 5 3 3 2 2 1 3 2 3 3 1 5 0 11 5 2 5 2 5 6 8 4 1 6 6 3 3 3 1 3 1 3 1 2 3 5 1 9 0 7 1 7 6 1 6 3 8 1 3 2 3 3 1 3 3 3 1 6 0 11 8 9 4 8 1 2 8 6 1 4 5 3 2 1 1 1 3 1 6 0 9 9 1 5 2 7 5 8 4 2 2 3 1 1 1 2 5 4 2 3 3 3 6 1 9 0 7 6 3 1 8 9 7 1 1 3 2 1 3 3 1 2 1 1 6 0 6 9 1 9 1 9 5 3 1 3 1 1 2 1 7 0 11 8 5 6 8 5 5 4 1 8 2 2 2 3 1 2 3 2 3 2 3 2 1 1 1 5 1 7 5 3 3 4 1 7 0 11 4 7 4 8 4 8 1 1 9 1 2 3 1 2 3 1 3 2 1 6 0 9 9 4 1 7 7 1 5 5 1 1 2 3 1 1 1 1 5 0 11 2 7 5 1 7 1 4 8 6 2 1 3 1 1 1 1 1 1 5 1 3 7 1 7 0 10 4 9 9 8 9 5 1 1 5 8 2 3 2 3 3 3 1 1 9 0 10 1 1 3 9 8 4 4 1 2 3 3 2 1 2 1 3 3 3 1 1 5 0 10 9 3 8 7 7 8 1 7 9 4 3 3 2 2 1 1 5 2 4 1 5 2 3 5 1 8 0 11 2 5 9 3 9 1 9 5 6 1 7 3 3 1 3 1 3 1 2 1 9 0 6 3 9 5 2 4 1 3 1 1 1 3 3 3 2 2 1 8 0 6 8 3 2 5 1 3 3 3 2 3 2 1 1 2 1 2 2 4 4 3 5 1 7 0 10 5 4 5 6 3 8 9 1 6 1 1 1 3 1 1 3 2 1 7 0 10 5 1 2 9 5 1 1 1 5 4 1 3 3 1 3 3 1 1 8 0 9 6 3 8 1 3 9 6 2 1 1 1 2 1 2 3 2 3 3 3 1 3 2 3 6 1 5 0 7 4 4 9 4 4 1 4 3 1 3 2 1 1 9 0 8 1 4 4 9 7 2 1 3 1 1 2 1 3 2 1 1 3 1 8 0 7 8 5 2 9 1 4 7 1 1 2 1 1 1 1 1 1 5 1 1 3 3 2 1 2 5 5 3 5 1 5 0 7 1 4 9 1 8 9 1 2 3 1 1 1 1 6 0 9 8 5 3 7 3 1 3 6 6 2 1 3 2 1 1 1 5 0 9 6 3 7 5 4 6 7 1 2 1 1 2 1 1 2 1 3 5 4 3 7 1 8 0 10 1 7 1 3 5 5 4 2 1 2 1 2 2 3 3 1 3 3 1 8 0 11 5 1 1 6 1 8 3 8 5 4 6 1 1 1 3 2 1 1 1 1 9 0 6 1 9 3 3 5 5 3 1 3 1 3 2 2 1 1 2 2 5 1 4 3 2 3 5 1 8 0 6 8 2 1 4 7 2 1 3 3 1 1 1 1 2 1 7 0 6 6 9 6 3 1 5 3 1 2 2 3 1 2 1 9 0 7 1 5 3 8 6 2 5 3 1 1 1 2 1 3 2 3 5 1 2 2 1 3 7 1 5 0 8 5 1 8 6 6 5 4 8 1 3 3 1 3 1 7 0 6 5 7 5 1 5 3 2 2 1 3 1 3 2 1 8 0 8 3 1 8 6 4 5 8 7 1 2 1 2 3 2 3 2 1 4 3 5 3 4 5 3 7 1 7 0 10 9 9 1 7 1 5 6 1 1 9 2 1 1 1 2 2 1 1 7 0 11 9 7 5 7 8 5 7 1 3 8 3 1 3 1 1 2 1 3 1 7 0 6 9 1 7 7 2 1 1 2 3 3 3 2 1 4 4 2 4 4 1 4 3 5 1 5 5 5 5 3 5 1 8 0 9 1 6 6 2 2 9 1 4 1 1 3 1 2 2 1 2 1 1 9 0 11 3 4 3 6 1 1 1 5 1 8 1 3 1 3 1 3 3 2 3 3 1 8 0 7 5 4 1 3 7 1 2 1 2 1 3 2 2 2 3 4 4 3 3 5 3 7 1 7 0 9 8 1 7 1 8 2 9 2 1 3 1 2 3 1 1 3 1 6 0 7 4 9 3 2 7 1 2 3 1 3 1 1 3 1 8 0 11 3 3 3 3 2 3 6 5 1 9 2 2 1 2 3 1 2 1 3 1 3 5 1 5 1 3 3 7 1 8 0 8 2 2 1 1 1 6 4 7 3 2 1 2 1 2 1 3 1 6 0 11 9 5 3 9 6 5 3 7 1 2 2 3 1 1 2 1 1 1 8 0 6 5 7 4 1 3 4 1 3 1 2 2 3 3 1 2 1 2 3 1 2 3 3 6 1 5 0 9 9 9 9 1 4 2 9 8 9 3 1 3 2 1 1 5 0 6 1 1 1 4 1 5 3 3 1 2 1 1 6 0 8 4 1 5 6 4 4 2 3 2 1 1 3 3 3 2 5 2 2 5 5 3 7 1 9 0 8 1 7 3 5 3 1 5 6 1 1 3 2 3 3 1 2 1 1 6 0 7 7 8 2 8 7 3 1 3 3 2 2 1 2 1 5 0 9 7 7 1 7 1 8 2 3 7 3 1 3 3 3 1 2 3 1 2 2 4 1 3 4 2 1 5 4 3 4 1 6 0 8 4 1 5 2 5 1 5 7 2 1 3 1 3 1 1 7 0 8 7 6 1 9 2 1 7 1 3 3 2 1 1 2 3 1 6 0 10 7 6 6 3 1 2 3 5 7 8 2 2 1 2 1 1 5 1 1 1 3 7 1 5 0 10 6 3 6 4 1 5 2 6 3 3 1 3 1 1 3 1 8 0 10 8 6 1 4 3 9 6 1 6 4 3 2 3 2 2 3 2 1 1 5 0 6 9 8 1 1 5 5 1 2 2 2 1 4 4 4 3 3 5 2 3 4 1 6 0 9 1 5 8 3 5 2 3 2 1 1 1 1 1 2 1 1 9 0 8 9 1 9 2 9 3 5 5 2 2 2 2 2 2 3 2 1 1 9 0 7 3 5 7 5 7 1 8 1 1 3 1 2 2 2 2 1 1 3 2 4 3 5 1 7 0 9 1 1 1 1 5 6 6 4 2 1 3 3 1 1 3 2 1 7 0 7 3 5 5 1 5 9 9 1 2 3 1 1 2 1 1 9 0 10 3 4 2 2 8 1 4 8 9 9 3 1 2 3 3 2 3 2 3 5 4 1 1 2 3 4 1 6 0 10 2 7 9 3 1 3 3 4 9 9 1 2 1 3 1 1 1 7 0 9 7 8 8 2 6 1 5 6 2 1 2 3 1 1 1 3 1 8 0 6 1 2 7 9 9 1 2 2 1 3 2 3 1 1 3 2 3 4 4 2 5 6 4 2 1 6 2 4 5 3 7 1 6 0 9 1 5 1 8 8 6 3 1 2 1 3 3 1 1 1 1 6 0 9 1 6 3 6 5 1 4 1 8 3 3 2 3 2 1 1 6 0 6 1 7 4 9 9 3 2 3 1 3 2 3 2 3 4 4 5 4 4 3 4 1 8 0 7 8 5 4 3 4 1 9 2 2 1 1 2 2 3 2 1 7 0 10 7 6 6 1 1 9 6 9 3 7 1 1 3 2 3 1 1 1 9 0 8 1 4 7 9 5 3 1 6 3 1 3 2 2 3 1 3 3 3 1 2 1 3 5 1 8 0 11 5 5 5 1 9 5 8 1 8 3 7 2 1 1 1 2 2 2 2 1 8 0 10 5 2 1 9 4 5 3 9 1 4 3 1 3 1 1 2 3 3 1 9 0 6 9 3 9 1 4 2 2 2 1 1 3 2 1 2 1 2 4 2 4 3 3 6 1 7 0 11 2 1 1 8 5 4 7 6 1 4 3 1 1 2 3 2 1 3 1 8 0 6 1 4 5 1 5 4 1 1 3 1 3 3 3 2 1 7 0 8 6 6 7 6 2 1 8 5 2 1 1 3 3 2 1 5 2 3 2 3 3 1 4 5 1 1 5 4 3 4 1 8 0 9 8 8 7 9 3 5 1 7 2 2 3 2 1 3 3 3 1 1 8 0 7 1 8 5 2 9 4 8 2 2 3 1 1 1 2 3 1 9 0 9 5 8 3 3 8 7 9 1 9 1 3 1 2 1 1 1 2 2 3 5 4 2 3 7 1 8 0 6 7 1 3 8 1 8 2 2 3 1 2 1 1 3 1 8 0 11 8 3 4 3 3 7 7 4 1 7 1 3 1 3 3 3 1 1 3 1 9 0 9 4 5 3 2 6 1 8 2 1 2 1 3 3 1 3 2 2 2 5 3 3 1 3 1 2 3 4 1 5 0 9 3 6 8 7 1 8 2 1 4 1 2 1 1 2 1 9 0 8 1 1 7 8 7 5 2 1 1 1 1 2 3 1 2 2 3 1 7 0 6 1 9 4 4 2 1 1 1 2 1 3 3 2 3 2 4 5 3 7 1 6 0 11 4 1 1 9 6 4 6 5 2 3 4 3 2 1 3 1 2 1 8 0 9 7 3 7 5 5 5 4 1 9 1 3 3 1 3 3 1 1 1 9 0 6 9 5 1 4 9 6 3 1 2 2 1 3 3 3 1 5 1 1 5 1 3 3 3 6 1 8 0 10 6 7 9 1 3 1 2 2 1 2 2 1 3 3 3 2 1 1 1 6 0 6 7 6 9 7 1 5 1 3 1 2 1 1 1 8 0 11 8 5 5 4 8 3 1 1 2 6 1 2 1 2 1 3 1 2 2 1 1 3 1 4 2 5 7 3 3 5 4 3 7 1 6 0 6 8 1 1 4 6 3 2 1 1 1 3 1 1 8 0 7 5 1 9 5 2 9 9 1 2 3 3 3 3 2 1 1 5 0 11 7 3 7 9 5 5 1 4 3 1 9 1 1 1 2 3 1 3 2 5 3 2 5 3 6 1 8 0 7 5 8 2 8 1 9 7 2 1 3 2 2 1 3 3 1 6 0 10 4 3 8 9 7 3 1 4 1 7 1 1 3 3 2 1 1 8 0 6 5 1 6 2 5 4 3 3 1 3 3 3 2 2 4 1 1 1 3 3 3 7 1 9 0 7 1 9 1 4 5 6 1 1 3 3 1 3 2 1 3 2 1 7 0 9 3 3 8 4 2 8 2 1 1 1 3 3 3 3 3 1 1 6 0 6 3 1 4 8 7 7 1 1 3 2 3 3 4 5 5 1 2 1 4 3 5 1 6 0 9 7 8 4 1 9 5 4 1 2 2 3 2 3 1 1 1 7 0 7 5 6 3 1 1 3 8 1 1 2 2 1 3 1 1 7 0 10 2 2 6 1 2 7 9 1 6 1 3 1 3 1 3 2 1 1 5 1 2 4 3 7 1 5 0 6 1 5 9 9 5 2 1 2 3 3 1 1 7 0 7 5 1 5 6 7 9 1 1 2 1 3 3 2 1 1 8 0 6 2 2 1 2 6 1 1 2 2 2 2 1 3 2 5 3 2 3 1 4 4 5 1 4 5 4 5 3 6 1 7 0 11 1 3 1 1 9 6 5 7 8 1 6 3 2 2 1 2 2 3 1 9 0 10 2 2 4 3 5 3 4 7 3 1 1 2 3 3 2 2 1 1 1 1 6 0 10 4 4 7 1 9 8 6 5 6 1 3 1 3 1 1 3 3 1 2 1 2 2 3 7 1 7 0 6 7 9 6 1 5 2 2 1 2 3 1 1 1 1 9 0 9 1 5 6 3 2 3 4 8 8 1 1 1 1 2 3 3 2 2 1 8 0 11 6 1 6 1 6 3 7 8 7 5 6 3 3 2 1 1 1 2 1 1 1 2 5 5 2 1 3 5 1 6 0 11 3 9 2 9 5 5 2 5 1 6 3 3 1 3 3 3 1 1 6 0 9 3 7 3 6 6 8 9 3 1 1 3 1 3 1 2 1 8 0 7 2 1 2 9 5 1 8 1 3 2 2 2 2 3 2 1 4 4 1 2 3 6 1 7 0 9 7 9 1 5 2 6 3 2 3 1 1 3 1 2 3 2 1 8 0 11 8 1 9 8 4 5 4 4 1 2 1 3 2 2 3 1 1 3 1 1 7 0 8 6 1 3 6 7 6 6 8 1 3 1 1 3 3 1 4 5 3 2 1 1 1 2 5 3 1 4 5 3 7 1 9 0 6 1 1 3 4 4 8 3 2 1 3 1 1 3 3 1 1 6 0 10 9 6 6 5 7 3 1 7 9 4 1 2 2 3 1 2 1 5 0 10 8 2 5 1 6 1 9 1 6 3 2 2 3 2 1 5 1 2 2 4 1 3 3 5 1 6 0 6 3 4 5 2 5 1 1 2 2 3 1 1 1 7 0 11 4 7 1 7 3 5 1 1 9 9 8 1 3 1 3 1 3 2 1 7 0 10 8 4 4 7 1 8 1 1 6 1 1 2 1 2 2 1 1 2 5 2 3 5 3 5 1 8 0 8 8 7 1 2 5 5 9 4 2 2 1 2 3 3 1 1 1 7 0 11 8 3 9 1 3 9 2 5 9 2 6 2 3 2 1 2 3 1 1 6 0 6 1 7 7 8 3 7 3 3 3 3 1 1 4 3 4 1 2 3 5 1 6 0 9 5 5 1 1 9 6 5 9 4 2 1 3 2 3 1 1 7 0 9 4 3 8 2 4 7 1 4 2 3 1 1 1 1 2 3 1 9 0 6 5 2 1 7 8 2 1 2 3 1 1 1 3 1 2 1 5 3 3 1 3 6 5 1 5 5 4 3 4 1 9 0 8 4 1 2 5 9 3 6 9 3 1 3 2 1 3 1 2 1 1 5 0 6 2 7 8 7 4 1 2 3 2 2 1 1 8 0 10 5 6 9 7 7 2 1 2 2 5 2 3 3 1 1 1 1 2 1 3 3 3 3 6 1 9 0 10 1 4 5 8 6 3 7 1 1 1 3 1 1 1 1 3 3 2 3 1 9 0 8 7 9 3 6 4 4 1 4 1 2 3 1 3 3 2 3 1 1 7 0 9 9 9 8 6 3 8 1 6 5 1 1 3 2 1 1 2 2 2 3 2 3 5 3 4 1 9 0 8 2 3 5 4 1 5 5 1 1 3 1 3 3 2 2 3 2 1 5 0 6 7 7 1 9 7 5 2 1 1 1 1 1 8 0 8 9 1 1 1 2 9 5 8 1 2 2 2 1 1 2 2 3 3 4 3 3 4 1 5 0 6 8 8 1 9 2 3 3 1 3 2 1 1 7 0 6 4 1 1 2 9 7 3 3 3 3 1 3 1 1 6 0 9 3 3 2 4 8 5 5 1 2 1 1 2 2 3 1 1 5 2 2 3 7 1 6 0 6 6 3 7 6 2 1 3 3 2 3 3 1 1 8 0 7 8 3 5 1 3 7 6 1 1 2 3 1 1 1 1 1 8 0 11 2 8 1 7 9 1 3 4 6 1 2 3 3 1 3 3 1 2 2 1 5 2 1 1 4 2 1 7 1 5 5 7 6 3 4 3 3 7 1 6 0 10 6 1 7 6 1 8 6 1 8 1 2 3 2 1 2 1 1 5 0 8 2 6 9 5 5 1 7 3 1 1 2 3 3 1 7 0 7 3 9 7 5 6 1 7 2 1 2 1 1 1 3 3 2 5 5 3 3 5 3 5 1 8 0 10 4 9 3 9 8 1 5 8 4 9 1 3 2 3 2 1 1 1 1 9 0 9 8 5 5 1 5 3 1 4 3 2 3 1 3 1 3 1 2 1 1 9 0 11 2 1 1 8 8 7 4 2 7 1 9 2 2 2 1 2 3 1 1 2 1 3 3 3 2 3 4 1 6 0 10 4 4 2 5 4 8 1 7 6 9 1 3 1 1 2 2 1 9 0 11 9 1 8 2 9 7 5 9 1 9 1 3 1 1 1 1 1 3 3 1 1 7 0 8 9 6 1 1 1 8 7 2 1 2 1 1 2 1 3 4 3 2 2 3 7 1 9 0 11 8 2 1 2 8 3 5 1 1 5 8 1 1 2 1 1 2 2 3 1 1 7 0 7 4 9 9 8 9 4 1 1 2 3 2 1 2 2 1 8 0 6 1 7 6 5 8 9 2 1 1 3 1 1 3 1 4 1 1 3 1 1 1 6 1 4 5 3 3 6 1 8 0 11 6 2 6 4 3 8 2 7 1 7 2 2 1 3 3 2 2 2 3 1 7 0 10 8 5 5 4 3 7 1 1 6 7 3 3 1 3 2 1 1 1 5 0 8 1 4 6 8 4 7 8 1 2 1 3 2 2 2 5 2 3 5 2 3 6 1 7 0 9 9 1 4 8 5 8 2 4 8 2 1 3 2 3 3 2 1 9 0 11 7 9 7 2 7 9 1 5 4 8 6 1 3 1 2 2 2 3 1 2 1 9 0 7 6 7 6 5 7 8 1 2 3 1 3 3 2 1 3 1 2 2 4 3 5 5 3 4 1 6 0 9 8 3 9 1 1 8 2 2 4 3 2 3 1 3 2 1 5 0 10 2 8 9 5 4 1 1 3 9 3 1 1 3 3 1 1 8 0 7 5 5 1 1 7 2 9 1 1 2 1 2 1 2 2 4 3 1 1 3 4 1 9 0 11 9 4 3 5 1 6 2 4 3 9 1 3 1 2 2 2 3 1 2 3 1 6 0 7 1 3 2 4 2 6 1 1 2 3 1 1 1 1 7 0 11 5 9 1 1 1 3 1 3 8 4 7 1 1 1 1 2 1 1 4 2 1 1 3 7 1 7 0 8 3 1 6 8 8 3 6 6 1 2 3 2 2 2 3 1 9 0 6 2 2 3 1 1 7 1 2 1 3 3 2 3 1 3 1 9 0 6 4 9 1 4 7 3 1 2 1 3 2 1 3 2 1 5 2 2 4 4 1 4 5 2 3 4 4 3 6 1 5 0 10 1 8 5 7 5 3 5 5 1 4 2 2 1 3 2 1 6 0 7 5 8 8 3 9 1 1 3 3 1 1 2 1 1 8 0 8 7 1 4 9 6 4 5 1 1 1 2 1 1 1 2 3 5 4 1 3 1 1 3 5 1 6 0 11 7 2 8 8 6 4 6 1 5 1 5 1 3 3 1 3 1 1 5 0 11 6 4 2 9 9 5 8 1 1 1 1 1 1 2 3 2 1 7 0 8 9 3 1 9 4 2 7 4 1 2 1 1 2 1 2 2 1 5 2 1 3 6 1 6 0 9 1 9 2 4 8 2 4 1 4 3 3 2 1 1 1 1 6 0 6 9 1 7 6 8 7 2 1 1 1 2 2 1 9 0 9 9 9 1 8 3 2 5 6 3 2 2 2 3 1 2 1 1 1 2 5 2 2 1 3 3 7 1 6 0 6 1 9 2 9 3 8 1 1 2 1 2 2 1 6 0 11 6 6 4 1 3 7 1 9 7 1 6 1 2 2 2 1 3 1 5 0 10 4 4 5 1 8 7 7 2 5 1 3 1 2 3 1 5 3 3 2 4 5 1 4 4 3 2 5 4 3 4 1 9 0 10 8 9 8 2 6 1 1 8 5 4 2 1 1 3 1 1 3 1 3 1 7 0 8 5 9 9 6 5 5 1 4 2 3 3 2 1 2 1 1 6 0 6 1 1 9 1 5 2 1 3 3 3 1 3 3 5 1 2 3 4 1 7 0 11 9 6 4 5 8 1 1 7 4 7 4 3 1 2 1 1 3 3 1 6 0 11 6 7 9 6 1 4 2 3 9 9 3 1 3 1 1 1 1 1 5 0 8 4 2 8 2 4 6 1 3 1 2 3 2 2 5 2 4 1 3 6 1 7 0 6 4 7 3 5 5 1 1 1 3 3 3 2 2 1 7 0 8 2 3 5 2 1 4 6 5 2 3 1 1 3 1 3 1 5 0 10 1 8 1 1 9 2 1 8 5 9 2 2 1 3 2 4 4 1 2 2 1 3 7 1 9 0 8 1 8 4 5 2 5 5 3 1 3 3 2 1 2 1 1 2 1 6 0 9 5 9 5 5 1 8 5 1 4 2 1 2 2 1 1 1 6 0 11 3 7 1 1 4 4 7 1 4 1 7 3 1 1 3 3 2 5 4 5 1 3 1 1 3 5 1 5 0 7 2 1 6 2 2 6 2 1 2 2 3 1 1 7 0 9 1 1 2 8 5 4 1 2 9 2 2 1 3 1 3 1 1 8 0 7 6 8 4 1 1 6 8 2 3 3 1 1 2 3 1 2 2 4 5 2 6 4 7 2 5 4 3 7 1 6 0 10 9 1 1 7 6 2 2 3 8 3 3 2 3 3 1 1 1 7 0 11 4 1 8 7 4 5 6 1 9 3 8 1 1 1 1 3 3 2 1 9 0 6 6 1 2 8 9 6 2 3 1 2 1 1 3 1 2 5 4 5 2 2 4 3 3 5 1 8 0 10 1 7 4 4 5 8 8 3 7 8 1 1 2 1 2 1 1 1 1 7 0 11 3 9 1 1 3 7 6 8 7 1 3 2 2 2 2 1 3 3 1 9 0 8 1 3 8 7 9 9 1 4 2 2 2 2 1 2 2 1 3 5 4 4 1 3 3 6 1 9 0 9 7 9 9 4 1 6 4 9 2 2 1 1 1 3 2 1 1 2 1 6 0 8 5 1 1 6 6 7 6 8 2 2 3 3 1 2 1 8 0 11 5 7 1 9 4 1 2 7 4 1 3 1 2 1 1 3 1 3 3 2 1 3 4 2 4 3 7 1 8 0 10 6 3 8 3 1 6 9 7 3 9 3 3 3 3 2 1 1 2 1 9 0 9 9 3 2 3 4 2 4 1 9 2 3 1 3 2 3 1 3 1 1 6 0 9 8 9 4 8 2 6 1 1 2 1 3 1 2 3 2 3 1 1 3 2 1 4 3 7 1 7 0 10 2 2 3 1 9 6 2 9 5 3 2 1 2 1 3 3 2 1 6 0 8 7 3 1 5 2 1 6 1 1 3 3 3 1 2 1 9 0 7 5 1 6 5 3 1 1 1 3 1 1 3 1 3 1 1 3 4 4 3 4 2 2 7 6 4 2 5 3 3 5 1 5 0 10 2 9 2 5 4 2 9 2 1 2 1 1 1 1 3 1 8 0 6 4 1 2 8 9 2 1 3 2 3 1 2 1 1 1 8 0 8 1 1 3 7 8 2 4 2 2 1 3 1 3 2 2 2 4 2 1 5 2 3 5 1 7 0 8 5 6 5 6 1 1 1 3 3 1 1 3 1 1 1 1 9 0 8 9 1 1 1 6 9 5 3 3 1 3 2 2 3 3 3 3 1 9 0 8 7 1 6 8 3 1 8 2 2 1 1 3 1 2 3 1 3 2 1 5 1 2 3 5 1 8 0 9 1 8 7 8 3 3 6 5 4 3 1 1 1 1 2 2 1 1 9 0 6 1 2 8 4 9 4 1 2 3 2 1 2 2 1 3 1 9 0 11 7 5 2 2 1 2 8 6 1 2 8 3 2 1 1 1 2 1 3 3 1 1 4 4 3 3 7 1 7 0 7 1 3 1 7 3 2 2 3 3 3 1 3 2 1 1 6 0 10 7 4 6 2 3 8 2 5 1 4 1 3 1 3 3 3 1 6 0 10 3 7 7 2 9 3 6 8 1 3 2 1 3 3 2 1 2 4 2 2 1 4 5 3 4 1 5 0 6 5 9 2 5 2 1 1 2 1 2 1 1 7 0 9 6 9 2 2 1 3 3 1 9 1 3 1 2 2 1 2 1 5 0 11 1 1 3 8 4 1 1 7 7 1 1 1 3 3 3 1 3 3 1 1 2 1 1 5 4 3 7 2 5 3 3 4 1 9 0 9 8 7 3 5 1 9 2 8 1 2 2 1 2 2 3 3 2 2 1 8 0 7 6 8 8 1 1 8 1 1 3 3 1 2 3 3 3 1 6 0 8 4 8 5 9 1 9 4 2 2 2 3 3 2 1 4 2 3 1 3 6 1 7 0 11 3 5 6 3 9 9 9 1 1 2 7 3 1 1 3 2 3 2 1 7 0 8 5 3 6 1 4 2 3 9 1 2 2 1 1 3 1 1 6 0 6 8 4 2 9 4 1 3 2 2 1 1 1 4 5 2 1 3 2 3 7 1 9 0 7 1 3 1 1 3 1 8 3 3 3 3 1 1 1 1 1 1 6 0 11 6 1 1 9 1 8 9 2 4 1 1 2 3 3 1 2 3 1 5 0 11 2 4 2 4 4 1 3 5 6 6 1 1 2 1 2 3 4 1 1 1 2 4 4 3 5 1 8 0 10 6 3 6 6 8 7 8 6 4 1 1 1 3 1 2 1 1 2 1 8 0 11 1 2 1 6 4 9 4 8 9 6 7 3 1 3 2 3 3 1 1 1 6 0 11 9 5 3 9 6 5 4 2 6 1 6 1 1 2 1 3 1 2 1 3 3 1 3 7 1 9 0 9 1 2 9 4 7 1 8 2 1 1 1 1 1 1 2 1 3 2 1 8 0 9 4 4 6 4 1 3 4 4 8 3 2 1 3 1 2 1 1 1 6 0 11 3 6 5 1 1 1 9 3 2 7 8 1 2 3 1 3 1 3 3 3 5 1 4 3 5 2 6 5 5 3 5 1 7 0 8 1 1 7 7 4 8 4 1 1 3 2 3 1 2 1 1 8 0 9 4 5 2 3 8 1 9 3 6 2 1 3 3 2 3 3 3 1 5 0 8 6 1 2 2 8 5 3 6 1 3 3 1 1 1 3 5 3 3 3 4 1 6 0 9 2 2 2 4 7 5 1 9 5 2 1 3 1 2 2 1 9 0 8 2 8 5 4 2 1 9 4 2 3 1 1 1 1 3 1 3 1 6 0 8 2 6 2 7 7 1 3 7 3 2 1 3 3 1 2 3 3 4 3 6 1 6 0 7 1 9 8 6 3 3 2 1 2 1 2 1 1 1 8 0 10 5 1 2 5 1 3 4 1 2 9 1 3 3 3 2 3 2 3 1 5 0 8 6 6 1 2 3 9 6 3 3 1 3 1 1 3 1 5 3 2 3 3 7 1 7 0 10 1 6 2 1 3 8 1 2 9 1 2 3 1 3 2 1 2 1 8 0 10 1 2 3 4 1 9 8 9 5 2 1 2 2 1 2 1 2 1 1 6 0 9 3 9 1 9 5 1 2 1 4 1 2 3 1 1 1 3 1 1 3 5 3 2 3 6 1 6 0 8 9 3 3 4 3 2 1 6 2 1 3 1 3 3 1 9 0 9 5 5 2 4 6 1 8 2 4 3 2 2 3 1 3 3 2 3 1 8 0 8 1 4 9 1 4 8 2 4 3 2 3 1 1 2 3 3 3 5 5 1 5 2 3 2 2 2 1 5 3 3 7 1 6 0 10 8 8 8 6 3 1 6 4 7 7 3 2 3 2 1 1 1 6 0 6 2 5 3 6 8 1 2 1 3 2 1 3 1 7 0 7 8 6 1 7 1 3 1 2 2 1 3 1 1 2 4 4 2 5 2 3 3 3 6 1 6 0 8 1 5 3 4 8 7 5 7 2 2 2 2 1 2 1 6 0 11 5 2 1 4 2 4 9 8 1 7 2 1 1 3 1 3 2 1 9 0 11 8 9 8 1 9 4 5 9 3 2 1 3 1 1 1 3 3 3 3 1 4 2 5 4 4 1 3 4 1 7 0 9 2 3 4 1 1 6 7 4 3 1 1 3 2 2 2 1 1 6 0 11 5 6 5 4 9 8 4 1 6 5 3 3 1 3 1 1 2 1 8 0 8 1 4 3 6 9 1 6 8 1 1 1 1 1 2 1 2 5 1 5 1 3 6 1 8 0 9 6 2 4 3 4 1 3 6 1 1 3 2 3 2 2 2 2 1 6 0 6 2 4 1 1 6 2 2 1 1 1 1 1 1 7 0 11 1 3 8 1 7 1 6 1 7 7 8 3 1 3 1 2 2 2 2 2 1 5 1 3 3 7 1 7 0 11 2 5 9 6 5 7 5 1 9 2 2 3 1 1 3 1 1 3 1 9 0 9 2 5 8 1 7 5 8 5 8 1 2 2 1 3 2 2 2 1 1 5 0 7 3 5 3 1 2 9 3 1 1 2 3 1 1 3 2 1 4 2 3 3 3 7 5 5 3 4 1 8 0 9 3 1 9 3 9 7 7 2 9 3 2 1 3 3 2 3 1 1 9 0 8 4 3 1 4 3 6 3 1 1 1 1 3 2 3 1 1 2 1 5 0 6 1 1 9 5 9 9 1 1 2 3 1 1 2 4 2 3 6 1 8 0 8 1 8 5 6 1 5 9 9 3 1 3 2 3 1 3 1 1 5 0 8 3 9 5 1 4 3 2 8 1 2 2 1 3 1 6 0 9 3 1 6 6 2 4 3 1 9 1 3 2 1 2 1 2 5 4 3 3 2 3 6 1 5 0 8 9 3 1 5 2 6 6 5 3 1 1 2 2 1 5 0 7 1 9 1 7 7 5 6 1 1 2 1 2 1 8 0 7 6 6 2 6 2 9 1 2 3 3 2 3 3 2 1 2 4 2 2 4 1 3 5 1 5 0 10 1 3 6 2 5 7 1 6 8 2 3 1 1 1 1 1 9 0 10 9 6 2 8 1 5 8 8 7 1 3 2 1 3 2 2 2 3 1 1 8 0 11 1 4 1 1 4 6 1 3 2 4 4 3 2 3 2 3 1 3 2 1 2 2 1 2 3 7 1 7 0 9 6 1 1 8 1 6 1 1 6 3 3 1 1 1 3 1 1 5 0 7 9 3 2 6 3 1 1 1 1 3 3 1 1 8 0 10 5 1 4 5 3 2 7 1 9 6 3 2 1 2 1 2 3 3 1 1 5 3 1 2 3 1 2 7 4 7 5 4 3 4 1 6 0 11 5 7 9 7 1 9 1 4 4 1 8 1 1 1 1 1 2 1 6 0 6 1 9 1 1 7 6 1 3 2 3 1 2 1 8 0 10 7 3 1 7 7 7 1 4 8 7 1 2 1 1 1 3 2 2 3 5 2 3 3 5 1 8 0 11 6 1 2 2 7 3 4 8 7 7 7 2 1 2 2 2 2 1 3 1 8 0 7 7 1 8 5 7 9 2 3 1 3 1 3 2 1 3 1 5 0 6 8 1 7 8 9 2 3 2 2 1 2 3 2 5 3 2 3 4 1 5 0 8 1 5 6 2 3 7 9 9 3 3 1 2 1 1 7 0 9 4 3 5 1 5 3 7 7 4 3 1 3 2 2 2 1 1 6 0 10 1 8 9 1 8 3 3 1 1 1 1 1 1 3 1 1 1 5 5 1 3 7 1 8 0 10 4 7 1 9 4 1 3 3 3 7 2 1 3 2 2 3 1 1 1 8 0 7 8 5 6 8 1 6 9 2 2 2 1 2 3 2 1 1 8 0 6 9 7 3 1 7 8 1 3 1 3 1 1 2 3 1 3 2 3 5 3 1 3 6 1 9 0 6 6 2 9 2 1 8 3 3 1 3 1 2 1 3 1 1 7 0 7 3 1 3 4 2 7 1 1 2 2 3 2 1 3 1 7 0 10 9 5 1 2 3 5 1 3 3 5 3 3 3 3 2 1 3 1 3 1 5 4 3 5 5 1 1 5 5 3 6 1 8 0 7 1 3 5 8 1 7 4 2 2 3 1 1 3 1 3 1 6 0 6 4 3 9 1 4 9 3 1 1 3 2 3 1 7 0 9 5 4 9 8 6 1 6 3 5 2 1 3 2 1 3 2 1 2 3 1 4 4 3 7 1 7 0 8 1 1 9 3 4 8 4 4 2 1 3 3 1 3 1 1 5 0 7 9 2 2 4 8 1 1 1 1 1 1 3 1 7 0 6 1 8 7 4 2 3 2 3 1 1 1 2 3 2 1 3 1 3 5 3 3 7 1 7 0 6 1 4 6 7 1 6 3 2 1 1 1 2 3 1 5 0 7 4 9 3 1 6 6 2 3 2 2 2 1 1 8 0 6 7 9 3 7 9 1 1 2 1 2 2 1 2 1 2 5 3 3 5 1 5 3 6 1 6 0 6 7 1 4 3 1 3 2 3 2 2 3 1 1 7 0 10 9 9 8 5 1 7 1 4 5 3 1 2 1 3 3 1 2 1 5 0 10 6 4 9 9 4 9 1 7 4 1 1 1 1 2 1 1 1 2 1 1 1 3 6 1 5 0 6 1 7 3 3 6 1 1 3 2 2 1 1 9 0 9 9 4 1 8 7 6 3 7 7 2 2 2 2 3 3 3 1 1 1 8 0 10 1 9 6 1 1 9 1 4 4 5 3 1 1 2 1 2 1 2 4 3 5 4 3 1 1 7 2 6 5 5 3 3 4 1 7 0 11 6 3 4 2 4 1 9 6 6 3 1 3 1 1 2 1 2 1 1 7 0 10 2 5 6 1 8 2 9 5 3 3 1 1 1 1 3 3 3 1 7 0 6 4 9 1 6 4 1 2 3 3 3 2 1 1 2 3 5 4 3 6 1 6 0 9 2 1 2 6 7 3 4 5 1 1 1 1 3 3 1 1 5 0 6 4 4 1 5 8 7 2 3 1 3 1 1 7 0 6 6 1 1 4 6 7 1 1 1 1 3 3 2 1 4 3 4 2 2 3 7 1 8 0 11 3 7 3 1 6 2 9 1 8 4 3 1 1 3 3 1 2 1 2 1 7 0 8 4 1 4 9 3 2 9 9 1 1 1 1 2 1 3 1 6 0 9 2 6 8 1 7 7 4 6 6 3 3 3 1 2 2 1 2 1 4 1 3 2 3 5 1 7 0 9 3 1 5 1 6 5 5 2 6 3 2 2 1 1 2 1 1 9 0 10 6 3 9 6 2 8 6 6 3 1 1 2 1 3 2 3 3 2 3 1 9 0 8 1 6 7 2 9 3 8 7 1 1 3 3 2 1 1 1 3 4 1 3 3 5 3 4 1 6 0 11 1 1 8 2 4 4 1 5 2 3 3 1 1 2 2 3 3 1 8 0 10 2 4 3 8 7 1 1 6 1 8 2 3 2 1 2 3 2 3 1 5 0 11 3 3 8 7 5 3 1 7 8 1 1 2 3 1 2 1 2 5 1 2 5 2 5 2 7 7 3 5 4 3 4 1 8 0 6 1 8 6 6 1 5 2 2 1 3 3 3 1 1 1 9 0 11 7 7 8 7 1 8 5 6 1 8 5 2 2 3 1 3 3 1 2 1 1 6 0 6 1 7 1 8 1 9 1 3 1 3 2 3 5 4 1 1 3 7 1 6 0 7 1 5 2 8 3 4 2 1 2 2 2 1 3 1 6 0 10 9 7 7 4 2 3 3 6 3 1 1 1 3 3 2 3 1 6 0 11 8 2 5 4 2 2 3 5 2 6 1 3 1 3 1 3 2 1 1 1 1 5 2 1 3 5 1 6 0 11 5 9 9 9 6 7 8 8 1 1 5 1 1 2 1 1 2 1 6 0 7 3 8 8 6 7 3 1 1 1 2 1 1 2 1 6 0 7 1 2 9 7 2 1 6 1 2 1 2 1 1 4 3 2 2 1 3 6 1 8 0 8 3 7 1 9 5 2 7 2 2 1 2 3 1 3 1 3 1 6 0 7 3 3 1 8 9 1 2 1 1 2 1 1 1 1 5 0 6 2 1 1 7 1 1 3 1 3 2 2 2 1 2 5 1 1 3 7 1 9 0 9 1 3 3 1 2 3 8 9 9 1 3 3 3 2 2 3 2 1 1 7 0 7 8 1 8 6 3 5 5 3 1 1 1 1 3 2 1 5 0 6 6 9 2 1 5 1 2 3 1 3 3 1 1 2 1 2 1 4 5 1 5 7 5 5 3 5 1 7 0 8 7 1 9 4 8 4 1 8 1 2 2 3 2 1 2 1 9 0 10 3 9 8 6 6 1 1 3 5 3 1 2 1 1 1 2 2 3 1 1 6 0 7 3 3 3 1 4 9 1 2 3 1 2 3 1 5 1 4 5 3 3 4 1 5 0 8 7 3 6 8 9 9 4 1 1 1 3 2 2 1 6 0 8 7 1 6 3 5 6 2 8 1 3 1 3 1 3 1 8 0 6 2 4 1 1 5 5 2 1 3 1 1 1 2 2 3 5 3 4 3 6 1 9 0 10 7 4 7 1 1 8 9 5 4 1 3 3 2 3 2 1 2 2 2 1 8 0 6 8 7 4 3 1 3 2 1 3 3 3 1 2 1 1 5 0 9 4 2 5 4 4 2 2 1 1 1 1 3 1 1 2 3 5 3 2 1 3 6 1 6 0 7 2 6 8 1 3 8 1 3 2 3 1 1 2 1 6 0 9 1 8 6 6 1 4 2 1 2 2 1 3 2 3 1 1 7 0 11 2 5 8 9 6 8 6 1 6 2 5 2 2 1 1 2 3 1 4 2 2 4 3 4 3 6 1 8 0 10 5 5 3 4 1 3 3 5 5 8 2 1 1 3 1 3 2 3 1 7 0 6 7 6 5 8 1 3 2 2 1 3 1 1 1 1 5 0 8 6 6 1 4 9 6 1 2 1 3 1 1 1 2 1 3 4 4 2 4 3 4 1 6 5 3 3 4 1 5 0 9 6 9 2 3 5 4 7 3 1 3 2 2 3 1 1 8 0 7 2 6 1 4 1 3 8 3 3 2 2 1 2 2 2 1 5 0 11 3 1 6 6 1 1 1 2 9 2 1 1 2 1 1 3 5 2 5 3 3 7 1 7 0 11 6 2 1 8 6 2 6 6 7 4 1 1 2 1 1 3 2 3 1 9 0 11 8 5 8 6 5 3 2 1 1 2 4 3 3 3 3 2 1 1 2 3 1 7 0 11 4 2 1 6 6 6 4 5 9 8 5 3 1 1 2 3 2 3 2 3 3 4 3 3 1 3 4 1 6 0 6 1 7 1 7 2 4 1 2 2 1 2 1 1 8 0 8 2 6 6 1 3 3 4 3 2 3 3 2 1 3 2 1 1 9 0 7 1 2 3 5 1 7 1 1 3 2 1 3 3 1 1 1 1 3 4 1 3 4 1 8 0 7 5 8 6 8 1 2 8 2 1 2 3 1 2 1 3 1 9 0 11 1 2 8 8 6 9 6 6 1 2 3 1 3 3 1 1 2 1 3 3 1 8 0 7 8 3 5 8 1 7 5 2 1 3 1 2 3 2 3 3 3 1 1 3 7 1 7 0 9 6 6 6 3 2 4 2 7 1 3 3 3 1 1 2 1 1 9 0 11 5 6 1 9 5 4 1 6 1 6 4 2 1 2 1 2 3 3 1 2 1 6 0 11 2 7 5 8 7 4 6 1 1 8 3 3 1 3 3 3 2 4 4 2 5 2 1 4 1 1 1 5 5 3 7 1 9 0 9 1 4 2 8 8 6 2 6 7 3 1 3 2 1 3 2 1 1 1 7 0 9 9 6 4 7 1 7 2 3 2 1 1 1 2 2 1 1 1 5 0 10 1 1 6 3 1 2 9 9 7 2 3 2 2 1 2 1 4 3 1 4 1 2 3 5 1 9 0 8 7 8 1 7 2 7 7 1 3 3 1 2 3 1 1 2 1 1 9 0 9 3 4 8 4 1 9 8 6 8 3 1 3 1 2 2 2 3 3 1 5 0 10 6 9 5 7 1 6 7 8 7 3 2 3 3 1 3 2 2 1 4 3 3 5 1 8 0 9 1 1 1 7 9 3 2 7 5 2 3 3 1 1 3 1 1 1 8 0 9 4 2 9 9 2 3 9 1 8 2 3 1 3 1 3 1 3 1 9 0 7 3 1 7 2 9 9 6 3 2 2 1 3 1 3 3 3 4 1 3 5 5 3 7 1 5 0 11 5 7 7 1 2 3 2 8 7 1 6 1 3 2 2 1 1 6 0 9 1 8 6 1 6 9 4 5 1 1 1 1 3 1 3 1 5 0 10 3 9 5 6 5 3 7 1 7 2 1 3 1 1 3 4 2 4 3 2 5 1 3 4 1 9 0 8 6 9 6 7 8 3 7 1 1 2 3 1 2 1 3 1 3 1 5 0 9 4 2 7 7 1 1 1 6 8 1 1 3 1 1 1 7 0 11 1 6 6 2 5 3 4 9 1 7 9 2 2 2 1 1 2 1 5 2 5 3 3 4 7 1 5 5 4 3 4 1 9 0 10 6 7 9 8 5 5 4 6 2 1 1 2 2 3 3 3 1 1 2 1 7 0 8 1 2 7 5 1 7 1 8 1 1 1 1 3 1 2 1 7 0 6 8 7 8 5 8 1 1 3 3 3 3 1 3 1 4 1 3 3 5 1 5 0 10 5 9 3 8 9 9 6 2 3 1 1 1 1 1 2 1 7 0 7 1 3 9 5 8 3 5 2 3 2 3 1 2 1 1 5 0 9 6 4 8 5 9 1 3 7 8 1 3 1 1 2 5 2 5 2 2 3 5 1 5 0 8 1 8 5 8 1 1 6 4 3 1 1 3 1 1 7 0 10 5 8 2 3 6 1 2 6 1 6 3 2 3 1 3 1 1 1 5 0 7 8 1 2 1 2 4 1 1 3 2 1 2 3 4 1 4 1 3 4 1 6 0 7 1 2 2 8 4 9 6 1 1 3 2 1 3 1 8 0 8 4 1 2 8 7 3 8 1 2 3 1 2 1 3 3 3 1 8 0 11 9 6 5 3 1 6 5 8 7 9 6 1 3 3 2 3 3 1 2 1 2 3 2 3 5 1 9 0 6 1 1 7 1 5 7 2 3 3 2 2 2 2 1 3 1 6 0 11 1 2 7 2 9 8 7 6 3 8 9 1 2 2 3 1 1 1 8 0 10 2 1 1 4 1 1 9 7 1 5 1 1 2 1 2 2 1 3 5 3 1 4 3 5 2 4 5 5 3 3 6 1 9 0 6 1 3 2 3 3 9 3 1 2 2 1 3 3 1 1 1 8 0 8 2 7 5 3 7 8 1 8 3 1 3 3 2 2 3 1 1 6 0 6 6 9 1 8 9 2 1 2 1 3 2 3 4 2 2 1 5 4 3 4 1 7 0 10 4 1 4 4 6 1 3 9 5 4 1 2 2 1 3 1 1 1 6 0 7 8 8 6 6 8 6 1 1 2 1 2 3 2 1 5 0 7 2 1 9 8 9 3 3 1 1 3 2 1 1 5 4 3 3 7 1 5 0 10 4 4 9 6 8 6 1 6 9 5 1 2 1 1 1 1 5 0 6 6 1 1 8 5 6 1 2 3 1 3 1 6 0 11 3 4 9 3 8 5 6 1 6 1 1 1 3 3 1 1 2 5 2 2 2 5 3 2 3 4 1 6 0 8 1 7 6 5 4 1 6 4 2 3 3 2 1 1 1 8 0 7 4 5 1 6 7 1 1 2 1 2 1 3 2 1 2 1 8 0 7 3 1 1 6 9 1 2 2 1 3 3 3 3 1 1 2 3 5 2 3 5 1 5 0 7 9 3 8 9 8 8 1 1 2 3 1 2 1 5 0 11 8 2 1 4 2 6 7 7 6 6 9 2 2 1 1 1 1 8 0 8 7 6 5 6 3 3 1 2 1 1 3 3 3 3 2 3 1 1 4 1 3 2 7 3 5 5 3 4 1 7 0 11 6 4 5 9 2 1 9 9 4 6 7 1 1 3 3 3 1 3 1 9 0 10 4 3 1 5 7 9 6 5 1 3 1 1 1 3 2 1 2 2 3 1 5 0 9 2 1 5 8 2 4 9 2 4 2 2 1 3 1 1 3 1 5 3 6 1 7 0 10 1 2 2 5 4 2 8 6 4 7 3 1 3 2 2 1 1 1 5 0 10 1 1 9 4 1 2 3 4 2 5 1 1 1 1 1 1 7 0 6 7 8 3 7 6 1 3 3 2 1 1 2 2 1 5 2 5 1 1 3 6 1 5 0 10 1 2 4 4 9 5 5 6 7 4 1 3 1 2 1 1 6 0 8 3 1 1 2 7 7 1 6 3 1 3 3 1 3 1 8 0 10 9 7 5 4 3 1 4 4 3 7 1 3 3 1 2 2 3 1 3 5 2 2 3 3 3 5 1 9 0 10 1 4 9 5 1 6 9 9 5 3 1 3 2 2 2 1 1 2 3 1 5 0 11 7 4 9 7 8 5 1 3 2 5 8 3 2 1 3 1 1 8 0 11 6 4 7 3 9 6 2 5 1 2 8 1 1 2 3 1 1 3 3 1 2 3 4 3 3 6 1 7 0 8 8 8 6 1 7 4 6 2 1 1 2 3 2 2 3 1 7 0 8 8 1 6 8 1 9 3 3 2 2 3 1 1 2 3 1 6 0 6 2 4 8 1 3 6 3 2 1 3 1 2 2 4 1 4 3 3 4 6 1 6 6 6 4 9 7 3 5 5 3 7 1 5 0 7 7 9 2 1 3 5 6 1 2 1 2 1 1 6 0 11 6 7 6 7 1 1 2 1 2 3 8 1 1 1 1 1 2 1 8 0 8 1 9 4 3 2 5 5 8 2 1 1 3 3 1 3 3 1 3 2 2 4 2 1 3 5 1 8 0 11 5 8 7 2 3 5 4 5 8 1 2 3 1 3 1 1 1 1 2 1 6 0 9 8 6 6 5 4 1 1 1 4 2 1 2 1 2 1 1 6 0 10 4 6 2 7 6 9 5 9 7 1 2 1 1 1 3 1 3 2 3 3 4 3 6 1 9 0 11 7 8 9 1 1 9 7 8 8 2 4 1 3 2 1 3 1 1 1 3 1 8 0 6 2 5 9 3 1 5 2 2 1 1 2 1 3 1 1 9 0 6 8 1 4 9 3 4 3 1 1 1 1 1 1 2 2 1 4 4 5 2 2 3 4 1 6 0 6 1 8 4 1 3 1 1 2 2 1 1 1 1 8 0 6 1 6 7 1 3 7 3 1 3 1 3 3 3 2 1 8 0 8 2 9 2 1 8 2 8 8 2 3 3 2 3 1 1 2 3 4 4 1 3 7 1 9 0 8 4 2 7 1 3 7 4 2 1 1 1 2 1 2 2 2 2 1 8 0 8 7 5 3 1 7 5 9 8 1 2 1 1 2 1 3 2 1 5 0 8 8 1 2 3 7 1 7 9 2 3 1 1 3 2 3 5 1 2 2 2 2 5 1 3 3 5 4 3 6 1 9 0 10 1 4 1 3 3 5 4 5 9 7 1 2 3 1 2 3 1 1 2 1 6 0 8 3 1 3 1 3 9 4 4 2 2 2 3 2 1 1 9 0 6 5 4 3 1 5 5 1 1 1 1 3 1 3 1 1 5 4 2 3 4 3 3 4 1 7 0 6 2 5 4 8 1 4 1 1 1 1 1 2 1 1 6 0 6 3 8 1 2 1 4 2 3 2 1 1 1 1 9 0 9 2 1 6 6 3 1 4 2 9 1 3 2 2 3 3 1 2 2 1 3 3 4 3 6 1 9 0 11 6 8 1 3 8 8 7 2 7 3 1 1 2 3 1 2 3 1 3 1 1 6 0 7 7 5 1 2 5 9 1 1 1 2 2 1 1 1 5 0 10 8 9 7 1 6 6 7 3 2 2 1 1 2 1 2 3 3 3 4 1 5 3 4 1 5 0 7 1 8 3 8 8 7 8 3 1 3 2 1 1 6 0 8 6 7 2 8 9 1 1 1 3 3 1 3 1 3 1 7 0 11 5 6 3 6 4 6 3 2 2 1 4 1 1 3 3 1 2 2 3 3 3 2 3 4 1 6 0 9 3 5 8 1 3 1 8 8 2 2 3 1 1 1 1 1 7 0 11 8 1 9 7 5 8 4 3 3 6 2 3 3 2 1 2 2 1 1 7 0 6 2 8 1 4 3 4 3 1 3 1 2 2 1 2 3 2 2 7 4 3 3 4 5 3 6 1 5 0 10 2 6 8 8 5 8 7 5 1 1 3 3 2 1 1 1 5 0 10 7 8 5 1 9 2 1 9 9 5 3 1 2 1 2 1 6 0 11 4 4 1 1 7 1 3 9 5 9 5 1 2 3 2 2 3 3 5 2 1 4 1 3 4 1 6 0 11 3 8 8 9 8 4 8 8 4 1 7 3 2 1 2 1 2 1 5 0 9 5 6 1 1 9 5 9 4 2 1 2 1 3 1 1 7 0 10 3 3 5 1 1 6 9 5 3 3 1 3 2 1 2 3 3 5 5 1 1 3 7 1 7 0 11 7 9 9 9 6 7 1 2 5 9 6 1 1 2 3 2 3 1 1 5 0 9 1 7 1 4 8 9 2 4 1 1 3 1 2 2 1 9 0 11 7 6 4 8 2 3 4 3 8 2 1 1 3 1 2 2 2 3 1 3 1 1 2 1 5 4 2 3 7 1 7 0 8 5 2 2 8 4 1 2 5 1 1 2 3 2 2 2 1 6 0 10 4 7 1 7 7 5 5 6 9 3 3 2 1 1 3 3 1 8 0 7 5 2 5 1 8 8 2 1 1 3 2 2 3 1 1 1 2 4 5 1 1 1 2 4 2 2 1 5 5 3 5 1 8 0 10 9 8 3 1 7 8 1 1 6 6 1 1 1 2 1 3 3 3 1 5 0 11 5 9 1 9 3 6 3 4 7 4 7 1 1 2 1 3 1 7 0 10 7 6 2 5 7 9 1 7 4 1 3 1 1 1 2 3 3 2 4 4 3 5 3 7 1 7 0 6 3 6 1 4 1 6 1 2 3 1 3 2 1 1 9 0 11 6 1 4 7 9 8 8 3 1 8 8 1 1 3 3 2 3 2 1 2 1 5 0 10 8 2 1 3 5 6 1 4 2 4 1 2 1 2 3 3 1 5 2 2 4 2 3 6 1 9 0 10 1 4 4 1 2 5 8 9 5 7 3 3 3 3 3 3 2 2 1 1 8 0 6 5 1 7 4 6 8 3 1 2 2 2 1 3 2 1 7 0 10 4 2 9 4 5 8 1 4 2 5 1 2 2 1 1 2 1 4 3 2 3 2 2 3 6 1 7 0 6 1 5 7 2 4 9 2 1 1 2 2 1 3 1 8 0 11 9 4 5 1 4 1 9 4 8 2 7 1 3 2 3 1 3 2 1 1 9 0 6 1 9 1 5 3 6 1 1 3 2 1 2 1 1 2 3 3 5 2 3 2 3 7 1 7 0 11 8 1 8 8 7 4 2 5 8 7 1 3 3 3 1 2 1 1 1 5 0 8 1 2 2 7 3 5 9 2 3 1 1 1 1 1 6 0 11 2 2 1 8 8 6 2 2 5 2 7 1 2 1 1 1 3 2 1 1 3 2 3 3 7 2 4 2 7 4 4 3 6 1 5 0 8 2 7 3 7 4 7 1 9 3 2 3 2 1 1 8 0 7 4 3 2 4 1 4 7 1 1 3 3 1 3 3 1 1 5 0 8 2 1 2 9 5 6 3 9 1 2 1 2 1 2 1 5 2 5 1 3 5 1 9 0 6 3 3 1 6 6 1 2 2 1 2 2 3 1 1 2 1 8 0 9 8 4 1 5 5 7 3 4 9 3 2 3 1 3 3 1 1 1 9 0 8 8 1 9 8 7 4 5 5 2 1 3 2 1 1 3 2 3 3 2 1 5 2 3 6 1 5 0 8 8 6 3 3 3 6 3 1 2 2 1 1 2 1 5 0 9 6 9 9 8 1 1 8 8 9 3 1 1 1 2 1 5 0 10 1 4 6 7 1 1 7 6 3 7 1 2 1 1 1 4 4 3 4 5 1 3 7 1 8 0 6 7 1 1 4 2 3 1 1 2 1 1 3 2 3 1 8 0 6 5 1 5 9 2 3 2 3 2 3 3 2 3 1 1 5 0 6 1 7 5 1 2 6 3 1 3 2 2 2 4 5 2 5 3 2 4 6 1 3 4 4 3 5 1 7 0 10 1 2 7 6 6 9 7 8 4 6 1 2 1 1 1 1 1 1 5 0 11 2 8 4 9 4 5 2 1 6 9 1 2 3 1 1 3 1 8 0 8 6 3 4 1 9 2 1 4 2 1 1 3 1 2 1 3 4 1 1 2 3 3 4 1 7 0 7 5 8 2 8 4 6 1 2 1 2 2 2 2 3 1 8 0 8 9 8 6 8 4 1 2 4 3 1 2 1 3 2 2 1 1 6 0 8 4 9 4 6 2 3 4 1 3 1 1 2 2 1 3 2 1 5 3 5 1 9 0 7 3 1 3 1 4 3 3 1 3 2 1 3 1 1 1 1 1 5 0 7 1 1 8 5 1 3 6 3 1 1 3 2 1 7 0 10 7 8 4 1 3 5 6 6 9 2 1 3 2 1 3 3 1 2 2 3 5 4 3 5 1 9 0 9 7 6 7 2 6 1 2 1 5 1 3 1 2 1 2 1 2 3 1 9 0 11 1 5 9 5 4 6 1 8 5 8 5 1 1 1 3 1 2 1 1 3 1 9 0 10 8 5 3 1 1 1 7 7 3 3 1 3 2 1 2 2 1 2 3 1 2 3 5 2 5 4 2 1 4 4 3 5 1 6 0 8 7 9 5 1 9 8 1 5 1 3 1 1 1 1 1 5 0 8 1 3 2 3 2 1 7 1 2 3 1 1 2 1 8 0 7 1 6 4 1 1 9 6 1 1 2 1 1 2 2 3 1 2 3 4 3 3 7 1 7 0 10 2 1 3 5 3 3 5 2 4 4 3 1 2 1 1 2 1 1 8 0 11 6 4 1 5 1 5 6 4 7 5 3 1 3 2 1 2 3 3 3 1 6 0 10 1 9 1 4 7 9 3 7 3 1 2 1 2 3 1 1 2 1 1 4 5 3 2 3 7 1 9 0 7 4 5 4 9 4 1 8 2 3 3 2 1 1 2 2 1 1 7 0 7 3 1 8 7 6 8 2 1 2 3 2 1 1 1 1 8 0 7 1 6 5 8 4 1 7 1 1 3 3 1 3 1 3 4 5 1 3 1 5 5 3 7 1 6 0 10 7 8 4 4 8 1 9 1 9 4 1 1 3 1 3 3 1 6 0 8 1 7 4 3 7 2 6 1 3 1 1 1 3 1 1 7 0 11 6 9 4 6 1 6 6 3 4 9 1 1 1 3 1 1 2 2 4 4 2 2 1 1 2 1 4 1 4 6 7 6 6 3 4 3 3 4 1 8 0 7 1 4 5 8 6 6 1 3 1 1 2 3 1 1 3 1 7 0 6 5 1 7 3 8 2 2 1 2 2 1 1 1 1 9 0 9 8 8 7 7 3 2 1 2 3 1 1 3 2 1 1 3 2 2 5 3 1 3 3 4 1 6 0 7 3 1 1 2 1 1 3 2 2 1 1 3 2 1 7 0 10 6 7 2 3 1 7 2 7 2 5 3 3 2 2 1 1 2 1 8 0 6 8 1 4 7 5 1 2 1 1 2 2 3 3 2 2 5 1 5 3 6 1 9 0 8 5 8 3 1 6 5 4 7 3 1 1 1 2 3 1 1 2 1 7 0 9 8 1 3 6 5 1 7 9 8 1 1 1 2 1 1 3 1 7 0 9 7 1 4 1 1 1 6 6 7 3 1 2 3 1 1 1 1 5 5 3 4 4 3 7 1 5 0 9 8 2 1 1 1 1 4 8 5 1 3 1 3 1 1 8 0 9 7 2 1 3 5 2 7 1 2 1 1 3 1 2 1 1 3 1 9 0 11 3 5 4 1 2 3 3 5 3 6 4 2 2 1 1 3 2 3 3 3 3 2 4 1 3 3 4 5 5 1 5 4 3 4 1 8 0 10 7 1 5 4 1 7 6 6 1 4 3 1 3 1 1 1 2 1 1 7 0 6 6 1 4 1 1 6 1 3 3 2 3 2 2 1 8 0 9 3 8 8 8 6 8 4 4 1 1 2 3 1 1 1 3 3 2 1 5 3 3 4 1 5 0 8 3 1 9 1 6 1 8 3 2 1 3 2 1 1 8 0 9 5 2 7 3 1 5 1 1 1 1 1 3 3 1 1 3 2 1 9 0 11 7 8 2 5 5 9 3 7 1 8 7 2 3 1 3 3 1 2 2 3 5 2 2 2 3 7 1 5 0 7 1 2 3 1 9 5 7 3 2 2 1 1 1 7 0 6 9 1 4 3 6 2 2 1 1 1 3 2 1 1 8 0 9 4 6 1 6 9 9 6 2 7 3 2 3 1 3 2 1 2 5 5 3 3 4 4 2 3 7 1 9 0 6 6 3 6 7 9 1 1 1 1 1 2 3 2 2 3 1 7 0 9 7 9 8 4 5 8 1 4 3 2 2 1 1 3 1 3 1 6 0 8 6 6 8 1 9 1 4 5 1 1 1 1 1 3 3 4 3 3 3 5 1 3 5 1 8 0 7 7 1 8 4 5 9 2 1 1 1 1 3 2 2 3 1 6 0 8 3 6 1 1 1 5 1 2 1 3 1 1 3 1 1 5 0 11 1 2 9 8 3 6 1 1 2 5 8 2 1 1 2 1 2 1 4 2 3 5 6 2 3 4 5 3 7 1 5 0 6 9 9 1 1 4 4 1 1 1 2 2 1 8 0 9 9 1 1 7 9 4 1 7 6 2 1 2 1 3 3 1 2 1 6 0 7 6 5 6 4 6 1 2 2 2 1 2 2 2 4 2 3 3 3 3 2 3 7 1 5 0 8 9 7 8 2 1 2 8 3 3 1 2 2 1 1 5 0 9 3 3 2 3 7 5 1 6 8 2 3 3 1 1 1 9 0 9 9 1 3 7 7 8 9 8 9 1 1 3 2 2 3 1 1 1 2 3 3 2 5 4 2 3 5 1 7 0 10 2 4 1 3 6 9 3 1 3 7 1 3 3 2 2 3 1 1 6 0 10 1 7 5 2 5 7 1 1 8 7 3 1 2 1 1 1 1 6 0 9 1 6 9 1 2 7 3 2 1 2 1 2 1 3 1 4 2 2 2 1 3 4 1 9 0 7 4 1 6 6 6 5 1 2 2 1 2 1 2 1 1 2 1 6 0 9 5 8 3 1 2 1 5 4 5 3 2 1 2 3 1 1 7 0 11 3 4 9 9 8 7 1 6 1 4 8 1 1 2 2 1 2 1 3 1 1 3 3 1 5 3 1 4 4 3 6 1 6 0 9 2 8 2 4 3 6 5 1 8 1 1 2 2 3 2 1 8 0 7 5 9 2 8 1 6 1 3 1 1 3 1 2 2 3 1 6 0 9 6 1 1 6 8 3 2 1 9 1 1 3 1 1 2 1 2 1 4 2 1 3 6 1 7 0 7 1 2 7 1 2 7 4 2 2 1 1 3 3 3 1 7 0 9 7 3 9 4 9 1 1 2 7 2 1 2 1 1 1 1 1 6 0 8 1 4 2 8 2 3 4 8 1 2 3 1 2 2 5 1 3 1 5 4 3 5 1 6 0 10 8 4 1 6 8 2 8 7 7 7 1 2 1 3 1 1 1 7 0 7 4 9 1 5 1 9 4 3 3 1 3 2 2 2 1 6 0 8 9 4 8 5 1 1 9 2 1 1 2 1 3 3 1 4 3 4 5 3 5 1 9 0 8 2 1 1 5 6 4 8 5 2 3 1 3 1 3 3 1 1 1 7 0 9 1 6 9 2 7 2 6 1 8 2 3 2 1 1 1 2 1 6 0 6 1 5 6 9 1 7 1 3 2 2 3 2 1 2 2 3 2 1 5 1 2 5 5 3 7 1 6 0 6 7 2 9 1 1 4 3 1 2 2 1 2 1 8 0 10 3 5 6 5 9 1 1 3 1 1 2 1 1 2 1 3 2 3 1 9 0 8 3 6 1 5 4 2 1 7 3 3 1 2 2 2 3 1 3 5 1 4 4 1 3 2 3 4 1 7 0 6 5 9 1 1 9 1 3 1 3 3 2 1 1 1 9 0 7 6 7 8 5 1 3 9 3 2 1 2 1 3 1 2 1 1 6 0 10 1 5 2 1 1 4 4 7 5 3 2 3 3 1 1 1 2 3 2 4 3 7 1 9 0 10 3 9 3 1 2 2 6 4 2 2 1 2 2 1 1 1 2 2 3 1 7 0 11 7 6 8 5 4 8 7 1 1 1 1 1 1 2 3 2 3 3 1 5 0 11 4 5 7 2 6 4 3 3 1 5 1 1 2 2 3 1 2 4 2 3 1 3 1 3 5 1 9 0 9 6 8 7 1 6 6 1 6 8 1 2 2 3 3 3 1 3 2 1 5 0 9 4 1 2 6 7 6 4 9 1 1 2 3 1 1 1 6 0 10 6 9 3 2 7 5 6 7 9 1 1 3 3 3 2 2 1 3 5 1 3 3 5 1 5 0 9 5 1 4 4 1 5 4 4 7 3 1 3 1 2 1 5 0 8 7 9 3 7 9 1 4 4 2 1 3 1 3 1 6 0 9 9 5 1 8 9 9 8 6 6 2 1 2 1 1 3 1 1 2 1 5 1 1 4 4 1 4 4 3 4 1 9 0 9 2 9 1 8 3 2 4 1 4 2 1 1 1 1 1 2 1 2 1 6 0 9 5 1 9 1 7 3 9 2 8 3 3 2 1 1 2 1 5 0 11 4 2 5 6 3 2 9 1 4 9 1 3 1 1 2 3 5 3 4 1 3 5 1 8 0 10 7 5 3 3 7 5 1 1 1 6 1 1 2 2 1 1 1 3 1 7 0 6 9 2 5 5 3 1 1 3 1 3 3 2 1 1 5 0 8 7 1 2 4 8 6 5 8 3 1 2 2 3 1 2 1 5 1 3 6 1 9 0 7 6 8 7 6 1 1 2 2 1 1 1 1 1 2 2 1 1 5 0 11 5 4 8 6 9 1 1 6 2 3 7 2 3 1 2 1 1 6 0 7 6 7 2 4 2 4 1 3 2 1 2 2 1 1 3 2 2 4 3 3 5 1 8 0 10 7 6 9 4 1 2 8 3 8 5 2 2 2 1 3 2 1 1 1 6 0 8 6 3 2 1 8 1 5 8 1 3 1 2 1 1 1 8 0 11 9 4 1 2 4 5 9 8 6 3 2 3 1 1 3 2 2 2 1 2 2 1 3 2 6 4 3 6 5 2 6 7 3 4 4 3 6 1 5 0 8 8 9 8 9 3 7 1 5 1 2 3 3 1 1 5 0 10 7 1 8 5 9 9 6 1 5 1 3 1 3 1 2 1 6 0 11 7 5 5 1 5 8 3 1 5 4 9 1 1 2 2 1 2 3 3 3 5 2 1 3 6 1 6 0 9 5 8 9 1 5 7 5 9 6 1 1 2 2 2 3 1 6 0 8 2 5 6 4 7 7 5 1 2 1 1 1 1 3 1 9 0 11 2 5 5 5 5 1 1 4 1 7 8 3 1 2 2 2 1 2 2 1 1 3 5 3 1 2 3 7 1 8 0 10 1 1 2 9 8 7 4 6 8 7 3 2 1 1 1 2 2 3 1 7 0 10 1 3 8 5 5 9 4 7 9 3 3 1 2 1 1 2 1 1 8 0 7 1 7 3 9 6 8 2 1 2 3 2 3 1 3 3 1 5 1 5 5 1 5 3 4 1 8 0 6 6 4 6 1 7 1 2 1 3 1 3 2 3 2 1 7 0 10 6 5 8 1 4 3 1 6 8 8 1 3 1 3 2 3 3 1 6 0 8 7 9 9 7 6 1 1 1 1 1 1 2 2 1 3 2 4 1 5 3 2 3 4 4 3 7 1 5 0 6 3 1 7 3 1 7 3 1 1 2 1 1 8 0 11 6 1 8 2 7 2 2 5 3 7 4 3 1 1 1 1 3 2 3 1 8 0 8 1 1 3 9 2 9 3 9 1 1 1 3 3 2 2 2 5 1 1 3 1 4 5 3 5 1 8 0 11 3 5 8 7 8 3 1 3 9 9 1 1 2 1 2 3 1 2 3 1 9 0 6 1 9 9 1 8 7 1 1 2 3 3 1 1 2 1 1 6 0 7 8 1 9 8 8 4 5 2 2 3 2 1 1 1 1 1 1 5 3 6 1 7 0 11 8 1 8 4 8 5 2 9 8 3 9 3 1 1 1 1 1 2 1 6 0 9 2 1 5 9 5 3 6 4 6 3 2 3 1 2 3 1 6 0 8 1 6 1 7 2 3 5 3 1 1 3 3 2 1 2 5 5 4 2 1 3 6 1 5 0 7 1 6 2 2 7 1 1 1 3 1 2 1 1 8 0 9 6 9 4 5 7 7 1 7 4 1 1 1 3 1 1 2 1 1 6 0 9 2 5 1 4 8 2 7 1 8 3 3 2 1 2 1 5 1 5 3 5 5 4 4 3 2 5 4 3 7 1 9 0 8 4 7 4 7 1 5 5 9 3 1 2 3 1 3 1 3 3 1 6 0 9 5 7 1 5 3 1 3 4 3 3 3 3 1 1 1 1 9 0 8 9 9 2 5 1 2 7 7 1 2 1 2 2 1 1 2 1 2 3 3 1 1 4 3 3 6 1 5 0 9 8 8 9 1 7 6 1 5 3 2 1 2 2 3 1 5 0 8 7 9 1 9 3 3 4 9 1 1 3 1 2 1 5 0 11 6 6 7 7 9 1 8 9 8 5 5 1 2 3 3 1 5 4 5 4 1 5 3 4 1 7 0 10 4 8 1 6 9 5 4 5 6 5 2 2 2 1 1 3 1 1 8 0 10 1 8 7 7 2 9 3 1 1 7 1 1 2 2 2 3 3 3 1 8 0 8 9 4 6 3 7 1 7 6 2 2 3 1 1 1 2 2 1 4 3 3 3 4 1 6 0 7 7 3 2 1 7 8 6 3 1 2 3 3 1 1 8 0 10 2 5 1 4 4 3 7 3 9 1 3 3 1 3 3 1 1 2 1 9 0 6 5 1 7 4 8 1 2 1 2 1 2 1 2 2 3 3 5 1 5 3 4 1 7 0 9 1 3 6 6 3 8 9 6 1 1 2 3 1 2 3 2 1 6 0 9 7 9 2 7 8 6 9 1 2 1 1 1 1 1 2 1 7 0 9 5 4 9 5 1 4 1 2 4 2 2 1 1 1 1 3 2 3 2 2 1 5 3 3 4 4 3 7 1 9 0 11 5 1 3 6 4 1 7 5 6 2 4 2 3 1 3 3 1 1 2 1 1 9 0 11 5 2 1 9 9 8 1 9 3 8 7 1 1 2 2 2 1 1 1 2 1 7 0 11 9 6 9 2 1 1 7 7 3 4 3 1 3 2 2 3 2 3 4 3 2 4 5 3 3 3 4 1 8 0 8 6 6 7 8 9 1 9 8 1 1 1 2 2 2 1 2 1 5 0 7 5 1 1 4 1 6 9 2 2 3 1 1 1 8 0 9 2 6 2 8 9 7 1 2 2 2 1 2 1 3 2 3 1 3 1 3 5 3 6 1 9 0 9 1 5 1 6 5 4 2 4 1 1 3 3 1 3 3 1 1 3 1 8 0 11 2 2 3 4 6 4 1 8 8 2 3 1 3 1 3 2 3 1 3 1 6 0 9 3 1 1 6 6 9 7 6 4 1 2 2 2 2 3 5 3 3 4 1 1 3 6 1 6 0 9 1 8 1 4 7 3 8 5 4 2 3 2 1 1 1 1 6 0 7 3 1 1 7 6 9 4 1 3 1 1 2 1 1 6 0 10 8 8 7 4 4 1 8 2 8 6 2 2 1 3 2 2 5 4 1 2 1 3 5 5 5 4 4 4 3 7 1 9 0 8 1 1 4 2 7 8 3 9 2 2 2 1 1 3 3 1 3 1 6 0 6 1 7 6 1 1 7 2 3 1 2 1 2 1 6 0 6 1 8 7 1 3 8 1 3 2 1 3 2 1 2 3 5 3 4 5 3 6 1 7 0 7 8 8 1 6 1 9 6 1 2 1 3 1 3 1 1 7 0 10 1 1 1 6 4 9 3 4 6 5 2 2 1 3 1 1 1 1 5 0 11 2 7 2 4 3 5 1 2 9 7 8 2 1 1 2 1 2 3 2 1 2 1 3 4 1 9 0 8 1 5 5 6 7 9 1 7 1 1 1 2 1 2 1 1 1 1 9 0 10 4 5 6 5 9 7 7 1 7 1 2 3 1 2 1 3 1 1 3 1 6 0 6 6 1 7 5 3 7 1 3 1 1 3 3 4 4 1 2 3 7 1 9 0 9 4 7 5 3 1 6 6 6 9 3 2 1 1 1 1 2 2 1 1 5 0 10 1 5 4 2 3 1 6 3 4 3 1 2 2 3 2 1 5 0 10 6 1 4 2 4 6 5 4 5 2 2 2 2 3 1 4 4 4 3 2 4 3 6 4 4 6 5 4 3 7 1 5 0 10 9 5 1 8 1 7 7 9 7 7 1 1 2 2 2 1 8 0 10 8 3 3 1 6 3 9 4 2 9 2 2 3 3 3 2 2 1 1 9 0 7 9 2 6 1 8 3 1 2 2 3 1 3 2 2 1 2 5 2 2 5 2 1 4 3 6 1 7 0 7 4 1 7 4 1 3 1 2 2 3 2 2 1 2 1 5 0 9 8 8 9 5 6 7 5 1 1 3 1 1 1 1 1 8 0 6 2 7 1 5 4 9 1 2 3 1 1 3 3 3 2 4 1 1 3 2 3 5 1 6 0 8 4 2 8 9 8 1 1 2 2 2 1 2 3 1 1 9 0 6 8 6 6 9 8 1 3 2 2 2 2 3 3 1 2 1 8 0 8 1 4 8 1 6 2 7 1 3 1 1 3 2 1 2 2 4 5 2 2 4 3 4 1 6 0 9 6 7 6 1 1 9 8 7 1 2 1 3 3 1 1 1 8 0 8 1 1 3 9 2 1 7 5 3 3 1 1 1 1 1 3 1 8 0 7 7 8 1 9 2 4 6 3 3 3 1 3 3 1 2 1 1 1 2 3 6 1 7 0 10 5 9 1 8 6 2 3 6 5 7 1 1 3 3 1 2 3 1 5 0 8 1 1 6 9 6 4 4 9 1 3 2 1 3 1 7 0 7 6 3 4 7 1 5 3 3 1 2 1 3 1 2 4 5 3 2 5 1 5 5 6 2 5 5 3 7 1 7 0 10 2 1 7 1 4 3 5 3 3 9 2 3 1 3 3 1 2 1 9 0 8 6 7 9 8 6 5 1 1 1 1 3 1 2 2 1 1 1 1 5 0 10 9 7 1 3 1 1 1 4 9 4 1 3 1 3 1 4 4 2 1 2 1 1 3 4 1 5 0 7 8 1 4 9 5 8 3 2 1 3 2 3 1 9 0 6 7 8 7 1 7 7 3 3 3 2 2 1 2 2 2 1 8 0 11 2 3 8 1 3 6 8 2 7 1 3 2 1 3 1 2 1 1 1 3 4 2 2 3 5 1 5 0 11 8 2 1 7 3 6 4 8 3 4 1 2 2 1 2 1 1 5 0 9 1 1 5 8 3 4 9 9 7 3 1 1 1 3 1 8 0 9 7 4 6 8 6 1 9 4 1 2 3 2 3 1 1 2 3 2 4 4 3 3 3 6 1 8 0 9 7 1 2 6 5 1 8 9 1 2 3 3 1 1 1 3 1 1 5 0 11 1 7 8 1 1 7 1 7 4 8 9 2 1 1 1 2 1 8 0 9 6 7 7 7 1 3 7 2 8 1 3 2 1 1 1 3 1 3 4 5 4 1 1 3 5 1 9 0 9 6 7 2 9 7 2 1 2 1 1 3 3 2 1 2 2 3 1 1 7 0 9 7 5 7 9 3 5 9 1 9 1 1 3 1 2 3 1 1 9 0 6 1 9 3 9 6 6 3 2 3 1 1 2 2 3 3 4 5 5 2 3 1 2 7 2 4 3 6 7 10 3 9 7 4 9 4 5 6 1 7'''
