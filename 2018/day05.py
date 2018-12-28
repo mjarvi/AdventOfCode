@@ -99,7 +99,7 @@ def remove_char(char, string):
     return [c for c in string if c.lower() != char.lower()]
 
 
-class TestDay02(unittest.TestCase):
+class TestDay05(unittest.TestCase):
 
     def test_example1(self):
         self.assertEqual(len(react('dabAcCaCBAcCcaDA')), 10)
