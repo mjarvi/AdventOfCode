@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+ls -1 *.py | entr py.test-3 --duration=3 *.py

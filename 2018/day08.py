@@ -4,6 +4,7 @@ from inputs import DAY8_INPUT
 
 
 '''
+
 Memory Maneuver
 
     The sleigh is much easier to pull than you'd expect for something its weight.
